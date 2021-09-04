@@ -149,8 +149,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				$this->p->debug->mark( 'update manager config' );	// Begin timer.
 			}
 
-			$cf_plugins = $this->p->cf[ 'plugin' ];
-
+			$cf_plugins     = $this->p->cf[ 'plugin' ];
 			$cache_md5_pre  = $this->p_id . '_!_';
 			$cache_exp_secs = 3 * DAY_IN_SECONDS;
 			$cache_salt     = __CLASS__ . '::upd_config';
@@ -1204,18 +1203,15 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				return $plugin_data = null;
 			}
 
-			$home_url = SucomUpdateUtilWP::raw_home_url();
-			$json_url = self::$upd_config[ $ext ][ 'data_json_url' ];
-
+			$home_url      = SucomUpdateUtilWP::raw_home_url();
+			$json_url      = self::$upd_config[ $ext ][ 'data_json_url' ];
 			$cache_md5_pre = $this->p_id . '_';
 			$cache_salt    = 'SucomUpdate::plugin_data(json_url:' . $json_url . '_home_url:' . $home_url . ')';
 			$cache_id      = $cache_md5_pre . md5( $cache_salt );
 
-			if ( self::prefer_wp_org_update( $ext ) ) {
+			if ( self::prefer_wp_org_update( $ext ) ) {	// Uses a local cache.
 
-				delete_transient( $cache_id );
-
-				return $plugin_data = null;
+				return $plugin_data = null;	// Stop here.
 			}
 
 			if ( $read_cache ) {
