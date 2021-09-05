@@ -57,7 +57,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.5.0-dev.5 (2021/09/04)**
+**Version 4.5.0-dev.6 (2021/09/05)**
 
 * **New Features**
 	* None.
@@ -106,9 +106,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.5.0-dev.5 =
+= 4.5.0-dev.6 =
 
-(2021/09/04) Minor optimization for stable version data from wordpress.org.
+(2021/09/05) Minor optimization for stable version data from wordpress.org.
 
 = 4.4.1 =
 
