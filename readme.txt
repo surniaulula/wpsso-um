@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 7.0
 Requires At Least: 5.0
 Tested Up To: 5.8
-Stable Tag: 4.4.1
+Stable Tag: 4.5.0
 
 Update Manager for the WPSSO Core Premium plugin and its Premium complementary add-ons.
 
@@ -62,7 +62,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* Minor optimization for stable version data from wordpress.org.
+	* Minor transient optimization for stable version data from wordpress.org.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -108,7 +108,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.5.0 =
 
-(2021/09/07) Minor optimization for stable version data from wordpress.org.
+(2021/09/07) Minor transient optimization for stable version data from wordpress.org.
 
 = 4.4.1 =
 
