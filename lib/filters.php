@@ -62,11 +62,11 @@ if ( ! class_exists( 'WpssoUmFilters' ) ) {
 
 		public function filter_option_type( $type, $base_key ) {
 
-			if ( ! empty( $type ) ) {
+			if ( ! empty( $type ) ) {	// Return early if we already have a type.
 
 				return $type;
 
-			} elseif ( strpos( $base_key, 'update_' ) !== 0 ) {
+			} elseif ( strpos( $base_key, 'update_' ) !== 0 ) {	// Nothing to do.
 
 				return $type;
 			}
