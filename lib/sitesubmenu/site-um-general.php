@@ -140,7 +140,8 @@ if ( ! class_exists( 'WpssoUmSitesubmenuSiteumgeneral' ) && class_exists( 'Wpsso
 				case 'um-general-filters':
 
 					$version_filters = $this->p->cf[ 'um' ][ 'version_filter' ];
-					$ext_sorted      = WpssoConfig::get_ext_sorted();	// Since WPSSO Core v3.38.3.
+
+					$ext_sorted = WpssoConfig::get_ext_sorted();	// Since WPSSO Core v3.38.3.
 
 					foreach ( $ext_sorted as $ext => $info ) {
 
@@ -152,9 +153,9 @@ if ( ! class_exists( 'WpssoUmSitesubmenuSiteumgeneral' ) && class_exists( 'Wpsso
 						$opt_key = 'update_filter_for_' . $ext;
 
 						$table_rows[ $opt_key ] = '' .
-						$this->form->get_th_html( $info[ 'name' ], $css_class = '', $css_id = 'update_version_filter' ) . 
-						'<td>' . $this->form->get_select( $opt_key, $version_filters, $css_class = 'update_filter' ) . '</td>' .
-						WpssoAdmin::get_option_site_use( $opt_key, $this->form, $network = true, $enabled = true );
+							$this->form->get_th_html( $info[ 'name' ], $css_class = '', $css_id = 'update_version_filter' ) . 
+							'<td>' . $this->form->get_select( $opt_key, $version_filters, $css_class = 'update_filter' ) . '</td>' .
+							WpssoAdmin::get_option_site_use( $opt_key, $this->form, $network = true, $enabled = true );
 					}
 
 					break;
