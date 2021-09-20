@@ -36,7 +36,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		private $sched_hours   = 24;
 		private $sched_name    = 'every24hours';
 
-		private static $api_version = 4.5;
+		private static $api_version = 4.6;
 		private static $upd_config  = array();
 		private static $offer_fname = 'offer-update.txt';
 
