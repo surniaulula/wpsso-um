@@ -120,7 +120,7 @@ msgstr ""
 
 #: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
-msgid "Schema shortcode for advanced users."
+msgid "Shortcode for advanced Schema markup of content sections."
 msgstr ""
 
 #: gettext/gettext-lib-config.php:8 gettext/gettext-lib-config.php:9
