@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Update Manager 4.5.0\n"
+"Project-Id-Version: WPSSO Update Manager 4.6.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-09-06 06:14-0700\n"
+"PO-Revision-Date: 2021-09-20 12:26-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -101,17 +101,27 @@ msgstr "La fonction WordPress %1$s a retourné HTTP %2$d (%3$s) pour %4$s."
 msgid "The %1$s plugin (%2$s) version number is missing from the WordPress plugins array."
 msgstr "Le numéro de version de l'extension %1$s (%2$s) est absente de la liste d'extensions de WordPress."
 
-#: gettext/gettext-lib-config.php:6 gettext/gettext-lib-config.php:7
+#: gettext/gettext-lib-config.php:6
+msgctxt "plugin name"
+msgid "WPSSO Schema Shortcode"
+msgstr "WPSSO code court de Schéma"
+
+#: gettext/gettext-lib-config.php:7
+msgctxt "plugin description"
+msgid "Shortcode for advanced Schema markup of content sections."
+msgstr "Code court pour un balisage de Schéma avancé des sections de contenu."
+
+#: gettext/gettext-lib-config.php:8 gettext/gettext-lib-config.php:9
 msgctxt "lib file description"
 msgid "Update Manager"
 msgstr "Mises à jour"
 
-#: gettext/gettext-lib-config.php:8
+#: gettext/gettext-lib-config.php:10
 msgctxt "plugin name"
 msgid "WPSSO Update Manager"
 msgstr "WPSSO gestionnaire de mise à jour"
 
-#: gettext/gettext-lib-config.php:9
+#: gettext/gettext-lib-config.php:11
 msgctxt "plugin description"
 msgid "Update Manager for the WPSSO Core Premium plugin and its Premium complementary add-ons."
 msgstr "Gestionnaire de mise à jour pour l'extension WPSSO Core Premium et ses ajouts complémentaires Premium."
@@ -124,7 +134,7 @@ msgstr "Les informations de mise à jour d'extension ont été actualisées."
 msgid "Plugin update offers have been reenabled."
 msgstr "Les offres de mise à jour des extensions ont été réactivées."
 
-#: lib/filters.php:218
+#: lib/filters.php:221
 msgctxt "lib file description"
 msgid "(api) Update Check Schedule"
 msgstr "(api) Horaire de vérification pour mises à jour"
