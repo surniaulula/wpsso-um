@@ -19,7 +19,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 				'wpssossc' => array(			// Plugin acronym.
 					'short'       => 'WPSSO SSC',	// Short plugin name.
 					'name'        => 'WPSSO Schema Shortcode',
-					'desc'        => 'Schema shortcode.',
+					'desc'        => 'Schema shortcode for advanced users.',
 					'slug'        => 'wpsso-schema-shortcode',
 					'base'        => 'wpsso-schema-shortcode/wpsso-schema-shortcode.php',
 					'update_auth' => '',		// No premium version.
@@ -77,7 +77,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					),
 				),
 				'wpssoum' => array(			// Plugin acronym.
-					'version'     => '4.6.0-dev.6',	// Plugin version.
+					'version'     => '4.6.0-dev.7',	// Plugin version.
 					'opt_version' => '7',		// Increment when changing default option values.
 					'short'       => 'WPSSO UM',	// Short plugin name.
 					'name'        => 'WPSSO Update Manager',
