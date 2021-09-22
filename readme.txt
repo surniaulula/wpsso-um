@@ -57,12 +57,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.6.0-b.2 (2021/09/21)**
+**Version 4.6.0-b.2 (2021/09/22)**
 
 * **New Features**
-	* None.
-* **Improvements**
 	* Added the new WPSSO Schema Shortcode add-on to the SSO &gt; Complimentary Add-ons settings page.
+* **Improvements**
+	* None.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -123,7 +123,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.6.0-b.2 =
 
-(2021/09/21) Added the new WPSSO Schema Shortcode add-on to the SSO &gt; Complimentary Add-ons settings page.
+(2021/09/22) Added the new WPSSO Schema Shortcode add-on to the SSO &gt; Complimentary Add-ons settings page.
 
 = 4.5.0 =
 
