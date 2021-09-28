@@ -13,11 +13,11 @@ Requires At Least: 5.0
 Tested Up To: 5.8.1
 Stable Tag: 4.6.0
 
-Update Manager for the WPSSO Core Premium plugin and its Premium complementary add-ons.
+Update Manager for the WPSSO Core Premium plugin.
 
 == Description ==
 
-<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-um/assets/icon-256x256.png"> The WPSSO Update Manager add-on is required to enable and update the <a href="https://wpsso.com/">WPSSO Core Premium plugin</a> and its complementary Premium add-ons.</p>
+<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-um/assets/icon-256x256.png"> The WPSSO Update Manager add-on is required to enable and update the <a href="https://wpsso.com/">WPSSO Core Premium plugin</a>.</p>
 
 <p>The WPSSO Update Manager supports WordPress Network / Multisite installations, WordPress MU Domain Mapping, and WordPress v5.5 Automatic Updates.</p>
 
