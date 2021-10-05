@@ -98,10 +98,9 @@ if ( ! class_exists( 'WpssoUmSubmenuUmGeneral' ) && class_exists( 'WpssoAdmin' )
 
 				$filter_name = SucomUtil::sanitize_hookname( 'wpsso_' . $metabox_id . '_' . $tab_key . '_rows' );
 
-				$table_rows[ $tab_key ] = array_merge(
-					$this->get_table_rows( $metabox_id, $tab_key ),
-					(array) apply_filters( $filter_name, array(), $this->form )
-				);
+				$table_rows[ $tab_key ] = $this->get_table_rows( $metabox_id, $tab_key );
+
+				$table_rows[ $tab_key ] = apply_filters( $filter_name, $table_rows[ $tab_key ], $this->form, $network = false );
 			}
 
 			if ( isset( $this->p->util->metabox ) ) {	// Since WPSSO Core v8.0.0.
