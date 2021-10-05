@@ -57,6 +57,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.6.1-b.1 (2021/10/05)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Standardized `get_table_rows()` calls and filters in 'submenu' and 'sitesubmenu' classes.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v5.0.
+	* WPSSO Core v8.0.0.
+
 **Version 4.6.0 (2021/09/24)**
 
 * **New Features**
@@ -120,6 +135,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v5.0.0.
 
 == Upgrade Notice ==
+
+= 4.6.1-b.1 =
+
+(2021/10/05) Standardized `get_table_rows()` calls and filters in 'submenu' and 'sitesubmenu' classes.
 
 = 4.6.0 =
 
