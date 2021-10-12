@@ -95,8 +95,8 @@ if ( ! class_exists( 'WpssoUmFilters' ) ) {
 		}
 
 		/**
-		 * Check for Authentication ID and version filter changes, and if the submitted values are different, force an
-		 * update check. $network is true when saving multisite settings.
+		 * Check for Authentication ID and version filter changes, and if the submitted values are different, refresh the
+		 * config and force an update check. If the options array is being upgraded, refresh the config.
 		 */
 		public function filter_save_setting_options( array $opts, $network, $upgrading ) {
 
@@ -149,6 +149,10 @@ if ( ! class_exists( 'WpssoUmFilters' ) ) {
 				 * SucomUpdate->check_ext_for_updates() does not throttle like SucomUpdate->check_all_for_updates().
 				 */
 				$this->a->update->check_ext_for_updates( $check_ext_for_updates, $quiet = true );
+
+			} elseif ( $upgrading ) {
+
+				$this->a->update->refresh_upd_config();
 			}
 
 			return $opts;

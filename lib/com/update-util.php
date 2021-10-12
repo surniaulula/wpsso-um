@@ -139,6 +139,8 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 
 		/**
 		 * The WordPress get_plugins() function is very slow, so call it only once and cache its result.
+		 *
+		 * We use the SucomPlugin::get_plugins() method if available, otherwise we use our own $get_plugins_cache.
 		 */
 		public static function get_plugins() {
 
@@ -173,7 +175,8 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 		}
 
 		/**
-		 * Clear both caches.
+		 * We use the SucomPlugin::get_plugins() method if available, otherwise we use our own $get_plugins_cache. Clear
+		 * both caches, just in case.
 		 */
 		public static function clear_plugins_cache() {
 
