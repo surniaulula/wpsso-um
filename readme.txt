@@ -63,6 +63,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.6.2 (2021/10/12)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* Fixed missing config cache refresh when upgrading the plugin settings.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v5.0.
+	* WPSSO Core v8.0.0.
+
 **Version 4.6.1 (2021/10/06)**
 
 * **New Features**
@@ -141,6 +156,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v5.0.0.
 
 == Upgrade Notice ==
+
+= 4.6.2 =
+
+(2021/10/12) Fixed missing config cache refresh when upgrading the plugin settings.
 
 = 4.6.1 =
 
