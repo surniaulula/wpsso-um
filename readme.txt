@@ -63,7 +63,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.7.0 (2021/10/15)**
+**Version 4.7.0-rc.1 (2021/10/15)**
 
 * **New Features**
 	* None.
@@ -76,7 +76,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v5.0.
-	* WPSSO Core v8.0.0.
+	* WPSSO Core v7.0.0.
 
 **Version 4.6.2 (2021/10/12)**
 
@@ -172,7 +172,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.7.0 =
+= 4.7.0-rc.1 =
 
 (2021/10/15) Refactored the `SucomUpdateUtilWP` class methods for WordPress v5.8.1.
 
