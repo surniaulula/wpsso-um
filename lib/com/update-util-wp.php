@@ -17,7 +17,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 		/**
 		 * Unfiltered version of home_url() from wordpress/wp-includes/link-template.php
 		 *
-		 * Last synchronized with WordPress v5.0.3 on 2019/01/28.
+		 * Last synchronized with WordPress v5.8.1 on 2020/10/15.
 		 */
 		public static function raw_home_url( $path = '', $scheme = null ) {
 
@@ -27,47 +27,26 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 		/**
 		 * Unfiltered version of get_home_url() from wordpress/wp-includes/link-template.php
 		 *
-		 * Last synchronized with WordPress v5.0.3 on 2019/01/28.
+		 * Last synchronized with WordPress v5.8.1 on 2020/10/15.
 		 */
 		public static function raw_get_home_url( $blog_id = null, $path = '', $scheme = null ) {
 
-			global $pagenow;
-
-			$opt_name = 'home';
-
 			if ( empty( $blog_id ) || ! is_multisite() ) {
 
-				if ( defined( 'WP_HOME' ) && WP_HOME ) {
-
-					$url = untrailingslashit( WP_HOME );
-
-					/**
-					 * Compare the value stored in the database and fix inconsistencies.
-					 */
-					$db_url = self::raw_do_option( $action = 'get', $opt_name );	// Returns false by default.
-
-					if ( $db_url !== $url ) {
-
-						self::raw_do_option( $action = 'update', $opt_name, $url );
-					}
-
-				} else {
-
-					$url = self::raw_do_option( $action = 'get', $opt_name );	// Returns false by default.
-				}
+				$url = self::raw_do_option( $action = 'get', $opt_name = 'home' );	// Returns false by default.
 
 			} else {
 
 				switch_to_blog( $blog_id );
 
-				$url = self::raw_do_option( $action = 'get', $opt_name );	// Returns false by default.
+				$url = self::raw_do_option( $action = 'get', $opt_name = 'home' );	// Returns false by default.
 
 				restore_current_blog();
 			}
 
-			if ( ! in_array( $scheme, array( 'http', 'https', 'relative' ) ) ) {
+			if ( ! in_array( $scheme, array( 'http', 'https', 'relative' ), $strict = true ) ) {
 
-				if ( is_ssl() && ! is_admin() && 'wp-login.php' !== $pagenow ) {
+				if ( is_ssl() ) {
 
 					$scheme = 'https';
 
@@ -90,7 +69,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 		/**
 		 * Unfiltered version of set_url_scheme() from wordpress/wp-includes/link-template.php
 		 *
-		 * Last synchronized with WordPress v5.0 on 2018/12/12.
+		 * Last synchronized with WordPress v5.8.1 on 2020/10/15.
 		 */
 		private static function raw_set_url_scheme( $url, $scheme = null ) {
 
@@ -98,11 +77,11 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 
 				$scheme = is_ssl() ? 'https' : 'http';
 
-			} elseif ( $scheme === 'admin' || $scheme === 'login' || $scheme === 'login_post' || $scheme === 'rpc' ) {
+			} elseif ( 'admin' === $scheme || 'login' === $scheme || 'login_post' === $scheme || 'rpc' === $scheme ) {
 
 				$scheme = is_ssl() || force_ssl_admin() ? 'https' : 'http';
 
-			} elseif ( $scheme !== 'http' && $scheme !== 'https' && $scheme !== 'relative' ) {
+			} elseif ( 'http' !== $scheme && 'https' !== $scheme && 'relative' !== $scheme ) {
 
 				$scheme = is_ssl() ? 'https' : 'http';
 			}
@@ -118,7 +97,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 
 				$url = ltrim( preg_replace( '#^\w+://[^/]*#', '', $url ) );
 
-				if ( $url !== '' && $url[0] === '/' ) {
+				if ( '' !== $url && '/' === $url[ 0 ] ) {
 
 					$url = '/' . ltrim( $url, "/ \t\n\r\0\x0B" );
 				}
