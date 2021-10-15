@@ -1203,7 +1203,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				return $plugin_data = null;
 			}
 
-			$home_url      = SucomUpdateUtilWP::raw_home_url();
+			$home_url      = SucomUpdateUtilWP::raw_get_home_url();
 			$json_url      = self::$upd_config[ $ext ][ 'data_json_url' ];
 			$cache_md5_pre = $this->p_id . '_';
 			$cache_salt    = 'SucomUpdate::plugin_data(json_url:' . $json_url . '_home_url:' . $home_url . ')';
