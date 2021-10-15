@@ -842,7 +842,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 			global $wp_version;	// Defined by ABSPATH . WPINC . '/version.php'.
 
-			$correct_wpua = 'WordPress/' . $wp_version . '; ' . SucomUpdateUtilWP::raw_home_url();
+			$correct_wpua = 'WordPress/' . $wp_version . '; ' . SucomUpdateUtilWP::raw_get_home_url();
 
 			if ( $correct_wpua !== $wpua ) {
 
