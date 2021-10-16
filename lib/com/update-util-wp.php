@@ -17,7 +17,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 		/**
 		 * Unfiltered version of home_url() from wordpress/wp-includes/link-template.php
 		 *
-		 * Last synchronized with WordPress v5.8.1 on 2020/10/15.
+		 * Last synchronized with WordPress v5.8.1 on 2021/10/15.
 		 */
 		public static function raw_home_url( $path = '', $scheme = null ) {
 
@@ -27,19 +27,35 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 		/**
 		 * Unfiltered version of get_home_url() from wordpress/wp-includes/link-template.php
 		 *
-		 * Last synchronized with WordPress v5.8.1 on 2020/10/15.
+		 * Last synchronized with WordPress v5.8.1 on 2021/10/15.
 		 */
 		public static function raw_get_home_url( $blog_id = null, $path = '', $scheme = null ) {
 
-			if ( empty( $blog_id ) || ! is_multisite() ) {
+			$is_multisite = is_multisite();
 
-				$url = self::raw_do_option( $action = 'get', $opt_name = 'home' );	// Returns false by default.
+			if ( empty( $blog_id ) || ! $is_multisite ) {
+
+				if ( ! $is_multisite && defined( 'WP_HOME' ) && WP_HOME ) {
+
+					$url = untrailingslashit( WP_HOME );
+
+					$db_url = self::raw_do_option( $action = 'get', $opt_name = 'home' );
+
+					if ( $db_url !== $url ) {
+
+						self::raw_do_option( $action = 'update', $opt_name = 'home', $url );
+					}
+
+				} else {
+
+					$url = self::raw_do_option( $action = 'get', $opt_name = 'home' );
+				}
 
 			} else {
 
 				switch_to_blog( $blog_id );
 
-				$url = self::raw_do_option( $action = 'get', $opt_name = 'home' );	// Returns false by default.
+				$url = self::raw_do_option( $action = 'get', $opt_name = 'home' );
 
 				restore_current_blog();
 			}
@@ -69,7 +85,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 		/**
 		 * Unfiltered version of set_url_scheme() from wordpress/wp-includes/link-template.php
 		 *
-		 * Last synchronized with WordPress v5.8.1 on 2020/10/15.
+		 * Last synchronized with WordPress v5.8.1 on 2021/10/15.
 		 */
 		private static function raw_set_url_scheme( $url, $scheme = null ) {
 
