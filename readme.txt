@@ -63,16 +63,16 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.7.0 (2021/10/15)**
+**Version 4.7.0 (2021/10/16)**
 
 * **New Features**
 	* None.
 * **Improvements**
 	* None.
 * **Bugfixes**
-	* Fixed a possible condition where WP_HOME could be used for the Site Address URL when a new site was created in a network / multisite setup.
+	* Fixed a condition where WP_HOME could be used for the Site Address URL for non-default sites in a multisite setup.
 * **Developer Notes**
-	* Refactored the `SucomUpdateUtilWP` class methods for WordPress v5.8.1.
+	* Updated the `SucomUpdateUtilWP` class methods for WordPress v5.8.1.
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v5.0.
@@ -174,7 +174,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.7.0 =
 
-(2021/10/15) Fixed a possible condition where WP_HOME could be used for the Site Address URL when a new site was created in a network / multisite setup.
+(2021/10/16) Fixed a condition where WP_HOME could be used for the Site Address URL for non-default sites in a multisite setup.
 
 = 4.6.2 =
 
