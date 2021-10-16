@@ -68,11 +68,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* Refactored the `SucomUpdateUtilWP` class methods for WordPress v5.8.1.
+	* None.
 * **Bugfixes**
-	* None.
+	* Fixed a possible condition where WP_HOME could be used for the Site Address URL when a new site was created in a network / multisite setup.
 * **Developer Notes**
-	* None.
+	* Refactored the `SucomUpdateUtilWP` class methods for WordPress v5.8.1.
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v5.0.
@@ -174,7 +174,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.7.0-rc.1 =
 
-(2021/10/15) Refactored the `SucomUpdateUtilWP` class methods for WordPress v5.8.1.
+(2021/10/15) Fixed a possible condition where WP_HOME could be used for the Site Address URL when a new site was created in a network / multisite setup.
 
 = 4.6.2 =
 
