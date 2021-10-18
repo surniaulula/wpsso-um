@@ -63,17 +63,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.8.0-dev.1 (2021/10/18)**
+**Version 4.8.0-b.1 (2021/10/18)**
 
 * **New Features**
-	* None.
+	* Added a new WPSSO Add Five Stars add-on to the SSO &gt; Complimentary Add-ons settings page.
 * **Improvements**
 	* None.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Removed the 'activated_plugin' and 'upgrader_process_complete' action hooks.
 	* Added a new lib/filters-options.php library file.
+	* Removed the 'activated_plugin' and 'upgrader_process_complete' action hooks.
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v5.0.
@@ -188,9 +188,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.8.0-dev.1 =
+= 4.8.0-b.1 =
 
-(2021/10/18) Removed the 'activated_plugin' and 'upgrader_process_complete' action hooks.
+(2021/10/18) Added a new WPSSO Add Five Stars add-on to the SSO &gt; Complimentary Add-ons settings page.
 
 = 4.7.0 =
 
