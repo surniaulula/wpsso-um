@@ -207,7 +207,6 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 					}
 
 					continue;
-
 				}
 
 				if ( empty( $info[ 'urls' ][ 'update' ] ) ) {

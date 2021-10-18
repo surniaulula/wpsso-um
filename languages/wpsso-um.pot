@@ -25,89 +25,89 @@ msgid ""
 msgstr ""
 
 #: gettext/gettext-lib-com.php:6 gettext/gettext-lib-com.php:18
-#: lib/com/update.php:299 lib/com/update.php:1251
+#: lib/com/update.php:298 lib/com/update.php:1250
 msgid "An inconsistency was found in the %1$s update server information - "
 msgstr ""
 
 #: gettext/gettext-lib-com.php:7 gettext/gettext-lib-com.php:19
-#: lib/com/update.php:302 lib/com/update.php:1254
+#: lib/com/update.php:301 lib/com/update.php:1253
 msgid "Update checks for %1$s are disabled while this inconsistency persists."
 msgstr ""
 
 #: gettext/gettext-lib-com.php:8 gettext/gettext-lib-com.php:20
-#: lib/com/update.php:306 lib/com/update.php:1258
+#: lib/com/update.php:305 lib/com/update.php:1257
 msgid ""
 "You may <a href=\"%1$s\">open a new support ticket</a> if you believe this "
 "error message is incorrect."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:9 lib/com/update.php:352
+#: gettext/gettext-lib-com.php:9 lib/com/update.php:351
 msgid "invalid authentication URL (%1$s)."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:10 lib/com/update.php:394
+#: gettext/gettext-lib-com.php:10 lib/com/update.php:393
 msgctxt "metabox title"
 msgid "Update Version Filters"
 msgstr ""
 
-#: gettext/gettext-lib-com.php:11 lib/com/update.php:398
+#: gettext/gettext-lib-com.php:11 lib/com/update.php:397
 msgid ""
 "Please note that one or more non-stable / development %s have been selected."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:12 lib/com/update.php:650
+#: gettext/gettext-lib-com.php:12 lib/com/update.php:649
 msgid ""
 "Update manager cache refresh ignored - it has been %s since the last refresh."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:13 lib/com/update.php:653
+#: gettext/gettext-lib-com.php:13 lib/com/update.php:652
 msgid "Please wait %s before requesting another cache refresh."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:14 lib/com/update.php:723
+#: gettext/gettext-lib-com.php:14 lib/com/update.php:722
 msgid "No plugins defined for updates."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:15 lib/com/update.php:766
+#: gettext/gettext-lib-com.php:15 lib/com/update.php:765
 msgid "Update information for %s has been retrieved and saved."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:16 lib/com/update.php:782
+#: gettext/gettext-lib-com.php:16 lib/com/update.php:781
 msgid "An error was returned while getting update information for %s."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:17 lib/com/update.php:798
+#: gettext/gettext-lib-com.php:17 lib/com/update.php:797
 msgid "Failed saving retrieved update information for %s."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:21 lib/com/update.php:1268
+#: gettext/gettext-lib-com.php:21 lib/com/update.php:1267
 msgid "the update server URL (%1$s) does not appear to be a valid URL."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:22 lib/com/update.php:1317
+#: gettext/gettext-lib-com.php:22 lib/com/update.php:1316
 msgid ""
 "the <a href=\"%1$s\">PHP %2$s function</a> did not return an IPv4 address."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:23 lib/com/update.php:1320
+#: gettext/gettext-lib-com.php:23 lib/com/update.php:1319
 msgid "Please contact your hosting provider to have this PHP issue fixed."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:24 lib/com/update.php:1324
+#: gettext/gettext-lib-com.php:24 lib/com/update.php:1323
 msgid ""
 "the IPv4 address (%1$s) from the local host does not match the DNS IPv4 "
 "address (%2$s)."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:25 lib/com/update.php:1419
+#: gettext/gettext-lib-com.php:25 lib/com/update.php:1418
 msgid "Update error from the WordPress %1$s function: %2$s"
 msgstr ""
 
-#: gettext/gettext-lib-com.php:26 lib/com/update.php:1474
+#: gettext/gettext-lib-com.php:26 lib/com/update.php:1473
 msgid "The WordPress %1$s function returned HTTP %2$d (%3$s) for %4$s."
 msgstr ""
 
-#: gettext/gettext-lib-com.php:27 lib/com/update.php:1594
+#: gettext/gettext-lib-com.php:27 lib/com/update.php:1593
 msgid ""
 "The %1$s plugin (%2$s) version number is missing from the WordPress plugins "
 "array."
@@ -115,25 +115,37 @@ msgstr ""
 
 #: gettext/gettext-lib-config.php:6
 msgctxt "plugin name"
-msgid "WPSSO Schema Shortcode"
+msgid "WPSSO Add Five Stars"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
+msgid ""
+"Add a 5 star rating and review from the site organization if the Schema "
+"markup does not already have an 'aggregateRating' property."
+msgstr ""
+
+#: gettext/gettext-lib-config.php:8
+msgctxt "plugin name"
+msgid "WPSSO Schema Shortcode"
+msgstr ""
+
+#: gettext/gettext-lib-config.php:9
+msgctxt "plugin description"
 msgid "Shortcode for advanced Schema markup of content sections."
 msgstr ""
 
-#: gettext/gettext-lib-config.php:8 gettext/gettext-lib-config.php:9
+#: gettext/gettext-lib-config.php:10 gettext/gettext-lib-config.php:11
 msgctxt "lib file description"
 msgid "Update Manager"
 msgstr ""
 
-#: gettext/gettext-lib-config.php:10
+#: gettext/gettext-lib-config.php:12
 msgctxt "plugin name"
 msgid "WPSSO Update Manager"
 msgstr ""
 
-#: gettext/gettext-lib-config.php:11
+#: gettext/gettext-lib-config.php:13
 msgctxt "plugin description"
 msgid ""
 "Update Manager for the WPSSO Core Premium plugin and its Premium "

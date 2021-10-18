@@ -16,6 +16,66 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 
 		public static $cf = array(
 			'plugin' => array(
+				'wpssoafs' => array(			// Plugin acronym.
+					'short'       => 'WPSSO AFS',	// Short plugin name.
+					'name'        => 'WPSSO Add Five Stars',
+					'desc'        => 'Add a 5 star rating and review from the site organization if the Schema markup does not already have an \'aggregateRating\' property.',
+					'slug'        => 'wpsso-add-five-stars',
+					'base'        => 'wpsso-add-five-stars/wpsso-add-five-stars.php',
+					'update_auth' => '',		// No premium version.
+
+					/**
+					 * URLs or relative paths to plugin banners and icons.
+					 */
+					'assets' => array(
+
+						/**
+						 * Banner image array keys are 'low' and 'high'.
+						 */
+						'banners' => array(
+							'low'  => 'https://surniaulula.github.io/wpsso-add-five-stars/assets/banner-772x250.jpg',
+							'high' => 'https://surniaulula.github.io/wpsso-add-five-stars/assets/banner-1544x500.jpg',
+						),
+
+						/**
+						 * Icon image array keys are '1x' and '2x'.
+						 */
+						'icons' => array(
+							'1x' => 'https://surniaulula.github.io/wpsso-add-five-stars/assets/icon-128x128.png',
+							'2x' => 'https://surniaulula.github.io/wpsso-add-five-stars/assets/icon-256x256.png',
+						),
+					),
+					'hosts' => array(
+						'wp_org' => false,
+						'github' => true,
+						'wpsso'  => true,
+					),
+					'url' => array(
+
+						/**
+						 * GitHub.com.
+						 */
+						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-add-five-stars/master/readme.txt',
+						'setup_html' => '',
+
+						/**
+						 * WPSSO.com.
+						 */
+						'home'      => 'https://wpsso.com/extend/plugins/wpsso-add-five-stars/',
+						'forum'     => '',
+						'review'    => '',
+						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-add-five-stars/changelog/',
+						'docs'      => 'https://wpsso.com/docs/plugins/wpsso-add-five-stars/',
+						'install'   => 'https://wpsso.com/docs/plugins/wpsso-add-five-stars/installation/',
+						'faqs'      => '',
+						'notes'     => '',
+						'support'   => '',	// Premium support ticket.
+						'purchase'  => '',	// Purchase page.
+						'info'      => '',	// License information.
+						'update'    => 'https://wpsso.com/extend/plugins/wpsso-add-five-stars/update/',
+						'latest'    => 'https://wpsso.com/extend/plugins/wpsso-add-five-stars/latest/',
+					),
+				),
 				'wpssossc' => array(			// Plugin acronym.
 					'short'       => 'WPSSO SSC',	// Short plugin name.
 					'name'        => 'WPSSO Schema Shortcode',

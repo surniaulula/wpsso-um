@@ -149,10 +149,12 @@ if ( ! class_exists( 'WpssoUmSitesubmenuSiteumgeneral' ) && class_exists( 'Wpsso
 							continue;
 						}
 
+						$name_transl = _x( $info[ 'name' ], 'plugin name', 'wpsso' );
+
 						$opt_key = 'update_filter_for_' . $ext;
 
 						$table_rows[ $opt_key ] = '' .
-							$this->form->get_th_html( $info[ 'name' ], $css_class = '', $css_id = 'update_version_filter' ) . 
+							$this->form->get_th_html( $name_transl ) . 
 							'<td>' . $this->form->get_select( $opt_key, $version_filters, $css_class = 'update_filter' ) . '</td>' .
 							WpssoAdmin::get_option_site_use( $opt_key, $this->form, $network = true, $enabled = true );
 					}

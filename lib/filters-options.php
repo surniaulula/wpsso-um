@@ -120,7 +120,7 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 				$this->a->update->refresh_upd_config();
 
 				/**
-				 * SucomUpdate->check_ext_for_updates() does not throttle like SucomUpdate->check_all_for_updates().
+				 * Note that SucomUpdate->check_ext_for_updates() does not throttle like SucomUpdate->check_all_for_updates().
 				 */
 				$this->a->update->check_ext_for_updates( $check_ext_for_updates, $quiet = true );
 
