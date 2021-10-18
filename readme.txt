@@ -63,7 +63,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.7.1-dev.1 (2021/10/18)**
+**Version 4.8.0-dev.1 (2021/10/18)**
 
 * **New Features**
 	* None.
@@ -72,7 +72,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Removed the 'activated_plugin' and 'upgrader_process_complete' action hooks.
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v5.0.
@@ -187,9 +187,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.7.1-dev.1 =
+= 4.8.0-dev.1 =
 
-(2021/10/18) None.
+(2021/10/18) Removed the 'activated_plugin' and 'upgrader_process_complete' action hooks.
 
 = 4.7.0 =
 
