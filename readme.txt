@@ -73,6 +73,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * **Developer Notes**
 	* Removed the 'activated_plugin' and 'upgrader_process_complete' action hooks.
+	* Added a new lib/filters-options.php library file.
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v5.0.
