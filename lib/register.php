@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoUmRegister' ) ) {
 
 			register_activation_hook( WPSSOUM_FILEPATH, array( $this, 'network_activate' ) );
 
-			register_deactivation_hook( WPSSOUM_FILEPATH, array( $this, 'network_deactivate' ) );
+			//register_deactivation_hook( WPSSOUM_FILEPATH, array( $this, 'network_deactivate' ) );
 
 			if ( is_multisite() ) {
 
@@ -111,8 +111,6 @@ if ( ! class_exists( 'WpssoUmRegister' ) ) {
 					WpssoUtilReg::update_ext_version( 'wpssoum', $version );
 				}
 			}
-
-			self::delete_options();
 		}
 
 		private function deactivate_plugin() {
@@ -128,59 +126,6 @@ if ( ! class_exists( 'WpssoUmRegister' ) ) {
 			}
 		}
 
-		private static function uninstall_plugin() {
-
-			self::delete_options();
-		}
-
-		private static function delete_options() {
-
-			$api_version = SucomUpdate::get_api_version();
-
-			if ( class_exists( 'WpssoConfig' ) ) {
-
-				$cf = WpssoConfig::get_config();
-
-				foreach ( $cf[ 'plugin' ] as $ext => $info ) {
-
-					foreach ( array( 'err', 'inf', 'time' ) as $type ) {
-
-						delete_option( md5( $ext . '_uapi' . $api_version . $type ) );
-					}
-
-					delete_option( 'external_updates-' . $info[ 'slug' ] );
-				}
-
-			} else {	// In case wpsso is deactivated.
-
-				foreach ( array(
-					'wpsso'      => 'wpsso',
-					'wpssoam'    => 'wpsso-am',
-					'wpssobc'    => 'wpsso-breadcrumbs',
-					'wpssofaq'   => 'wpsso-faq',
-					'wpssoipm'   => 'wpsso-inherit-parent-meta',
-					'wpssojson'  => 'wpsso-schema-json-ld',
-					'wpssoorg'   => 'wpsso-organization',
-					'wpssoplm'   => 'wpsso-plm',
-					'wpssorar'   => 'wpsso-ratings-and-reviews',
-					'wpssorest'  => 'wpsso-rest-api',
-					'wpssorrssb' => 'wpsso-rrssb',
-					'wpssossm'   => 'wpsso-strip-schema-microdata',
-					'wpssotie'   => 'wpsso-tune-image-editors',
-					'wpssoul'    => 'wpsso-user-locale',
-					'wpssoum'    => 'wpsso-um',
-					'wpssowcmd'  => 'wpsso-wc-metadata',
-					'wpssowcsdt' => 'wpsso-wc-shipping-delivery-time',
-				) as $ext => $slug ) {
-
-					foreach ( array( 'err', 'inf', 'time' ) as $type ) {
-
-						delete_option( md5( $ext . '_uapi' . $api_version . $type ) );
-					}
-
-					delete_option( 'external_updates-' . $slug );
-				}
-			}
-		}
+		private static function uninstall_plugin() {}
 	}
 }

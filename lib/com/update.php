@@ -36,7 +36,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		private $sched_hours   = 24;
 		private $sched_name    = 'every24hours';
 
-		private static $api_version = '4.7.0';
+		private static $api_version = '4.8.0';
 		private static $upd_config  = array();
 		private static $offer_fname = 'offer-update.txt';
 
@@ -1475,8 +1475,6 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 						$this->text_domain ), 'wp_remote_get()', $http_code, self::$http_error_codes[ $http_code ], $json_url );
 				}
 			}
-
-			self::set_umsg( $ext, 'time', time() );
 
 			self::$upd_config[ $ext ][ 'plugin_data' ] = $plugin_data;	// Save to static cache.
 
