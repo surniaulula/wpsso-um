@@ -67,7 +67,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.8.0-rc.1 (2021/10/19)**
+**Version 4.8.0 (2021/10/19)**
 
 * **New Features**
 	* Added a new WPSSO Add Five Stars add-on to the SSO &gt; Complimentary Add-ons settings page.
@@ -192,7 +192,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.8.0-rc.1 =
+= 4.8.0 =
 
 (2021/10/19) Added a new WPSSO Add Five Stars add-on to the SSO &gt; Complimentary Add-ons settings page.
 
