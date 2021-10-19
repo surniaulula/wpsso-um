@@ -17,7 +17,7 @@ Update Manager for the WPSSO Core Premium plugin.
 
 == Description ==
 
-<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-um/assets/icon-256x256.png"> The WPSSO Update Manager add-on is required to enable and update the <a href="https://wpsso.com/">WPSSO Core Premium plugin</a>.</p>
+<p>The WPSSO Update Manager add-on is required to enable and update the <a href="https://wpsso.com/">WPSSO Core Premium plugin</a>.</p>
 
 <p>The WPSSO Update Manager supports WordPress Network / Multisite installations, WordPress MU Domain Mapping, and WordPress v5.5 Automatic Updates.</p>
 
@@ -63,7 +63,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.8.0-b.1 (2021/10/18)**
+**Version 4.8.0-b.2 (2021/10/19)**
 
 * **New Features**
 	* Added a new WPSSO Add Five Stars add-on to the SSO &gt; Complimentary Add-ons settings page.
@@ -188,9 +188,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.8.0-b.1 =
+= 4.8.0-b.2 =
 
-(2021/10/18) Added a new WPSSO Add Five Stars add-on to the SSO &gt; Complimentary Add-ons settings page.
+(2021/10/19) Added a new WPSSO Add Five Stars add-on to the SSO &gt; Complimentary Add-ons settings page.
 
 = 4.7.0 =
 
