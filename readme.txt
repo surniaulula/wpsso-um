@@ -17,11 +17,15 @@ Update Manager for the WPSSO Core Premium plugin.
 
 == Description ==
 
+<!-- about -->
+
 <p>The WPSSO Update Manager add-on is required to enable and update the <a href="https://wpsso.com/">WPSSO Core Premium plugin</a>.</p>
 
 <p>The WPSSO Update Manager supports WordPress Network / Multisite installations, WordPress MU Domain Mapping, and WordPress v5.5 Automatic Updates.</p>
 
 <p>Simply <em>download</em>, <em>install</em> and <em>activate</em>.</p>
+
+<!-- /about -->
 
 <h3>WPSSO Core Required</h3>
 
