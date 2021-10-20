@@ -31,8 +31,9 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		private $p_slug        = '';
 		private $p_text_domain = '';
 		private $p_avail_enc   = array();
+		private $p_cron_hook   = '';
+		private $p_updcfg_name = '';
 		private $text_domain   = '';
-		private $cron_hook     = '';
 		private $sched_hours   = 24;
 		private $sched_name    = 'every24hours';
 
@@ -85,8 +86,9 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 					$this->p_slug        = $this->p->cf[ 'plugin' ][ $this->p_id ][ 'slug' ];
 					$this->p_text_domain = $this->p->cf[ 'plugin' ][ $this->p_id ][ 'text_domain' ];
+					$this->p_cron_hook   = $this->p_id . '_update_manager_check';
+					$this->p_updcfg_name = $this->p_id . '_update_manager_config';
 					$this->text_domain   = $ext_text_domain;
-					$this->cron_hook     = $this->p_id . '_update_manager_check';
 
 					if ( isset( $this->p->avail ) && is_array( $this->p->avail ) ) {	// Just in case.
 
@@ -130,17 +132,14 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		 */
 		public function clear_upd_config() {
 
-			$cache_md5_pre = $this->p_id . '_!_';
-			$cache_salt    = __CLASS__ . '::upd_config';
-			$cache_id      = $cache_md5_pre . md5( $cache_salt );
+			if ( ! empty( $this->p_updcfg_name ) ) {
 
-			delete_transient( $cache_id );
+				delete_option( $cache_id );
+			}
 		}
 
 		/**
 		 * Since WPSSO UM v2.5.1.
-		 *
-		 * Called when the plugin settings are saved to update the transient cache.
 		 */
 		public function refresh_upd_config() {
 
@@ -154,24 +153,21 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		 */
 		private function set_upd_config( $quiet = false, $read_cache = true ) {
 
-			$cf_plugins     = $this->p->cf[ 'plugin' ];
-			$cache_md5_pre  = $this->p_id . '_!_';
-			$cache_exp_secs = 3 * DAY_IN_SECONDS;
-			$cache_salt     = __CLASS__ . '::upd_config';
-			$cache_id       = $cache_md5_pre . md5( $cache_salt );
-
 			if ( $read_cache ) {
 
-				self::$upd_config = get_transient( $cache_id );
+				if ( ! empty( $this->p_updcfg_name ) ) {	// Just in case.
 
-				if ( is_array( self::$upd_config ) ) {
+					self::$upd_config = get_option( $this->p_updcfg_name );	// Option is autoloaded.
 
-					if ( $this->p->debug->enabled ) {
+					if ( is_array( self::$upd_config ) ) {
 
-						$this->p->debug->log( 'update manager config from transient cache' );
+						if ( $this->p->debug->enabled ) {
+
+							$this->p->debug->log( 'update manager config from option' );
+						}
+	
+						return;
 					}
-
-					return;
 				}
 			}
 
@@ -184,7 +180,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 			$has_dev_filter = false;	// Assume we're using the production version filter by default.
 
-			foreach ( $cf_plugins as $ext => $info ) {
+			foreach ( $this->p->cf[ 'plugin' ] as $ext => $info ) {
 
 				$ext_auth_type = $this->get_ext_auth_type( $ext );
 				$ext_auth_id   = $this->get_ext_auth_id( $ext );
@@ -406,11 +402,9 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				}
 			}
 
-			set_transient( $cache_id, self::$upd_config, $cache_exp_secs );
+			if ( ! empty( $this->p_updcfg_name ) ) {	// Just in case.
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->log( 'config saved to transient cache for ' . $cache_exp_secs . ' seconds' );
+				update_option( $this->p_updcfg_name, self::$upd_config, $autoload = true );
 			}
 
 			if ( $this->p->debug->enabled ) {
@@ -494,21 +488,21 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( ! $this->cron_hook ) {	// Just in case.
+			if ( ! $this->p_cron_hook ) {	// Just in case.
 
 				return;
 			}
 
 			if ( $this->p->debug->enabled ) {
 
-				$this->p->debug->log( 'adding ' . $this->cron_hook . ' schedule for ' . $this->sched_name );
+				$this->p->debug->log( 'adding ' . $this->p_cron_hook . ' schedule for ' . $this->sched_name );
 			}
 
-			add_action( $this->cron_hook, array( $this, 'quiet_update_check' ) );
+			add_action( $this->p_cron_hook, array( $this, 'quiet_update_check' ) );
 
 			add_filter( 'cron_schedules', array( $this, 'add_custom_schedule_name' ) );
 
-			$schedule = wp_get_schedule( $this->cron_hook );
+			$schedule = wp_get_schedule( $this->p_cron_hook );
 
 			$is_scheduled = false;
 
@@ -518,30 +512,30 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 					if ( $this->p->debug->enabled ) {
 
-						$this->p->debug->log( 'changing ' . $this->cron_hook . ' schedule from ' . $schedule . ' to ' . $this->sched_name );
+						$this->p->debug->log( 'changing ' . $this->p_cron_hook . ' schedule from ' . $schedule . ' to ' . $this->sched_name );
 					}
 
-					wp_clear_scheduled_hook( $this->cron_hook );
+					wp_clear_scheduled_hook( $this->p_cron_hook );
 
 				} else {
 
 					if ( $this->p->debug->enabled ) {
 
-						$this->p->debug->log( $this->cron_hook . ' registered for schedule ' . $this->sched_name );
+						$this->p->debug->log( $this->p_cron_hook . ' registered for schedule ' . $this->sched_name );
 					}
 
 					$is_scheduled = true;
 				}
 			}
 
-			if ( ! $is_scheduled && ! defined( 'WP_INSTALLING' ) && ! wp_next_scheduled( $this->cron_hook ) ) {
+			if ( ! $is_scheduled && ! defined( 'WP_INSTALLING' ) && ! wp_next_scheduled( $this->p_cron_hook ) ) {
 
 				if ( $this->p->debug->enabled ) {
 
-					$this->p->debug->log( 'registering ' . $this->cron_hook . ' for schedule ' . $this->sched_name );
+					$this->p->debug->log( 'registering ' . $this->p_cron_hook . ' for schedule ' . $this->sched_name );
 				}
 
-				wp_schedule_event( time(), $this->sched_name, $this->cron_hook );
+				wp_schedule_event( time(), $this->sched_name, $this->p_cron_hook );
 			}
 		}
 
@@ -641,7 +635,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			$cache_salt     = __METHOD__;
 			$cache_id       = $cache_md5_pre . md5( $cache_salt );
 
-			if ( false !== ( $last_time = get_transient( $cache_id ) ) ) {
+			if ( false !== ( $last_time = get_transient( $cache_id ) ) ) {	// Get last throttle time.
 
 				$user_id = get_current_user_id();
 
@@ -663,7 +657,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				return;
 			}
 
-			set_transient( $cache_id, time(), $cache_exp_secs );
+			set_transient( $cache_id, time(), $cache_exp_secs );	// Prevent another execution within the next 5 minutes.
 
 			$this->set_upd_config( $quiet, $read_cache = false );
 
