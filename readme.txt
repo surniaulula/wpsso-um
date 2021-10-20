@@ -76,7 +76,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Refactored the `SucomUpdate::get_ext_dir()` method to add a `$read_cache` argument (true by default).
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v5.0.
