@@ -134,7 +134,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 			if ( ! empty( $this->p_updcfg_name ) ) {
 
-				delete_option( $cache_id );
+				delete_option( $this->p_updcfg_name );
 			}
 		}
 
