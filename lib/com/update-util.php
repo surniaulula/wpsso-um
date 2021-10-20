@@ -138,9 +138,11 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 		}
 
 		/**
+		 * SucomUpdate->get_ext_version() calls this method when a plugin is not active or not installed.
+		 *
 		 * The WordPress get_plugins() function is very slow, so call it only once and cache its result.
 		 *
-		 * We use the SucomPlugin::get_plugins() method if available, otherwise we use our own $get_plugins_cache.
+		 * If available, we use the SucomPlugin::get_plugins() method, otherwise we use our own $get_plugins_cache.
 		 */
 		public static function get_plugins() {
 
@@ -175,8 +177,8 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 		}
 
 		/**
-		 * We use the SucomPlugin::get_plugins() method if available, otherwise we use our own $get_plugins_cache. Clear
-		 * both caches, just in case.
+		 * If available, we use the SucomPlugin::get_plugins() method, otherwise we use our own $get_plugins_cache, but we
+		 * clear both caches here, just in case.
 		 */
 		public static function clear_plugins_cache() {
 

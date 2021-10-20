@@ -1553,7 +1553,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				$local_cache[ $ext ] = $info[ 'version' ];
 
 			/**
-			 * Plugin is not active (or not installed) - use get_plugins() to get the plugin version.
+			 * Plugin is not active or not installed - use get_plugins() to get the plugin version.
 			 */
 			} elseif ( isset( $info[ 'base' ] ) ) {
 
