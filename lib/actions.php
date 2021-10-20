@@ -41,9 +41,9 @@ if ( ! class_exists( 'WpssoUmActions' ) ) {
 		 */
 		public function activated_plugin( $plugin_base, $network_activation ) {
 
-			if ( 0 === strpos( $plugin_base, 'wpsso' ) ) {	// Matches the WPSSO Core plugin or its add-on.
+			if ( 0 === strpos( $plugin_base, 'wpsso' ) ) {	// Matches the WPSSO Core plugin and its add-ons.
 
-				$this->a->update->refresh_upd_config();
+				$this->a->update->clear_upd_config();	// Refresh the update manager config on next page load.
 			}
 		}
 
@@ -58,9 +58,9 @@ if ( ! class_exists( 'WpssoUmActions' ) ) {
 
 					foreach ( $hook_extra[ 'plugins' ] as $plugin_base ) {
 
-						if ( 0 === strpos( $plugin_base, 'wpsso' ) ) {	// Matches the WPSSO Core plugin or its add-on.
+						if ( 0 === strpos( $plugin_base, 'wpsso' ) ) {	// Matches the WPSSO Core plugin and its add-ons.
 
-							$this->a->update->refresh_upd_config();
+							$this->a->update->clear_upd_config();	// Refresh the update manager config on next page load.
 
 							break;	// Stop here.
 						}

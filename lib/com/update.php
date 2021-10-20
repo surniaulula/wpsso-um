@@ -126,6 +126,18 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		}
 
 		/**
+		 * Since WPSSO UM v4.9.0.
+		 */
+		public function clear_upd_config() {
+
+			$cache_md5_pre = $this->p_id . '_!_';
+			$cache_salt    = __CLASS__ . '::upd_config';
+			$cache_id      = $cache_md5_pre . md5( $cache_salt );
+
+			delete_transient( $cache_id );
+		}
+
+		/**
 		 * Since WPSSO UM v2.5.1.
 		 *
 		 * Called when the plugin settings are saved to update the transient cache.
@@ -142,11 +154,6 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		 */
 		private function set_upd_config( $quiet = false, $read_cache = true ) {
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark( 'update manager config' );	// Begin timer.
-			}
-
 			$cf_plugins     = $this->p->cf[ 'plugin' ];
 			$cache_md5_pre  = $this->p_id . '_!_';
 			$cache_exp_secs = 3 * DAY_IN_SECONDS;
@@ -161,17 +168,16 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 					if ( $this->p->debug->enabled ) {
 
-						$this->p->debug->log( 'config retrieved from transient cache' );
-
-						$this->p->debug->mark( 'update manager config' );	// End timer.
+						$this->p->debug->log( 'update manager config from transient cache' );
 					}
 
 					return;
 				}
+			}
 
-			} else {
+			if ( $this->p->debug->enabled ) {
 
-				delete_transient( $cache_id );
+				$this->p->debug->mark( 'update manager config' );	// Begin timer.
 			}
 
 			self::$upd_config = array();	// Init a new config array.
@@ -578,7 +584,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				return;	// Stop here.
 			}
 
-			$this->check_all_for_updates( $quiet = false );
+			$this->check_all_for_updates( $quiet = false );	// Throttled.
 		}
 
 		/**
@@ -593,7 +599,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$this->check_all_for_updates( $quiet = false );
+			$this->check_all_for_updates( $quiet = false );	// Throttled.
 		}
 
 		/**
@@ -608,7 +614,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$this->check_all_for_updates( $quiet = true );
+			$this->check_all_for_updates( $quiet = true );	// Throttled.
 		}
 
 		/**
@@ -990,11 +996,6 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				}
 
 				self::$upd_config[ $ext ][ 'response' ] = false;
-
-				if ( $this->p->debug->enabled ) {
-
-					$this->p->debug->log( $ext . ' plugin: getting update data' );
-				}
 
 				$update_data = self::get_option_data( $ext );
 
@@ -1944,7 +1945,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 			if ( ! empty( self::$upd_config[ $ext ][ 'option_name' ] ) ) {
 
-				$option_data = self::get_option_data( $ext, $default = false );
+				$option_data = self::get_option_data( $ext );
 
 				if ( false !== $prop_name ) {
 
