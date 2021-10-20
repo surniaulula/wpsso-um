@@ -74,9 +74,15 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Improvements**
 	* None.
 * **Bugfixes**
-	* None.
+	* Fixed the WPSSO Update Manager config refresh after updating the WPSSO Core plugin or its add-ons.
 * **Developer Notes**
+	* Re-added the 'activated_plugin' and 'upgrader_process_complete' action hooks in `WpssoUmActions`.
+	* Refactored the `SucomUpdate->get_ext_status()` method to add a `$read_cache` argument (true by default).
+	* Refactored the `SucomUpdate->get_ext_version()` method to add a `$read_cache` argument (true by default).
 	* Refactored the `SucomUpdate::get_ext_dir()` method to add a `$read_cache` argument (true by default).
+	* Refactored the `SucomUpdate::prefer_wp_org_update()` method to add a `$read_cache` argument (true by default).
+	* Refactored the `SucomUpdateUtil::get_plugins()` method to add a `$read_cache` argument (true by default).
+	* Deprecated the `SucomUpdateUtil::clear_plugins_cache()` method.
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v5.0.
@@ -209,7 +215,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.9.0-dev.1 =
 
-(2021/10/20) None.
+(2021/10/20) Fixed the WPSSO Update Manager config refresh after updating the WPSSO Core plugin or its add-ons.
 
 = 4.8.0 =
 
