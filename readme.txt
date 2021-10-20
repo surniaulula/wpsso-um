@@ -67,7 +67,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.9.0-dev.1 (2021/10/20)**
+**Version 4.9.0-dev.2 (2021/10/20)**
 
 * **New Features**
 	* None.
@@ -213,7 +213,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.9.0-dev.1 =
+= 4.9.0-dev.2 =
 
 (2021/10/20) Fixed the WPSSO Update Manager config refresh after updating the WPSSO Core plugin or its add-ons.
 
