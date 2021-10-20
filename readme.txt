@@ -67,14 +67,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.9.0-dev.2 (2021/10/20)**
+**Version 4.9.0-dev.3 (2021/10/20)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Moved the update manager config from the transient cache to the options table for a small performance improvement.
 * **Bugfixes**
-	* Fixed the WPSSO Update Manager config refresh after updating the WPSSO Core plugin or its add-ons.
+	* Fixed the update manager config refresh after updating the WPSSO Core plugin or its add-ons.
 * **Developer Notes**
 	* Re-added the 'activated_plugin' and 'upgrader_process_complete' action hooks in `WpssoUmActions`.
 	* Refactored the `SucomUpdate->get_ext_status()` method to add a `$read_cache` argument (true by default).
@@ -213,9 +213,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.9.0-dev.2 =
+= 4.9.0-dev.3 =
 
-(2021/10/20) Fixed the WPSSO Update Manager config refresh after updating the WPSSO Core plugin or its add-ons.
+(2021/10/20) Moved the update manager config from the transient cache to the options table for a small performance improvement. Fixed the update manager config refresh after updating the WPSSO Core plugin or its add-ons.
 
 = 4.8.0 =
 
