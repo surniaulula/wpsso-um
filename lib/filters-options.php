@@ -69,8 +69,16 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 		}
 
 		/**
-		 * Check for Authentication ID and version filter changes, and if the submitted values are different, refresh the
-		 * config and force an update check. If the options array is being upgraded, refresh the config.
+		 * The 'wpsso_save_setting_options' filter is applied by WpssoOptions->save_options(),
+		 * WpssoAdmin->registered_setting_sanitation(), and WpssoAdmin->save_site_options().
+		 *
+		 * $upgrading is true if the options array is new, or the options 'version' value is different.
+		 *
+		 * $network is true if we're saving the multisite network settings.
+		 *
+		 * Check for Authentication ID changes, and if the submitted values are different, refresh the update manager
+		 * config and force an update check. If the saved version string is different, then just refresh the update manager
+		 * config.
 		 */
 		public function filter_save_setting_options( array $opts, $network, $upgrading ) {
 

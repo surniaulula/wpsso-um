@@ -36,7 +36,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		private $sched_hours   = 24;
 		private $sched_name    = 'every24hours';
 
-		private static $api_version = '4.8.0';
+		private static $api_version = '4.9.0';
 		private static $upd_config  = array();
 		private static $offer_fname = 'offer-update.txt';
 
@@ -132,8 +132,6 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		 */
 		public function refresh_upd_config() {
 
-			SucomUpdateUtil::clear_plugins_cache();
-
 			return $this->set_upd_config( $quiet = false, $read_cache = false );
 		}
 
@@ -183,8 +181,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			foreach ( $cf_plugins as $ext => $info ) {
 
 				$ext_auth_type = $this->get_ext_auth_type( $ext );
-
-				$ext_auth_id = $this->get_ext_auth_id( $ext );
+				$ext_auth_id   = $this->get_ext_auth_id( $ext );
 
 				/**
 				 * Prefer a 'urls' array key instead of 'url'.
@@ -235,12 +232,12 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				/**
 				 * Saved as the 'plugin_status' value.
 				 */
-				$ext_status = $this->get_ext_status( $ext );	// Uses a local cache.
+				$ext_status = $this->get_ext_status( $ext, $read_cache );	// Uses a local cache.
 
 				/**
 				 * Saved as the 'plugin_version' value.
 				 */
-				$ext_version = $this->get_ext_version( $ext );	// Uses a local cache.
+				$ext_version = $this->get_ext_version( $ext, $read_cache );	// Uses a local cache.
 
 				if ( false === $ext_version ) {
 
@@ -1208,7 +1205,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			$cache_salt    = 'SucomUpdate::plugin_data(json_url:' . $json_url . '_home_url:' . $home_url . ')';
 			$cache_id      = $cache_md5_pre . md5( $cache_salt );
 
-			if ( self::prefer_wp_org_update( $ext ) ) {	// Uses a local cache.
+			if ( self::prefer_wp_org_update( $ext, $read_cache ) ) {	// Uses a local cache.
 
 				return $plugin_data = null;	// Stop here.
 			}
@@ -1562,7 +1559,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 					$this->p->debug->log( $ext . ' plugin: not active / installed' );
 				}
 
-				$wp_plugins = SucomUpdateUtil::get_plugins();
+				$wp_plugins = SucomUpdateUtil::get_plugins( $read_cache );
 
 				/**
 				 * The plugin is installed.
@@ -1658,8 +1655,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			}
 
 			$ext_auth_type = $this->get_ext_auth_type( $ext );
-
-			$ext_auth_id  = $this->get_ext_auth_id( $ext );
+			$ext_auth_id   = $this->get_ext_auth_id( $ext );
 
 			if ( $ext_auth_type !== 'none' ) {
 
@@ -1710,31 +1706,15 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 		public function get_ext_auth_type( $ext ) {
 
-			static $local_cache = array();
-
-			if ( isset( $local_cache[ $ext ] ) ) {
-
-				return $local_cache[ $ext ];	// Return from cache.
-			}
-
-			return $local_cache[ $ext ] = empty( $this->p->cf[ 'plugin' ][ $ext ][ 'update_auth' ] ) ?
-				'none' : $this->p->cf[ 'plugin' ][ $ext ][ 'update_auth' ];
+			return empty( $this->p->cf[ 'plugin' ][ $ext ][ 'update_auth' ] ) ? 'none' : $this->p->cf[ 'plugin' ][ $ext ][ 'update_auth' ];
 		}
 
 		public function get_ext_auth_id( $ext ) {
 
-			static $local_cache = array();
-
-			if ( isset( $local_cache[ $ext ] ) ) {
-
-				return $local_cache[ $ext ];	// Return from cache.
-			}
-
 			$ext_auth_type = $this->get_ext_auth_type( $ext );
+			$ext_auth_key  = 'plugin_' . $ext . '_' . $ext_auth_type;
 
-			$ext_auth_key = 'plugin_' . $ext . '_' . $ext_auth_type;
-
-			return $local_cache[ $ext ] = empty( $this->p->options[ $ext_auth_key ] ) ? '' : $this->p->options[ $ext_auth_key ];
+			return empty( $this->p->options[ $ext_auth_key ] ) ? '' : $this->p->options[ $ext_auth_key ];
 		}
 
 		/**
@@ -1779,9 +1759,8 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		 */
 		public function get_ext_filter_regex( $ext ) {
 
-			$filter_name = $this->get_ext_filter_name( $ext );	// Returns a valid filter name or 'stable'.
-
 			$filter_regex = '/^[0-9][0-9\.\-]+$/';			// Default stable regex.
+			$filter_name  = $this->get_ext_filter_name( $ext );	// Returns a valid filter name or 'stable'.
 
 			if ( ! empty( $this->p->cf[ 'um' ][ 'version_regex' ][ $filter_name ] ) ) {
 
@@ -1791,13 +1770,16 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			return $filter_regex;
 		}
 
-		public static function prefer_wp_org_update( $ext ) {
+		public static function prefer_wp_org_update( $ext, $read_cache = true ) {
 
 			static $local_cache = array();
 
-			if ( isset( $local_cache[ $ext ] ) ) {
+			if ( $read_cache ) {
 
-				return $local_cache[ $ext ];	// Return from cache.
+				if ( isset( $local_cache[ $ext ] ) ) {
+
+					return $local_cache[ $ext ];	// Return from cache.
+				}
 			}
 
 			if ( ! isset( self::$upd_config[ $ext ] ) ) {
@@ -2025,7 +2007,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 		public function create_offer( $ext ) {
 
-			if ( $ext_dir = $this->get_ext_dir( $ext ) ) {	// True if plugin directory exists.
+			if ( $ext_dir = self::get_ext_dir( $ext ) ) {	// True if plugin directory exists.
 
 				touch( $ext_dir . self::$offer_fname );
 			}
@@ -2033,7 +2015,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 		public function has_offer( $ext ) {
 
-			return $this->get_ext_file_path( $ext, self::$offer_fname );	// True if filename exists.
+			return self::get_ext_file_path( $ext, self::$offer_fname );	// True if filename exists.
 		}
 
 		public function cancel_offer( $ext ) {
@@ -2044,13 +2026,19 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			}
 		}
 
-		private function get_ext_dir( $ext ) {
+		/**
+		 * Returns false or a slashed directory path.
+		 */
+		private static function get_ext_dir( $ext, $read_cache = true ) {
 
 			static $local_cache = array();
 
-			if ( isset( $local_cache[ $ext ] ) ) {
+			if ( $read_cache ) {
 
-				return $local_cache[ $ext ];
+				if ( isset( $local_cache[ $ext ] ) ) {
+
+					return $local_cache[ $ext ];
+				}
 			}
 
 			/**
@@ -2082,11 +2070,13 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		}
 
 		/**
+		 * Returns false, a slashed directory path, or the file name path.
+		 *
 		 * Use $is_dir = true when specifically checking for a sub-folder path.
 		 */
-		private function get_ext_file_path( $ext, $file_name = '', $is_dir = false ) {
+		private static function get_ext_file_path( $ext, $file_name = '', $is_dir = false ) {
 
-			if ( $ext_dir = $this->get_ext_dir( $ext ) ) {	// Returns false or a slashed directory path.
+			if ( $ext_dir = self::get_ext_dir( $ext ) ) {	// Returns false or a slashed directory path.
 
 				if ( $is_dir ) {	// Must be a directory.
 

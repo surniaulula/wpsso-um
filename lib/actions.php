@@ -22,12 +22,50 @@ if ( ! class_exists( 'WpssoUmActions' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
+			add_action( 'activated_plugin', array( $this, 'activated_plugin' ), PHP_INT_MAX, 2 );
+			add_action( 'upgrader_process_complete', array( $this, 'upgrader_process_complete' ), PHP_INT_MAX, 2 );
+
 			if ( is_admin() ) {
 
 				$this->p->util->add_plugin_actions( $this, array( 
 					'load_setting_page_check_for_updates' => 4,
 					'load_setting_page_create_offers'     => 4,
 				) );
+			}
+		}
+
+		/**
+		 * This action is run by WordPress after any plugin is activated.
+		 *
+		 * If a plugin is silently activated (such as during an update), this action does not run. 
+		 */
+		public function activated_plugin( $plugin_base, $network_activation ) {
+
+			if ( 0 === strpos( $plugin_base, 'wpsso' ) ) {	// Matches the WPSSO Core plugin or its add-on.
+
+				$this->a->update->refresh_upd_config();
+			}
+		}
+
+		/**
+		 * This action is run by WordPress when the upgrader process is complete.
+		 */
+		public function upgrader_process_complete( $wp_upgrader_obj, $hook_extra ) {
+
+			if ( ! empty( $hook_extra[ 'action' ] ) && ! empty( $hook_extra[ 'type' ] ) && ! empty( $hook_extra[ 'plugins' ] ) ) {
+
+				if ( 'update' === $hook_extra[ 'action' ] && 'plugin' === $hook_extra[ 'type' ] && is_array( $hook_extra[ 'plugins' ] ) ) {
+
+					foreach ( $hook_extra[ 'plugins' ] as $plugin_base ) {
+
+						if ( 0 === strpos( $plugin_base, 'wpsso' ) ) {	// Matches the WPSSO Core plugin or its add-on.
+
+							$this->a->update->refresh_upd_config();
+
+							break;	// Stop here.
+						}
+					}
+				}
 			}
 		}
 

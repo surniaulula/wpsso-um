@@ -14,8 +14,6 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 
 	class SucomUpdateUtil {
 
-		private static $get_plugins_cache = null;	// Common cache for get_plugins().
-
 		public function __construct() {}
 
 		/**
@@ -142,21 +140,26 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 		 *
 		 * The WordPress get_plugins() function is very slow, so call it only once and cache its result.
 		 *
-		 * If available, we use the SucomPlugin::get_plugins() method, otherwise we use our own $get_plugins_cache.
+		 * If available, we use the SucomPlugin::get_plugins() method instead.
 		 */
-		public static function get_plugins() {
+		public static function get_plugins( $read_cache = true ) {
 
 			if ( method_exists( 'SucomPlugin', 'get_plugins' ) ) {	// Since WPSSO Core v4.21.0.
 
-				return SucomPlugin::get_plugins();
+				return SucomPlugin::get_plugins( $read_cache );
 			}
 
-			if ( null !== SucomUpdateUtil::$get_plugins_cache ) {	// Use SucomUpdateUtil (not self) for single variable reference.
+			static $local_cache = null;
 
-				return SucomUpdateUtil::$get_plugins_cache;	// Use SucomUpdateUtil (not self) for single variable reference.
+			if ( $read_cache ) {
+
+				if ( null !== $local_cache ) {
+
+					return $local_cache;
+				}
 			}
 
-			SucomUpdateUtil::$get_plugins_cache = array();	// Use SucomUpdateUtil (not self) for single variable reference.
+			$local_cache = array();
 
 			if ( ! function_exists( 'get_plugins' ) ) {	// Load the library if necessary.
 
@@ -170,24 +173,18 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 
 			if ( function_exists( 'get_plugins' ) ) {
 
-				SucomUpdateUtil::$get_plugins_cache = get_plugins();	// Use SucomUpdateUtil (not self) for single variable reference.
+				$local_cache = get_plugins();
 			}
 
-			return SucomUpdateUtil::$get_plugins_cache;	// Use SucomUpdateUtil (not self) for single variable reference.
+			return $local_cache;
 		}
 
 		/**
-		 * If available, we use the SucomPlugin::get_plugins() method, otherwise we use our own $get_plugins_cache, but we
-		 * clear both caches here, just in case.
+		 * Deprecated on 2021/10/20.
 		 */
 		public static function clear_plugins_cache() {
 
-			if ( method_exists( 'SucomPlugin', 'clear_plugins_cache' ) ) {	// Since WPSSO Core v4.21.0.
-
-				SucomPlugin::clear_plugins_cache();
-			}
-
-			SucomUpdateUtil::$get_plugins_cache = null;	// Use SucomUpdateUtil (not self) for single variable reference.
+			_deprecated_function( __METHOD__ . '()', '2021/10/20', $replacement = '' );	// Deprecation message.
 		}
 	}
 }
