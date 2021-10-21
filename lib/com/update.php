@@ -467,14 +467,6 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			add_filter( 'pre_site_transient_update_plugins', array( $this, 'reenable_plugin_updates' ), PHP_INT_MAX, 1 );
 			add_filter( 'site_transient_update_plugins', array( $this, 'maybe_add_plugin_update' ), PHP_INT_MAX, 1 );
 
-			/**
-			 * Maybe remove the old plugin update hook.
-			 */
-			if ( wp_get_schedule( 'plugin_update-' . $this->p_slug ) ) {
-
-				wp_clear_scheduled_hook( 'plugin_update-' . $this->p_slug );
-			}
-
 			$this->add_wp_hooks_cron();
 		}
 
@@ -537,6 +529,16 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 				wp_schedule_event( time(), $this->sched_name, $this->p_cron_hook );
 			}
+		}
+
+		public function add_custom_schedule_name( $schedules ) {
+
+			$schedules[ $this->sched_name ] = array(
+				'interval' => $this->sched_hours * HOUR_IN_SECONDS,
+				'display'  => sprintf( 'Every %d hours', $this->sched_hours )
+			);
+
+			return $schedules;
 		}
 
 		/**
@@ -1144,16 +1146,6 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			}
 
 			return $transient;
-		}
-
-		public function add_custom_schedule_name( $schedules ) {
-
-			$schedules[ $this->sched_name ] = array(
-				'interval' => $this->sched_hours * HOUR_IN_SECONDS,
-				'display'  => sprintf( 'Every %d hours', $this->sched_hours )
-			);
-
-			return $schedules;
 		}
 
 		public function get_update_data( $ext, $read_cache = true ) {

@@ -116,15 +116,9 @@ if ( ! class_exists( 'WpssoUmRegister' ) ) {
 
 		private function deactivate_plugin() {
 
-			if ( class_exists( 'WpssoConfig' ) ) {
+			delete_option( 'wpsso_update_manager_config' );
 
-				$cf = WpssoConfig::get_config();
-
-				foreach ( $cf[ 'plugin' ] as $ext => $info ) {
-
-					wp_clear_scheduled_hook( 'plugin_updates-' . $info[ 'slug' ] );
-				}
-			}
+			wp_clear_scheduled_hook( 'wpsso_update_manager_check' );
 		}
 
 		private static function uninstall_plugin() {}
