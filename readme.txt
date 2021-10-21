@@ -67,13 +67,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.9.0-dev.3 (2021/10/20)**
+**Version 4.9.0-b.1 (2021/10/21)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Refactored several methods to offer selective local caching (on by default).
-	* Moved the update manager config from the transient cache to the options table for a small performance improvement.
+	* Moved the update manager config from transient cache to the options table for a small performance improvement.
+	* Refactored several methods to offer selective local caching (enabled by default).
 * **Bugfixes**
 	* Fixed the update manager config refresh after updating the WPSSO Core plugin or its add-ons.
 * **Developer Notes**
@@ -214,9 +214,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.9.0-dev.3 =
+= 4.9.0-b.1 =
 
-(2021/10/20) Moved the update manager config from the transient cache to the options table. Fixed the update manager config refresh.
+(2021/10/21) Moved the update manager config from transient cache to the options table. Fixed the update manager config refresh.
 
 = 4.8.0 =
 
