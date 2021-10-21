@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Update Manager 4.9.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-10-21 08:13-0700\n"
+"PO-Revision-Date: 2021-10-21 08:16-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -109,7 +109,7 @@ msgstr "WPSSO Ajouter cinq étoiles"
 #: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
 msgid "Add a 5 star rating and review from the site organization if the Schema markup does not already have an 'aggregateRating' property."
-msgstr "Ajoutez une note de 5 étoiles et une critiques de l'organisation du site si le balisage de Schéma n'a pas déjà une propriété 'aggregateRating'."
+msgstr "Ajoute une note de 5 étoiles et une critiques de l'organisation du site si le balisage de Schéma n'a pas déjà une propriété 'aggregateRating'."
 
 #: gettext/gettext-lib-config.php:8
 msgctxt "plugin name"
