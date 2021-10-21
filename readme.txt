@@ -67,7 +67,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.9.0-b.1 (2021/10/21)**
+**Version 4.9.0-rc.1 (2021/10/21)**
 
 * **New Features**
 	* None.
@@ -214,7 +214,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.9.0-b.1 =
+= 4.9.0-rc.1 =
 
 (2021/10/21) Moved the update manager config from transient cache to the options table. Fixed the update manager config refresh.
 
