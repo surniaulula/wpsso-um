@@ -30,7 +30,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		private $p_id          = '';
 		private $p_slug        = '';
 		private $p_text_domain = '';
-		private $p_avail_enc   = array();
+		private $p_avail_csv   = '';
 		private $p_cron_hook   = '';
 		private $p_updcfg_name = '';
 		private $text_domain   = '';
@@ -92,7 +92,10 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 					if ( isset( $this->p->avail ) && is_array( $this->p->avail ) ) {	// Just in case.
 
-						$this->p_avail_enc = SucomUpdateUtil::encode_avail( $this->p->avail );
+						/**
+						 * Returns an imploded string of active modules.
+						 */
+						$this->p_avail_csv = SucomUpdateUtil::encode_avail( $this->p->avail );
 					}
 
 					/**
@@ -334,7 +337,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 							$json_args[ 'wc_version' ] = WC_VERSION;
 						}
 
-						$json_args[ 'plugin_avail' ] = $this->p_avail_enc;
+						$json_args[ 'plugin_avail' ] = $this->p_avail_csv;
 					}
 				}
 

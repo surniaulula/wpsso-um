@@ -23,7 +23,7 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 
 			$avail = self::clean_avail( $avail );
 
-			$avail_enc = array();
+			$avail_active = array();
 
 			foreach ( $avail as $sub => $libs ) {
 
@@ -31,14 +31,12 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 
 					if ( $active ) {
 
-						$avail_enc[] = $sub . ':' . $lib;
+						$avail_active[] = $sub . ':' . $lib;
 					}
 				}
 			}
 
-			$avail_enc = implode( $glue = ',', $avail_enc );	// Convert to comma delimited string.
-
-			return $avail_enc;
+			return implode( $glue = ',', $avail_active );	// Convert to comma delimited string.
 		}
 
 		public static function clean_avail( array $avail ) {
