@@ -671,6 +671,8 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		 *	- Update information for %s has been retrieved and saved.
 		 *	- An error was returned while getting update information for %s.
 		 *	- Failed saving retrieved update information for %s.
+		 *
+		 * Note that check_ext_for_updates() does not throttle like check_all_for_updates().
 		 */
 		public function check_ext_for_updates( $check_ext = null, $quiet = true ) {
 

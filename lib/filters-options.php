@@ -72,7 +72,7 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 		 * The 'wpsso_save_setting_options' filter is applied by WpssoOptions->save_options(),
 		 * WpssoAdmin->registered_setting_sanitation(), and WpssoAdmin->save_site_options().
 		 *
-		 * $upgrading is true if the options array is new, or the options 'version' value is different.
+		 * $upgrading will be true when the options version, not the plugin version, is being upgraded.
 		 *
 		 * $network is true if we're saving the multisite network settings.
 		 *
@@ -132,6 +132,9 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 				 */
 				$this->a->update->check_ext_for_updates( $check_ext_for_updates, $quiet = true );
 
+			/**
+			 * $upgrading will be true when the options version, not the plugin version, is being upgraded.
+			 */
 			} elseif ( $upgrading ) {
 
 				$this->a->update->refresh_upd_config();
