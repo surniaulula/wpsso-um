@@ -79,7 +79,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 				'wpssossc' => array(			// Plugin acronym.
 					'short'       => 'WPSSO SSC',	// Short plugin name.
 					'name'        => 'WPSSO Schema Shortcode',
-					'desc'        => 'Shortcode for advanced Schema markup of content sections.',
+					'desc'        => 'Shortcode for customized Schema markup of content sections.',
 					'slug'        => 'wpsso-schema-shortcode',
 					'base'        => 'wpsso-schema-shortcode/wpsso-schema-shortcode.php',
 					'update_auth' => '',		// No premium version.

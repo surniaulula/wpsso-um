@@ -168,7 +168,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 							$this->p->debug->log( 'update manager config from option' );
 						}
-	
+
 						return;
 					}
 				}
