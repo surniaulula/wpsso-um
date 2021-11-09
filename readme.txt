@@ -67,7 +67,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.9.1-dev.1 (TBD)**
+**Version 4.9.1-dev.1 (2021/11/09)**
 
 * **New Features**
 	* None.
@@ -231,7 +231,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.9.1-dev.1 =
 
-(TBD) None.
+(2021/11/09) None.
 
 = 4.9.0 =
 
