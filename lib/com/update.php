@@ -1796,7 +1796,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				}
 
 				/**
-				 * Make sure the authentication type is 'none' (ie. no Pro / Premium version exists).
+				 * Make sure the authentication type is 'none' (ie. no Premium edition).
 				 */
 				if ( isset( $upd_cfg_info[ 'auth_type' ] ) && 'none' === $upd_cfg_info[ 'auth_type' ] ) {
 
