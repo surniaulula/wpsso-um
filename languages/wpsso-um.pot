@@ -113,9 +113,9 @@ msgid ""
 "array."
 msgstr ""
 
-#: gettext/gettext-lib-config.php:6 gettext/gettext-lib-config.php:8
+#: gettext/gettext-lib-config.php:6
 msgctxt "plugin name"
-msgid "WPSSO Schema Shortcode"
+msgid "WPSSO Google Merchant Feed"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:7
@@ -123,6 +123,11 @@ msgctxt "plugin description"
 msgid ""
 "Create a Google Merchant Feed for your WooCommerce, Easy Digital Downloads, "
 "and Custom Products."
+msgstr ""
+
+#: gettext/gettext-lib-config.php:8
+msgctxt "plugin name"
+msgid "WPSSO Schema Shortcode"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:9

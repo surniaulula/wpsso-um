@@ -18,7 +18,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 			'plugin' => array(
 				'wpssogmf' => array(			// Plugin acronym.
 					'short'       => 'WPSSO GMF',	// Short plugin name.
-					'name'        => 'WPSSO Schema Shortcode',
+					'name'        => 'WPSSO Google Merchant Feed',
 					'desc'        => 'Create a Google Merchant Feed for your WooCommerce, Easy Digital Downloads, and Custom Products.',
 					'slug'        => 'wpsso-google-merchant-feed',
 					'base'        => 'wpsso-google-merchant-feed/wpsso-google-merchant-feed.php',
