@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.10.0-rc.1 (2021/11/10)**
+**Version 4.10.0 (2021/11/10)**
 
 * **New Features**
 	* Added a new WPSSO Google Merchant Feed add-on to the SSO &gt; Plugin Add-ons settings page.
@@ -227,7 +227,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.10.0-rc.1 =
+= 4.10.0 =
 
 (2021/11/10) Added a new WPSSO Google Merchant Feed add-on to the SSO &gt; Plugin Add-ons settings page.
 
