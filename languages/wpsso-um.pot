@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Update Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Update Manager 4.9.1-dev.1\n"
+"Project-Id-Version: WPSSO Update Manager 4.10.0-dev.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -113,21 +113,16 @@ msgid ""
 "array."
 msgstr ""
 
-#: gettext/gettext-lib-config.php:6
+#: gettext/gettext-lib-config.php:6 gettext/gettext-lib-config.php:8
 msgctxt "plugin name"
-msgid "WPSSO Add Five Stars"
+msgid "WPSSO Schema Shortcode"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
 msgid ""
-"Add a 5 star rating and review from the site organization if the Schema "
-"markup does not already have an 'aggregateRating' property."
-msgstr ""
-
-#: gettext/gettext-lib-config.php:8
-msgctxt "plugin name"
-msgid "WPSSO Schema Shortcode"
+"Create a Google Merchant Feed for your WooCommerce, Easy Digital Downloads, "
+"and Custom Products."
 msgstr ""
 
 #: gettext/gettext-lib-config.php:9

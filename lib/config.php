@@ -16,12 +16,12 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 
 		public static $cf = array(
 			'plugin' => array(
-				'wpssoafs' => array(			// Plugin acronym.
-					'short'       => 'WPSSO AFS',	// Short plugin name.
-					'name'        => 'WPSSO Add Five Stars',
-					'desc'        => 'Add a 5 star rating and review from the site organization if the Schema markup does not already have an \'aggregateRating\' property.',
-					'slug'        => 'wpsso-add-five-stars',
-					'base'        => 'wpsso-add-five-stars/wpsso-add-five-stars.php',
+				'wpssogmf' => array(			// Plugin acronym.
+					'short'       => 'WPSSO GMF',	// Short plugin name.
+					'name'        => 'WPSSO Schema Shortcode',
+					'desc'        => 'Create a Google Merchant Feed for your WooCommerce, Easy Digital Downloads, and Custom Products.',
+					'slug'        => 'wpsso-google-merchant-feed',
+					'base'        => 'wpsso-google-merchant-feed/wpsso-google-merchant-feed.php',
 					'update_auth' => '',		// No premium version.
 
 					/**
@@ -33,16 +33,16 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 						 * Banner image array keys are 'low' and 'high'.
 						 */
 						'banners' => array(
-							'low'  => 'https://surniaulula.github.io/wpsso-add-five-stars/assets/banner-772x250.jpg',
-							'high' => 'https://surniaulula.github.io/wpsso-add-five-stars/assets/banner-1544x500.jpg',
+							'low'  => 'https://surniaulula.github.io/wpsso-google-merchant-feed/assets/banner-772x250.jpg',
+							'high' => 'https://surniaulula.github.io/wpsso-google-merchant-feed/assets/banner-1544x500.jpg',
 						),
 
 						/**
 						 * Icon image array keys are '1x' and '2x'.
 						 */
 						'icons' => array(
-							'1x' => 'https://surniaulula.github.io/wpsso-add-five-stars/assets/icon-128x128.png',
-							'2x' => 'https://surniaulula.github.io/wpsso-add-five-stars/assets/icon-256x256.png',
+							'1x' => 'https://surniaulula.github.io/wpsso-google-merchant-feed/assets/icon-128x128.png',
+							'2x' => 'https://surniaulula.github.io/wpsso-google-merchant-feed/assets/icon-256x256.png',
 						),
 					),
 					'hosts' => array(
@@ -55,25 +55,24 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 						/**
 						 * GitHub.com.
 						 */
-						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-add-five-stars/master/readme.txt',
+						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-google-merchant-feed/master/readme.txt',
 						'setup_html' => '',
 
 						/**
 						 * WPSSO.com.
 						 */
-						'home'      => 'https://wpsso.com/extend/plugins/wpsso-add-five-stars/',
+						'home'      => 'https://wpsso.com/extend/plugins/wpsso-google-merchant-feed/',
 						'forum'     => '',
 						'review'    => '',
-						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-add-five-stars/changelog/',
-						'docs'      => 'https://wpsso.com/docs/plugins/wpsso-add-five-stars/',
-						'install'   => 'https://wpsso.com/docs/plugins/wpsso-add-five-stars/installation/',
+						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-google-merchant-feed/changelog/',
+						'docs'      => 'https://wpsso.com/docs/plugins/wpsso-google-merchant-feed/',
+						'install'   => 'https://wpsso.com/docs/plugins/wpsso-google-merchant-feed/installation/',
 						'faqs'      => '',
 						'notes'     => '',
 						'support'   => '',	// Premium support ticket.
 						'purchase'  => '',	// Purchase page.
 						'info'      => '',	// License information.
-						'update'    => 'https://wpsso.com/extend/plugins/wpsso-add-five-stars/update/',
-						'latest'    => 'https://wpsso.com/extend/plugins/wpsso-add-five-stars/latest/',
+						'update'    => 'https://wpsso.com/extend/plugins/wpsso-google-merchant-feed/update/',
 					),
 				),
 				'wpssossc' => array(			// Plugin acronym.
@@ -133,11 +132,10 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 						'purchase'  => '',	// Purchase page.
 						'info'      => '',	// License information.
 						'update'    => 'https://wpsso.com/extend/plugins/wpsso-schema-shortcode/update/',
-						'latest'    => 'https://wpsso.com/extend/plugins/wpsso-schema-shortcode/latest/',
 					),
 				),
 				'wpssoum' => array(			// Plugin acronym.
-					'version'     => '4.9.1-dev.1',	// Plugin version.
+					'version'     => '4.10.0-dev.2',	// Plugin version.
 					'opt_version' => '7',		// Increment when changing default option values.
 					'short'       => 'WPSSO UM',	// Short plugin name.
 					'name'        => 'WPSSO Update Manager',
