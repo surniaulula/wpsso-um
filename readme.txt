@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.10.0-dev.2 (2021/11/09)**
+**Version 4.10.0-dev.2 (2021/11/10)**
 
 * **New Features**
 	* Added a new WPSSO Google Merchant Feed add-on to the SSO &gt; Complimentary Add-ons settings page.
@@ -229,7 +229,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.10.0-dev.2 =
 
-(2021/11/09) Added a new WPSSO Google Merchant Feed add-on to the SSO &gt; Complimentary Add-ons settings page.
+(2021/11/10) Added a new WPSSO Google Merchant Feed add-on to the SSO &gt; Complimentary Add-ons settings page.
 
 = 4.9.0 =
 
