@@ -19,7 +19,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 				'wpssogmf' => array(			// Plugin acronym.
 					'short'       => 'WPSSO GMF',	// Short plugin name.
 					'name'        => 'WPSSO Google Merchant Feed',
-					'desc'        => 'Create a Google Merchant Feed for your WooCommerce, Easy Digital Downloads, and Custom Products.',
+					'desc'        => 'Google Merchant Feeds for your WooCommerce, Easy Digital Downloads, and Custom Products (WPSSO Core Premium Required).',
 					'slug'        => 'wpsso-google-merchant-feed',
 					'base'        => 'wpsso-google-merchant-feed/wpsso-google-merchant-feed.php',
 					'update_auth' => '',		// No premium version.
@@ -139,7 +139,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					'opt_version' => '7',		// Increment when changing default option values.
 					'short'       => 'WPSSO UM',	// Short plugin name.
 					'name'        => 'WPSSO Update Manager',
-					'desc'        => 'Update Manager for the WPSSO Core Premium plugin and its Premium complementary add-ons.',
+					'desc'        => 'Update Manager for the WPSSO Core Premium plugin.',
 					'slug'        => 'wpsso-um',
 					'base'        => 'wpsso-um/wpsso-um.php',
 					'update_auth' => '',		// No premium version.

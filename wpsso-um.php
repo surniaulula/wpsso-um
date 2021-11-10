@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: Update Manager for the WPSSO Core Premium plugin and its Premium complementary add-ons.
+ * Description: Update Manager for the WPSSO Core Premium plugin.
  * Requires PHP: 7.0
  * Requires At Least: 5.0
  * Tested Up To: 5.8.2
