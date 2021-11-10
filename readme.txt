@@ -23,8 +23,6 @@ Update Manager for the WPSSO Core Premium plugin.
 
 <p>The WPSSO Update Manager supports WordPress Network / Multisite installations, WordPress MU Domain Mapping, and WordPress v5.5 Automatic Updates.</p>
 
-<p>Simply <em>download</em>, <em>install</em> and <em>activate</em>.</p>
-
 <!-- /about -->
 
 <h3>WPSSO Core Required</h3>
@@ -67,12 +65,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.9.1-dev.1 (2021/11/09)**
+**Version 4.10.0-dev.2 (2021/11/09)**
 
 * **New Features**
-	* None.
+	* Added a new WPSSO Google Merchant Feed add-on to the SSO &gt; Complimentary Add-ons settings page.
 * **Improvements**
-	* None.
+	* Moved the WPSSO Add Five Stars add-on config to the WPSSO Core plugin.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -229,9 +227,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.9.1-dev.1 =
+= 4.10.0-dev.2 =
 
-(2021/11/09) None.
+(2021/11/09) Added a new WPSSO Google Merchant Feed add-on to the SSO &gt; Complimentary Add-ons settings page.
 
 = 4.9.0 =
 
