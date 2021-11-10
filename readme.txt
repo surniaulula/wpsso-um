@@ -68,7 +68,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 4.10.0-rc.1 (2021/11/10)**
 
 * **New Features**
-	* Added a new WPSSO Google Merchant Feed add-on to the SSO &gt; Complimentary Add-ons settings page.
+	* Added a new WPSSO Google Merchant Feed add-on to the SSO &gt; Plugin Add-ons settings page.
 * **Improvements**
 	* Moved the WPSSO Add Five Stars add-on config to the WPSSO Core plugin.
 * **Bugfixes**
@@ -105,7 +105,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 4.8.0 (2021/10/19)**
 
 * **New Features**
-	* Added a new WPSSO Add Five Stars add-on to the SSO &gt; Complimentary Add-ons settings page.
+	* Added a new WPSSO Add Five Stars add-on to the SSO &gt; Plugin Add-ons settings page.
 * **Improvements**
 	* None.
 * **Bugfixes**
@@ -166,7 +166,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 4.6.0 (2021/09/24)**
 
 * **New Features**
-	* Added a new WPSSO Schema Shortcode add-on to the SSO &gt; Complimentary Add-ons settings page.
+	* Added a new WPSSO Schema Shortcode add-on to the SSO &gt; Plugin Add-ons settings page.
 * **Improvements**
 	* None.
 * **Bugfixes**
@@ -229,7 +229,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.10.0-rc.1 =
 
-(2021/11/10) Added a new WPSSO Google Merchant Feed add-on to the SSO &gt; Complimentary Add-ons settings page.
+(2021/11/10) Added a new WPSSO Google Merchant Feed add-on to the SSO &gt; Plugin Add-ons settings page.
 
 = 4.9.0 =
 
@@ -237,7 +237,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.8.0 =
 
-(2021/10/19) Added a new WPSSO Add Five Stars add-on to the SSO &gt; Complimentary Add-ons settings page.
+(2021/10/19) Added a new WPSSO Add Five Stars add-on to the SSO &gt; Plugin Add-ons settings page.
 
 = 4.7.0 =
 
@@ -253,7 +253,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.6.0 =
 
-(2021/09/24) Added a new WPSSO Schema Shortcode add-on to the SSO &gt; Complimentary Add-ons settings page.
+(2021/09/24) Added a new WPSSO Schema Shortcode add-on to the SSO &gt; Plugin Add-ons settings page.
 
 = 4.5.0 =
 
