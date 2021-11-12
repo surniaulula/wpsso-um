@@ -109,6 +109,9 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 							$this->manual_update_check();
 
+							/**
+							 * Prevent a second check when reloading the '/update-core.php?force-check=1' page.
+							 */
 							$_SERVER[ 'REQUEST_URI' ] = add_query_arg( array( $this->p_id . '-check-done' => 1 ) );
 						}
 
