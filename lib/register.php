@@ -107,7 +107,7 @@ if ( ! class_exists( 'WpssoUmRegister' ) ) {
 				 */
 				if ( class_exists( 'WpssoUtilReg' ) ) { // Since WPSSO Core v6.13.1.
 
-					$version = WpssoUmConfig::$cf[ 'plugin' ][ 'wpssoum' ][ 'version' ];
+					$version = WpssoUmConfig::get_version();
 
 					WpssoUtilReg::update_ext_version( 'wpssoum', $version );
 				}

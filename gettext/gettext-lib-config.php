@@ -6,7 +6,7 @@
 _x( 'WPSSO Google Merchant Feed', 'plugin name', 'wpsso-um' );
 _x( 'Google Merchant Feeds for your WooCommerce, Easy Digital Downloads, and Custom Products (WPSSO Core Premium Required).', 'plugin description', 'wpsso-um' );
 _x( 'WPSSO Schema Shortcode', 'plugin name', 'wpsso-um' );
-_x( 'Shortcode for customized Schema markup of content sections.', 'plugin description', 'wpsso-um' );
+_x( 'Advanced Schema shortcode to define and customize additional properties and types for sections of the content.', 'plugin description', 'wpsso-um' );
 _x( 'Update Manager', 'lib file description', 'wpsso-um' );
 _x( 'Update Manager', 'lib file description', 'wpsso-um' );
 _x( 'WPSSO Update Manager', 'plugin name', 'wpsso-um' );
