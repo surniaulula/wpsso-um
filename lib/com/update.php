@@ -103,9 +103,14 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 					 */
 					$user_id = get_current_user_id();
 
-					if ( $user_id && strpos( $_SERVER[ 'REQUEST_URI' ], '/update-core.php?force-check=1' ) ) {
+					if ( $user_id && false !== strpos( $_SERVER[ 'REQUEST_URI' ], '/update-core.php?force-check=1' ) ) {
 
-						$this->manual_update_check();
+						if ( false === strpos( $_SERVER[ 'REQUEST_URI' ], $this->p_id . '-check-done=1' ) ) {
+
+							$this->manual_update_check();
+
+							$_SERVER[ 'REQUEST_URI' ] = add_query_arg( array( $this->p_id . '-check-done' => 1 ) );
+						}
 
 					} else {
 
