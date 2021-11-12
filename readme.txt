@@ -65,6 +65,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.10.1-dev.2 (2021/11/12)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added a query argument to prevent a second check when reloading the '/update-core.php?force-check=1' page.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v5.0.
+	* WPSSO Core v7.0.0.
+
 **Version 4.10.0 (2021/11/10)**
 
 * **New Features**
@@ -226,6 +241,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v5.0.0.
 
 == Upgrade Notice ==
+
+= 4.10.1-dev.2 =
+
+(2021/11/12) Added a query argument to prevent a second check when reloading the '/update-core.php?force-check=1' page.
 
 = 4.10.0 =
 
