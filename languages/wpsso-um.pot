@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Update Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Update Manager 4.10.1-dev.2\n"
+"Project-Id-Version: WPSSO Update Manager 4.10.1-dev.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -131,8 +131,8 @@ msgstr ""
 #: gettext/gettext-lib-config.php:9
 msgctxt "plugin description"
 msgid ""
-"Advanced Schema shortcode to define and customize additional properties and "
-"types for sections of the content."
+"Schema shortcode to define and customize additional properties and types for "
+"sections of the content (WPSSO Core Premium Required)."
 msgstr ""
 
 #: gettext/gettext-lib-config.php:10 gettext/gettext-lib-config.php:11
