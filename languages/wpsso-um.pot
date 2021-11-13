@@ -113,7 +113,7 @@ msgstr ""
 
 #: gettext/gettext-lib-config.php:6
 msgctxt "plugin name"
-msgid "WPSSO Google Merchant Feed"
+msgid "WPSSO Google Merchant Feeds"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:7
