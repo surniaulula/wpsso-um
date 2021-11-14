@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.10.1-dev.3 (2021/11/13)**
+**Version 4.10.1-dev.4 (2021/11/14)**
 
 * **New Features**
 	* None.
@@ -242,9 +242,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.10.1-dev.3 =
+= 4.10.1-dev.4 =
 
-(2021/11/13) Added a query argument to prevent a second check when reloading the '/update-core.php?force-check=1' page.
+(2021/11/14) Added a query argument to prevent a second check when reloading the '/update-core.php?force-check=1' page.
 
 = 4.10.0 =
 
