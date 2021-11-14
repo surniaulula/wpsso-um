@@ -74,7 +74,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Refactored the `SucomAddOn->get_missing_requirements()` method.
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v5.0.
