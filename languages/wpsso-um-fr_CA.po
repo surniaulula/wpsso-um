@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Update Manager 4.10.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-11-13 20:00-0800\n"
+"PO-Revision-Date: 2021-11-15 09:12-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -13,11 +13,11 @@ msgstr ""
 "X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:182
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:213
 msgid "The %1$s add-on requires the %2$s plugin."
 msgstr "L'ajout %1$s requiert l'extension %2$s."
 
-#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:198
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:227
 msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
 msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est installée actuellement)."
 
@@ -135,6 +135,11 @@ msgstr "WPSSO gestionnaire de mise à jour"
 msgctxt "plugin description"
 msgid "Update Manager for the WPSSO Core Premium plugin."
 msgstr "Gestionnaire de mise à jour pour l'extension WPSSO Core Premium."
+
+#: gettext/gettext-lib-config.php:14
+msgctxt "plugin name"
+msgid "WPSSO Core"
+msgstr "WPSSO Core"
 
 #: lib/actions.php:81
 msgid "Plugin update information has been refreshed."
