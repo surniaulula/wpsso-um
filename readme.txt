@@ -83,7 +83,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 4.10.0 (2021/11/10)**
 
 * **New Features**
-	* Added a new WPSSO Google Merchant Feeds add-on to the SSO &gt; Plugin Add-ons settings page.
+	* Added a new WPSSO Google Merchant Feeds XML add-on to the SSO &gt; Plugin Add-ons settings page.
 * **Improvements**
 	* Moved the WPSSO Add Five Stars add-on config to the WPSSO Core plugin.
 * **Bugfixes**
@@ -248,7 +248,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.10.0 =
 
-(2021/11/10) Added a new WPSSO Google Merchant Feeds add-on to the SSO &gt; Plugin Add-ons settings page.
+(2021/11/10) Added a new WPSSO Google Merchant Feeds XML add-on to the SSO &gt; Plugin Add-ons settings page.
 
 = 4.9.0 =
 
