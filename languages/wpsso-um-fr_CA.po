@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Update Manager 4.10.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-11-15 09:12-0800\n"
+"PO-Revision-Date: 2021-11-16 12:40-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -103,12 +103,12 @@ msgstr "Le numéro de version de l'extension %1$s (%2$s) est absente de la liste
 
 #: gettext/gettext-lib-config.php:6
 msgctxt "plugin name"
-msgid "WPSSO Google Merchant Feeds"
-msgstr "WPSSO flux de marchands Google"
+msgid "WPSSO Google Merchant Feeds XML"
+msgstr "WPSSO XML flux de marchands Google"
 
 #: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
-msgid "Google Merchant Feeds for your WooCommerce, Easy Digital Downloads, and Custom Products (WPSSO Core Premium Required)."
+msgid "Google Merchant Feeds for WooCommerce, Easy Digital Downloads, and Custom Products (WPSSO Core Premium Required)."
 msgstr "Flux de marchands Google pour WooCommerce, Easy Digital Downloads et produits personnalisés (WPSSO Core Premium requis)."
 
 #: gettext/gettext-lib-config.php:8
