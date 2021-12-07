@@ -425,7 +425,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		}
 
 		/**
-		 * Called by self::__construct() after self::set_upd_config() is run.
+		 * Called by SucomUpdate->__construct() after SucomUpdate->set_upd_config() is run.
 		 */
 		private function add_wp_hooks() {
 
