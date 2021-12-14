@@ -26,36 +26,12 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 			$this->a =& $addon;
 
 			$this->p->util->add_plugin_filters( $this, array( 
-				'option_type'          => 2,
 				'save_options'         => 4,	// Deprecated on 2020/06/20.
 				'save_setting_options' => 3,
 				'get_defaults'         => 1,	// Option defaults.
 				'get_site_defaults'    => 1,	// Site option defaults.
+				'option_type'          => 2,
 			) );
-		}
-
-		/**
-		 * Return the sanitation type for a given option key.
-		 */
-		public function filter_option_type( $type, $base_key ) {
-
-			if ( ! empty( $type ) ) {	// Return early if we already have a type.
-
-				return $type;
-
-			} elseif ( strpos( $base_key, 'update_' ) !== 0 ) {	// Nothing to do.
-
-				return $type;
-			}
-
-			switch ( $base_key ) {
-
-				case ( strpos( $base_key, 'update_filter_for_' ) === 0 ? true : false ):
-
-					return 'not_blank';
-			}
-
-			return $type;
 		}
 
 		/**
@@ -160,6 +136,27 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 			}
 
 			return $defs;
+		}
+
+		public function filter_option_type( $type, $base_key ) {
+
+			if ( ! empty( $type ) ) {	// Return early if we already have a type.
+
+				return $type;
+
+			} elseif ( strpos( $base_key, 'update_' ) !== 0 ) {	// Nothing to do.
+
+				return $type;
+			}
+
+			switch ( $base_key ) {
+
+				case ( strpos( $base_key, 'update_filter_for_' ) === 0 ? true : false ):
+
+					return 'not_blank';
+			}
+
+			return $type;
 		}
 	}
 }
