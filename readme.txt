@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.10.2-dev.6 (2021/12/16)**
+**Version 4.10.2-b.1 (2021/12/16)**
 
 * **New Features**
 	* None.
@@ -74,7 +74,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Added a 'wpsso_clear_cache' action hook to refresh the update manager config.
 * **Requires At Least**
 	* PHP v7.2.
 	* WordPress v5.2.
@@ -257,9 +257,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.10.2-dev.6 =
+= 4.10.2-b.1 =
 
-(2021/12/16) None.
+(2021/12/16) Added a 'wpsso_clear_cache' action hook to refresh the update manager config.
 
 = 4.10.1 =
 
