@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Update Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Update Manager 4.10.1\n"
+"Project-Id-Version: WPSSO Update Manager 4.10.2-dev.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -155,11 +155,11 @@ msgctxt "plugin name"
 msgid "WPSSO Core"
 msgstr ""
 
-#: lib/actions.php:81
+#: lib/actions.php:87
 msgid "Plugin update information has been refreshed."
 msgstr ""
 
-#: lib/actions.php:93
+#: lib/actions.php:99
 msgid "Plugin update offers have been reenabled."
 msgstr ""
 

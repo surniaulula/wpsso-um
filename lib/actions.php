@@ -28,6 +28,7 @@ if ( ! class_exists( 'WpssoUmActions' ) ) {
 			if ( is_admin() ) {
 
 				$this->p->util->add_plugin_actions( $this, array( 
+					'clear_cache'                         => 4,
 					'load_setting_page_check_for_updates' => 4,
 					'load_setting_page_create_offers'     => 4,
 				) );
@@ -67,6 +68,11 @@ if ( ! class_exists( 'WpssoUmActions' ) ) {
 					}
 				}
 			}
+		}
+
+		public function action_clear_cache( $user_id, $clear_other, $clear_short, $refresh ) {
+
+			$this->a->update->clear_upd_config();	// Refresh the update manager config on next page load.
 		}
 
 		public function action_load_setting_page_check_for_updates( $pagehook, $menu_id, $menu_name, $menu_lib ) {
