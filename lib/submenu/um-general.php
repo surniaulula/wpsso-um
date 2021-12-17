@@ -121,9 +121,8 @@ if ( ! class_exists( 'WpssoUmSubmenuUmGeneral' ) && class_exists( 'WpssoAdmin' )
 
 				case 'um-general-filters':
 
+					$ext_sorted      = WpssoConfig::get_ext_sorted();	// Since WPSSO Core v3.38.3.
 					$version_filters = $this->p->cf[ 'um' ][ 'version_filter' ];
-
-					$ext_sorted = WpssoConfig::get_ext_sorted();	// Since WPSSO Core v3.38.3.
 
 					foreach ( $ext_sorted as $ext => $info ) {
 
@@ -132,13 +131,13 @@ if ( ! class_exists( 'WpssoUmSubmenuUmGeneral' ) && class_exists( 'WpssoAdmin' )
 							continue;
 						}
 
+						$opt_key     = 'update_filter_for_' . $ext;
 						$name_transl = _x( $info[ 'name' ], 'plugin name', 'wpsso' );
-
-						$opt_key = 'update_filter_for_' . $ext;
 
 						$table_rows[ $opt_key ] = '' .
 							$this->form->get_th_html( $name_transl ) . 
-							'<td>' . $this->form->get_select( $opt_key, $version_filters, $css_class = 'update_filter' ) . '</td>';
+							'<td>' . $this->form->get_select( $opt_key, $version_filters,
+								$css_class = 'update_filter', $css_id = '', $is_assoc = true ) . '</td>';
 					}
 
 					break;
