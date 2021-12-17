@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.10.2-b.1 (2021/12/16)**
+**Version 4.10.2-b.2 (2021/12/16)**
 
 * **New Features**
 	* None.
@@ -257,7 +257,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.10.2-b.1 =
+= 4.10.2-b.2 =
 
 (2021/12/16) Added a 'wpsso_clear_cache' action hook to refresh the update manager config.
 
