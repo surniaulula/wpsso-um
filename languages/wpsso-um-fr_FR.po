@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Update Manager 4.10.1\n"
+"Project-Id-Version: WPSSO Update Manager 4.10.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-11-16 12:40-0800\n"
+"PO-Revision-Date: 2021-12-16 16:56-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -141,11 +141,11 @@ msgctxt "plugin name"
 msgid "WPSSO Core"
 msgstr "WPSSO Core"
 
-#: lib/actions.php:81
+#: lib/actions.php:87
 msgid "Plugin update information has been refreshed."
 msgstr "Les informations de mise à jour d'extension ont été actualisées."
 
-#: lib/actions.php:93
+#: lib/actions.php:99
 msgid "Plugin update offers have been reenabled."
 msgstr "Les offres de mise à jour des extensions ont été réactivées."
 
