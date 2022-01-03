@@ -65,21 +65,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.10.3-dev.2 (2022/01/02)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added WPSSO JSON Premium update URL to the WPSSO UM config for older versions.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v7.0.0.
-
 **Version 4.10.2 (2021/12/16)**
 
 * **New Features**
@@ -271,10 +256,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v5.0.0.
 
 == Upgrade Notice ==
-
-= 4.10.3-dev.2 =
-
-(2022/01/02) Added WPSSO JSON Premium update URL to the WPSSO UM config for older versions.
 
 = 4.10.2 =
 
