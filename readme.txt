@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.10.3-dev.1 (2022/01/02)**
+**Version 4.10.3-dev.2 (2022/01/02)**
 
 * **New Features**
 	* None.
@@ -272,7 +272,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.10.3-dev.1 =
+= 4.10.3-dev.2 =
 
 (2022/01/02) Added WPSSO JSON Premium update URL to the WPSSO UM config for older versions.
 
