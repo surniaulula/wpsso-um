@@ -16,6 +16,11 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 
 		public static $cf = array(
 			'plugin' => array(
+				'wpssojson' => array(			// Plugin acronym.
+					'url' => array(
+						'update' => 'https://wpsso.com/extend/plugins/wpsso-schema-json-ld/update/',
+					),
+				),
 				'wpssogmf' => array(			// Plugin acronym.
 					'short'       => 'WPSSO GMF',	// Short plugin name.
 					'name'        => 'WPSSO Google Merchant Feeds XML',
@@ -135,7 +140,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					),
 				),
 				'wpssoum' => array(			// Plugin acronym.
-					'version'     => '4.10.2',	// Plugin version.
+					'version'     => '4.10.3-dev.1',	// Plugin version.
 					'opt_version' => '8',		// Increment when changing default option values.
 					'short'       => 'WPSSO UM',	// Short plugin name.
 					'name'        => 'WPSSO Update Manager',
