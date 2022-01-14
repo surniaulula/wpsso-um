@@ -65,6 +65,24 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.11.0-dev.2 (2022/01/14)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Renamed the lib/abstracts/ folder to lib/abstract/.
+	* Renamed the `SucomAddOn` class to `SucomAbstractAddOn`.
+	* Renamed the `WpssoAddOn` class to `WpssoAbstractAddOn`.
+	* Renamed the `WpssoWpMeta` class to `WpssoAbstractWpMeta`.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v7.0.0.
+
 **Version 4.10.2 (2021/12/16)**
 
 * **New Features**
@@ -256,6 +274,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v5.0.0.
 
 == Upgrade Notice ==
+
+= 4.11.0-dev.2 =
+
+(2022/01/14) Renamed the lib/abstracts/ folder and its classes.
 
 = 4.10.2 =
 
