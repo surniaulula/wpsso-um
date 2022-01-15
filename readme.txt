@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.11.0-dev.2 (2022/01/14)**
+**Version 4.11.0-dev.4 (2022/01/15)**
 
 * **New Features**
 	* None.
@@ -275,9 +275,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.11.0-dev.2 =
+= 4.11.0-dev.4 =
 
-(2022/01/14) Renamed the lib/abstracts/ folder and its classes.
+(2022/01/15) Renamed the lib/abstracts/ folder and its classes.
 
 = 4.10.2 =
 
