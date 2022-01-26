@@ -438,7 +438,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 				if ( $this->p->debug->enabled ) {
 
-					$this->p->debug->log( 'skipping all update checks - update config array is empty' );
+					$this->p->debug->log( 'skipping all update checks: update config array is empty' );
 				}
 
 				return;
