@@ -65,6 +65,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.12.0-dev.4 (2022/02/09)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added a 'user_direction' argument to compliment 'user_locale' for the update information query.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v7.0.0.
+
 **Version 4.11.0 (2022/01/19)**
 
 * **New Features**
@@ -274,6 +289,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v5.0.0.
 
 == Upgrade Notice ==
+
+= 4.12.0-dev.4 =
+
+(2022/02/09) Added a 'user_direction' argument to compliment 'user_locale' for the update information query.
 
 = 4.11.0 =
 
