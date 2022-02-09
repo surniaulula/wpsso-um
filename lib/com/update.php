@@ -37,7 +37,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		private $sched_hours   = 24;
 		private $sched_name    = 'every24hours';
 
-		private static $api_version = '4.11.1';
+		private static $api_version = '4.12.0';
 		private static $upd_config  = array();
 		private static $offer_fname = 'offer-update.txt';
 
@@ -290,11 +290,6 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				}
 
 				/**
-				 * get_user_locale() is available since WP v4.7.0, so make sure it exists before calling it. :)
-				 */
-				$user_locale = is_admin() && function_exists( 'get_user_locale' ) ? get_user_locale() : get_locale();
-
-				/**
 				 * Translate the plugin name for notification mesages.
 				 */
 				$name_transl = _x( $info[ 'name' ], 'plugin name', $this->p_text_domain );
@@ -332,7 +327,8 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				$json_args[ 'plugin_status' ]  = $ext_status;
 				$json_args[ 'plugin_version' ] = $ext_version;
 				$json_args[ 'version_filter' ] = $filter_name;
-				$json_args[ 'user_locale' ]    = $user_locale;
+				$json_args[ 'user_direction' ] = is_rtl() ? 'rtl' : 'ltr';
+				$json_args[ 'user_locale' ]    = is_admin() ? get_user_locale() : get_locale();
 				$json_args[ 'php_version' ]    = phpversion();
 				$json_args[ 'wp_version' ]     = $wp_version;
 
