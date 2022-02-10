@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.12.0-b.1 (2022/02/09)**
+**Version 4.12.0-b.1 (2022/02/10)**
 
 * **New Features**
 	* None.
@@ -292,7 +292,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.12.0-b.1 =
 
-(2022/02/09) Added a 'user_direction' argument to compliment 'user_locale' for the update information query.
+(2022/02/10) Added a 'user_direction' argument to compliment 'user_locale' for the update information query.
 
 = 4.11.0 =
 
