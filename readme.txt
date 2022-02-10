@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.12.0-rc.1 (2022/02/10)**
+**Version 4.12.0 (2022/02/10)**
 
 * **New Features**
 	* None.
@@ -290,7 +290,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.12.0-rc.1 =
+= 4.12.0 =
 
 (2022/02/10) Added a 'user_direction' argument to compliment 'user_locale' for the update information query.
 
