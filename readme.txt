@@ -10,7 +10,7 @@ Tags: wpsso, update, manager, schedule, add-on, pro version
 Contributors: jsmoriss
 Requires PHP: 7.2
 Requires At Least: 5.2
-Tested Up To: 5.9.0
+Tested Up To: 5.9.1
 Stable Tag: 4.12.0
 
 Update Manager for the WPSSO Core Premium plugin.
