@@ -65,7 +65,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.12.1-b.2 (2022/03/06)**
+**Version 4.12.1-rc.1 (2022/03/07)**
+
+Maintenance release.
 
 * **New Features**
 	* None.
@@ -305,9 +307,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.12.1-b.2 =
+= 4.12.1-rc.1 =
 
-(2022/03/06) None.
+(2022/03/07) Maintenance release.
 
 = 4.12.0 =
 
