@@ -65,6 +65,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.12.2-dev.4 (2022/03/13)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Removed deprecated functions and methods from 2020.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v8.0.0.
+
 **Version 4.12.1 (2022/03/07)**
 
 Maintenance release.
@@ -306,6 +321,10 @@ Maintenance release.
 	* WPSSO Core v5.0.0.
 
 == Upgrade Notice ==
+
+= 4.12.2-dev.4 =
+
+(2022/03/13) Removed deprecated functions and methods from 2020.
 
 = 4.12.1 =
 
