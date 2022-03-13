@@ -26,22 +26,11 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 			$this->a =& $addon;
 
 			$this->p->util->add_plugin_filters( $this, array( 
-				'save_options'         => 4,	// Deprecated on 2020/06/20.
 				'save_setting_options' => 3,
 				'get_defaults'         => 1,	// Option defaults.
 				'get_site_defaults'    => 1,	// Site option defaults.
 				'option_type'          => 2,
 			) );
-		}
-
-		/**
-		 * Deprecated on 2020/06/20.
-		 */
-		public function filter_save_options( array $opts, $options_name, $network, $upgrading ) {
-
-			_deprecated_function( __METHOD__ . '()', '2020/06/20', $replacement = __CLASS__ . '::filter_save_setting_options()' );	// Deprecation message.
-
-			return $this->filter_save_setting_options( $opts, $network, $upgrading );
 		}
 
 		/**

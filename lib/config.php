@@ -135,7 +135,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					),
 				),
 				'wpssoum' => array(			// Plugin acronym.
-					'version'     => '4.12.1',	// Plugin version.
+					'version'     => '4.12.2-dev.4',	// Plugin version.
 					'opt_version' => '8',		// Increment when changing default option values.
 					'short'       => 'WPSSO UM',	// Short plugin name.
 					'name'        => 'WPSSO Update Manager',
@@ -155,7 +155,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '7.0.0',	// Required minimum version (released on 2020/04/19).
+							'min_version'   => '8.0.0',	// Required minimum version (released on 2020/10/13).
 						),
 					),
 
