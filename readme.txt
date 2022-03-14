@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.12.2-dev.4 (2022/03/13)**
+**Version 4.12.2-b.1 (2022/03/14)**
 
 * **New Features**
 	* None.
@@ -322,9 +322,9 @@ Maintenance release.
 
 == Upgrade Notice ==
 
-= 4.12.2-dev.4 =
+= 4.12.2-b.1 =
 
-(2022/03/13) Removed deprecated functions and methods from 2020.
+(2022/03/14) Removed deprecated functions and methods from 2020.
 
 = 4.12.1 =
 
