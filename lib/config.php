@@ -73,6 +73,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 						'purchase'  => '',	// Purchase page.
 						'info'      => '',	// License information.
 						'update'    => 'https://wpsso.com/extend/plugins/wpsso-google-merchant-feed/update/',
+						'download'  => 'https://wpsso.com/extend/plugins/wpsso-google-merchant-feed/latest/',
 					),
 				),
 				'wpssossc' => array(			// Plugin acronym.
@@ -132,10 +133,11 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 						'purchase'  => '',	// Purchase page.
 						'info'      => '',	// License information.
 						'update'    => 'https://wpsso.com/extend/plugins/wpsso-schema-shortcode/update/',
+						'download'  => 'https://wpsso.com/extend/plugins/wpsso-schema-shortcode/latest/',
 					),
 				),
 				'wpssoum' => array(			// Plugin acronym.
-					'version'     => '4.12.2',	// Plugin version.
+					'version'     => '4.12.3-b.3',	// Plugin version.
 					'opt_version' => '8',		// Increment when changing default option values.
 					'short'       => 'WPSSO UM',	// Short plugin name.
 					'name'        => 'WPSSO Update Manager',
