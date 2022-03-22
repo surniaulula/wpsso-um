@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.12.3-b.3 (2022/03/22)**
+**Version 4.12.3-rc.1 (2022/03/22)**
 
 * **New Features**
 	* None.
@@ -129,7 +129,7 @@ Maintenance release.
 
 == Upgrade Notice ==
 
-= 4.12.3-b.3 =
+= 4.12.3-rc.1 =
 
 (2022/03/22) Fixed missing download information for add-ons in the config array.
 
