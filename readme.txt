@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 7.2
 Requires At Least: 5.2
 Tested Up To: 5.9.2
-Stable Tag: 4.12.2
+Stable Tag: 4.12.3
 
 Update Manager for the WPSSO Core Premium plugin.
 
@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.12.3 (2022/03/22)**
+**Version 4.12.3 (2022/03/23)**
 
 * **New Features**
 	* None.
@@ -131,7 +131,7 @@ Maintenance release.
 
 = 4.12.3 =
 
-(2022/03/22) Fixed missing download information for add-ons in the config array.
+(2022/03/23) Fixed missing download information for add-ons in the config array.
 
 = 4.12.2 =
 
