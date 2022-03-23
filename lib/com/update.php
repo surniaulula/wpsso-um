@@ -351,7 +351,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 					if ( $this->p->debug->enabled ) {
 
-						$this->p->debug->log( $ext . ' plugin: invalid authentication URL (' . $json_url . ')' );
+						$this->p->debug->log( $ext . ' plugin: invalid authentication url "' . $json_url . '"' );
 					}
 
 					$error_msg = $inconsistency_msg . sprintf( __( 'invalid authentication URL (%1$s).',
