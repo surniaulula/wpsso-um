@@ -16,66 +16,6 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 
 		public static $cf = array(
 			'plugin' => array(
-				'wpssogmf' => array(			// Plugin acronym.
-					'short'       => 'WPSSO GMF',	// Short plugin name.
-					'name'        => 'WPSSO Google Merchant Feeds XML',
-					'desc'        => 'Google Merchant Feeds for WooCommerce, Easy Digital Downloads, and Custom Products (WPSSO Core Premium Required).',
-					'slug'        => 'wpsso-google-merchant-feed',
-					'base'        => 'wpsso-google-merchant-feed/wpsso-google-merchant-feed.php',
-					'update_auth' => '',		// No premium version.
-
-					/**
-					 * URLs or relative paths to plugin banners and icons.
-					 */
-					'assets' => array(
-
-						/**
-						 * Banner image array keys are 'low' and 'high'.
-						 */
-						'banners' => array(
-							'low'  => 'https://surniaulula.github.io/wpsso-google-merchant-feed/assets/banner-772x250.jpg',
-							'high' => 'https://surniaulula.github.io/wpsso-google-merchant-feed/assets/banner-1544x500.jpg',
-						),
-
-						/**
-						 * Icon image array keys are '1x' and '2x'.
-						 */
-						'icons' => array(
-							'1x' => 'https://surniaulula.github.io/wpsso-google-merchant-feed/assets/icon-128x128.png',
-							'2x' => 'https://surniaulula.github.io/wpsso-google-merchant-feed/assets/icon-256x256.png',
-						),
-					),
-					'hosts' => array(
-						'wp_org' => false,
-						'github' => true,
-						'wpsso'  => true,
-					),
-					'url' => array(
-
-						/**
-						 * GitHub.com.
-						 */
-						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-google-merchant-feed/master/readme.txt',
-						'setup_html' => '',
-
-						/**
-						 * WPSSO.com.
-						 */
-						'home'      => 'https://wpsso.com/extend/plugins/wpsso-google-merchant-feed/',
-						'forum'     => '',
-						'review'    => '',
-						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-google-merchant-feed/changelog/',
-						'docs'      => 'https://wpsso.com/docs/plugins/wpsso-google-merchant-feed/',
-						'install'   => 'https://wpsso.com/docs/plugins/wpsso-google-merchant-feed/installation/',
-						'faqs'      => '',
-						'notes'     => '',
-						'support'   => '',	// Premium support ticket.
-						'purchase'  => '',	// Purchase page.
-						'info'      => '',	// License information.
-						'update'    => 'https://wpsso.com/extend/plugins/wpsso-google-merchant-feed/update/',
-						'download'  => 'https://wpsso.com/extend/plugins/wpsso-google-merchant-feed/latest/',
-					),
-				),
 				'wpssossc' => array(			// Plugin acronym.
 					'short'       => 'WPSSO SSC',	// Short plugin name.
 					'name'        => 'WPSSO Schema Shortcode',
@@ -137,7 +77,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					),
 				),
 				'wpssoum' => array(			// Plugin acronym.
-					'version'     => '4.12.3',	// Plugin version.
+					'version'     => '4.13.0-dev.4',	// Plugin version.
 					'opt_version' => '8',		// Increment when changing default option values.
 					'short'       => 'WPSSO UM',	// Short plugin name.
 					'name'        => 'WPSSO Update Manager',

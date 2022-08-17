@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Update Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Update Manager 4.12.3\n"
+"Project-Id-Version: WPSSO Update Manager 4.13.0-dev.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2022-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -113,44 +113,32 @@ msgstr ""
 
 #: gettext/gettext-lib-config.php:6
 msgctxt "plugin name"
-msgid "WPSSO Google Merchant Feeds XML"
-msgstr ""
-
-#: gettext/gettext-lib-config.php:7
-msgctxt "plugin description"
-msgid ""
-"Google Merchant Feeds for WooCommerce, Easy Digital Downloads, and Custom "
-"Products (WPSSO Core Premium Required)."
-msgstr ""
-
-#: gettext/gettext-lib-config.php:8
-msgctxt "plugin name"
 msgid "WPSSO Schema Shortcode"
 msgstr ""
 
-#: gettext/gettext-lib-config.php:9
+#: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
 msgid ""
 "Schema shortcode to define and customize additional properties and types for "
 "sections of the content (WPSSO Core Premium Required)."
 msgstr ""
 
-#: gettext/gettext-lib-config.php:10 gettext/gettext-lib-config.php:11
+#: gettext/gettext-lib-config.php:8 gettext/gettext-lib-config.php:9
 msgctxt "lib file description"
 msgid "Update Manager"
 msgstr ""
 
-#: gettext/gettext-lib-config.php:12
+#: gettext/gettext-lib-config.php:10
 msgctxt "plugin name"
 msgid "WPSSO Update Manager"
 msgstr ""
 
-#: gettext/gettext-lib-config.php:13
+#: gettext/gettext-lib-config.php:11
 msgctxt "plugin description"
 msgid "Update Manager for the WPSSO Core Premium plugin."
 msgstr ""
 
-#: gettext/gettext-lib-config.php:14
+#: gettext/gettext-lib-config.php:12
 msgctxt "plugin name"
 msgid "WPSSO Core"
 msgstr ""
