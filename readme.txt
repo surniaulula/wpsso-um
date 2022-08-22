@@ -65,12 +65,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.13.0-dev.4 (TBD)**
+**Version 4.13.0-dev.4 (2022/08/22)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Moved the WPSSO Google Merchant Feeds XML add-on config to the WPSSO Core plugin.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -146,7 +146,7 @@ Maintenance release.
 
 = 4.13.0-dev.4 =
 
-(TBD) None.
+(2022/08/22) Moved the WPSSO Google Merchant Feeds XML add-on config to the WPSSO Core plugin.
 
 = 4.12.3 =
 
