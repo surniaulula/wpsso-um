@@ -70,7 +70,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* Moved the WPSSO Google Merchant Feeds XML add-on config to the WPSSO Core plugin.
+	* Moved the WPSSO Google Merchant Feed XML add-on config to the WPSSO Core plugin.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -146,7 +146,7 @@ Maintenance release.
 
 = 4.13.0 =
 
-(2022/08/24) Moved the WPSSO Google Merchant Feeds XML add-on config to the WPSSO Core plugin.
+(2022/08/24) Moved the WPSSO Google Merchant Feed XML add-on config to the WPSSO Core plugin.
 
 = 4.12.3 =
 
