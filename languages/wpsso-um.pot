@@ -153,7 +153,7 @@ msgstr ""
 
 #: lib/filters.php:98
 msgctxt "lib file description"
-msgid "(api) Update Check Schedule"
+msgid "(api) Update Check is Scheduled"
 msgstr ""
 
 #: lib/sitesubmenu/site-um-general.php:50
