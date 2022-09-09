@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.13.1-rc.1 (2022/09/09)**
+**Version 4.13.1 (2022/09/09)**
 
 * **New Features**
 	* None.
@@ -159,7 +159,7 @@ Maintenance release.
 
 == Upgrade Notice ==
 
-= 4.13.1-rc.1 =
+= 4.13.1 =
 
 (2022/09/09) Updated the WPSSO UM feature status text.
 
