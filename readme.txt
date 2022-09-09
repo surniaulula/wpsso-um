@@ -65,6 +65,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.13.1-rc.1 (2022/09/09)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Updated the WPSSO UM feature status text.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v8.0.0.
+
 **Version 4.13.0 (2022/08/24)**
 
 * **New Features**
@@ -143,6 +158,10 @@ Maintenance release.
 	* WPSSO Core v7.0.0.
 
 == Upgrade Notice ==
+
+= 4.13.1-rc.1 =
+
+(2022/09/09) Updated the WPSSO UM feature status text.
 
 = 4.13.0 =
 
