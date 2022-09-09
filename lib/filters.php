@@ -95,7 +95,7 @@ if ( ! class_exists( 'WpssoUmFilters' ) ) {
 		public function filter_status_std_features( $features, $ext, $info ) {
 
 			$features[ '(api) Update Check Schedule' ] = array( 
-				'label_transl' => _x( '(api) Update Check is Scheduled', 'lib file description', 'wpsso-um' ),
+				'label_transl' => _x( '(feature) Update Check is Scheduled', 'lib file description', 'wpsso-um' ),
 				'status'       => SucomUpdate::is_enabled() ? 'on' : 'off'
 			);
 

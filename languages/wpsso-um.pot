@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Update Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Update Manager 4.13.0\n"
+"Project-Id-Version: WPSSO Update Manager 4.13.1-rc.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2022-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -153,7 +153,7 @@ msgstr ""
 
 #: lib/filters.php:98
 msgctxt "lib file description"
-msgid "(api) Update Check is Scheduled"
+msgid "(feature) Update Check is Scheduled"
 msgstr ""
 
 #: lib/sitesubmenu/site-um-general.php:50
