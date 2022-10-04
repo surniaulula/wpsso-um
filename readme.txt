@@ -65,6 +65,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.13.2 (2022/10/04)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Added support for the 'external' plugin data property.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v8.0.0.
+
 **Version 4.13.1 (2022/09/09)**
 
 * **New Features**
@@ -158,6 +173,10 @@ Maintenance release.
 	* WPSSO Core v7.0.0.
 
 == Upgrade Notice ==
+
+= 4.13.2 =
+
+(2022/10/04) Added support for the 'external' plugin data property.
 
 = 4.13.1 =
 
