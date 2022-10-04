@@ -376,6 +376,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 					'plugin_version'   => $ext_version,
 					'version_filter'   => $filter_name,
 					'hosts'            => empty( $info[ 'hosts' ] ) ? array() : $info[ 'hosts' ],
+					'external'         => isset( $info[ 'hosts' ][ 'wp_org' ] ) && empty( $info[ 'hosts' ][ 'wp_org' ] ) ? true : false,
 					'urls'             => empty( $info[ 'urls' ] ) ? array() : $info[ 'urls' ],
 					'data_json_url'    => $json_url,
 					'data_expire'      => 86100,					// Plugin data expiration (almost 24 hours).
@@ -874,15 +875,15 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( $action !== 'plugin_information' ) {				// This filter only provides plugin data.
+			if ( 'plugin_information' !== $action ) {	// This filter only provides plugin data.
 
 				return $result;
 
-			} elseif ( empty( $args->slug ) ) {					// Make sure we have a slug in the request.
+			} elseif ( empty( $args->slug ) ) {	// Make sure we have a slug in the request.
 
 				return $result;
 
-			} elseif ( ! empty( $args->unfiltered ) ) {				// Flag for the update manager filter.
+			} elseif ( ! empty( $args->unfiltered ) ) {	// Flag for the update manager filter.
 
 				return $result;
 
@@ -891,9 +892,9 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				return $result;
 			}
 
-			$ext = $this->p->cf[ '*' ][ 'slug' ][ $args->slug ];			// Get the plugin acronym to read its config.
+			$ext = $this->p->cf[ '*' ][ 'slug' ][ $args->slug ];	// Get the plugin acronym to read its config.
 
-			if ( empty( self::$upd_config[ $ext ][ 'slug' ] ) ) {			// Make sure we have an update config for acronym.
+			if ( empty( self::$upd_config[ $ext ][ 'slug' ] ) ) {	// Make sure we have an update config for acronym.
 
 				return $result;
 			}
@@ -910,7 +911,14 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				return $result;
 			}
 
-			return $plugin_data->json_to_wp();
+			$result = $plugin_data->json_to_wp();
+
+			if ( ! empty( self::$upd_config[ $ext ][ 'external' ] ) ) {
+
+				$result->external = true;
+			}
+
+			return $result;
 		}
 
 		/**

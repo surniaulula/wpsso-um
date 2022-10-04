@@ -83,13 +83,13 @@ if ( ! class_exists( 'SucomPluginData' ) ) {
 
 				if ( isset( $this->$prop_name ) ) {
 
-					if ( $prop_name === 'download_url' ) {
+					if ( 'download_url' === $prop_name ) {
 
 						$plugin_data->download_link = $this->download_url;
 
-					} elseif ( $prop_name === 'author_homepage' ) {
+					} elseif ( 'author_homepage' === $prop_name ) {
 
-						if ( strpos( $this->author, '<a href' ) === false ) {
+						if ( false === strpos( $this->author, '<a href' ) ) {
 
 							$plugin_data->author = sprintf( '<a href="%s">%s</a>', $this->author_homepage, $this->author );
 
@@ -98,7 +98,7 @@ if ( ! class_exists( 'SucomPluginData' ) ) {
 							$plugin_data->author = $this->author;
 						}
 
-					} elseif ( $prop_name === 'sections' && empty( $this->$prop_name ) ) {
+					} elseif ( 'sections' === $prop_name && empty( $this->$prop_name ) ) {
 
 						$plugin_data->$prop_name = array( 'description' => '' );
 
@@ -111,7 +111,7 @@ if ( ! class_exists( 'SucomPluginData' ) ) {
 						$plugin_data->$prop_name = $this->$prop_name;
 					}
 
-				} elseif ( $prop_name === 'author_homepage' ) {
+				} elseif ( 'author_homepage' === $prop_name ) {
 
 					$plugin_data->author = $this->author;
 				}
