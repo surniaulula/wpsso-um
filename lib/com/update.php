@@ -1460,7 +1460,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 								if ( $this->p->debug->enabled ) {
 
-									$this->p->debug->log( $ext . ' plugin: property ' . $plugin_data->plugin . 
+									$this->p->debug->log( $ext . ' plugin: property ' . $plugin_data->plugin .
 										' does not match ' . self::$upd_config[ $ext ][ 'base' ] );
 								}
 

@@ -135,7 +135,7 @@ if ( ! class_exists( 'WpssoUmSubmenuUmGeneral' ) && class_exists( 'WpssoAdmin' )
 						$name_transl = _x( $info[ 'name' ], 'plugin name', 'wpsso' );
 
 						$table_rows[ $opt_key ] = '' .
-							$this->form->get_th_html( $name_transl ) . 
+							$this->form->get_th_html( $name_transl ) .
 							'<td>' . $this->form->get_select( $opt_key, $version_filters,
 								$css_class = 'update_filter', $css_id = '', $is_assoc = true ) . '</td>';
 					}

@@ -25,7 +25,7 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'save_setting_options' => 3,
 				'get_defaults'         => 1,	// Option defaults.
 				'get_site_defaults'    => 1,	// Site option defaults.
