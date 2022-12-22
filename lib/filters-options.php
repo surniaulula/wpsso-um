@@ -101,7 +101,7 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 			return $opts;
 		}
 
-		public function filter_get_defaults( $defs ) {
+		public function filter_get_defaults( array $defs ) {
 
 			$def_filter_name = $this->a->update->get_default_filter_name();
 
