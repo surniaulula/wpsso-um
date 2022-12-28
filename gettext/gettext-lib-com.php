@@ -1,8 +1,7 @@
 <?php die( 'These aren\'t the droids you\'re looking for.' );
-
-/**
- * Extract of translatable strings from lib/com/.
- */
+// 
+// Extract of translatable strings from lib/com/.
+// 
 __( 'An inconsistency was found in the %1$s update server information - ', 'wpsso-um' );
 __( 'Update checks for %1$s are disabled while this inconsistency persists.', 'wpsso-um' );
 __( 'You may <a href="%1$s">open a new support ticket</a> if you believe this error message is incorrect.', 'wpsso-um' );
