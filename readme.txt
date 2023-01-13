@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.14.0-b.1 (2023/01/13)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Minor update for settings page CSS.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v8.0.0.
+
 **Version 4.13.2 (2022/10/04)**
 
 * **New Features**
@@ -174,6 +189,10 @@ Maintenance release.
 	* WPSSO Core v7.0.0.
 
 == Upgrade Notice ==
+
+= 4.14.0-b.1 =
+
+(2023/01/13) Minor update for settings page CSS.
 
 = 4.13.2 =
 
