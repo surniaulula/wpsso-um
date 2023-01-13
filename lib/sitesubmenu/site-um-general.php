@@ -152,7 +152,7 @@ if ( ! class_exists( 'WpssoUmSitesubmenuSiteumgeneral' ) && class_exists( 'Wpsso
 						$name_transl = _x( $info[ 'name' ], 'plugin name', 'wpsso' );
 
 						$table_rows[ $opt_key ] = '' .
-							$this->form->get_th_html( $name_transl ) .
+							$this->form->get_th_html( $name_transl, $css_class = 'plugin_name' ) .
 							'<td>' . $this->form->get_select( $opt_key, $version_filters,
 								$css_class = 'update_filter', $css_id = '', $is_assoc = true ) . '</td>' .
 							WpssoAdmin::get_option_site_use( $opt_key, $this->form, $network = true, $enabled = true );
