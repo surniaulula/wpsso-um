@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.14.0-b.6 (2023/01/13)**
+**Version 4.14.0-b.7 (2023/01/16)**
 
 * **New Features**
 	* None.
@@ -190,9 +190,9 @@ Maintenance release.
 
 == Upgrade Notice ==
 
-= 4.14.0-b.6 =
+= 4.14.0-b.7 =
 
-(2023/01/13) Minor update for settings page CSS.
+(2023/01/16) Minor update for settings page CSS.
 
 = 4.13.2 =
 
