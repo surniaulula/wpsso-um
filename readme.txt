@@ -75,7 +75,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Updated the `SucomAbstractAddOn` common library class.
 * **Requires At Least**
 	* PHP v7.2.
 	* WordPress v5.2.
