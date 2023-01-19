@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2015-2023 Jean-Sebastien Morisset (https://wpsso.com/)
@@ -35,7 +35,7 @@ if ( ! class_exists( 'WpssoUmActions' ) ) {
 			}
 		}
 
-		/**
+		/*
 		 * This action is run by WordPress after any plugin is activated.
 		 *
 		 * If a plugin is silently activated (such as during an update), this action does not run.
@@ -48,7 +48,7 @@ if ( ! class_exists( 'WpssoUmActions' ) ) {
 			}
 		}
 
-		/**
+		/*
 		 * This action is run by WordPress when the upgrader process is complete.
 		 */
 		public function upgrader_process_complete( $wp_upgrader_obj, $hook_extra ) {

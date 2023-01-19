@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2015-2023 Jean-Sebastien Morisset (https://wpsso.com/)
@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 		private $p;	// Wpsso class object.
 		private $a;	// WpssoUm class object.
 
-		/**
+		/*
 		 * Instantiated by WpssoUmFilters->construct().
 		 */
 		public function __construct( &$plugin, &$addon ) {
@@ -33,7 +33,7 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 			) );
 		}
 
-		/**
+		/*
 		 * The 'wpsso_save_setting_options' filter is applied by WpssoOptions->save_options(),
 		 * WpssoAdmin->registered_setting_sanitation(), and WpssoAdmin->save_site_options().
 		 *
@@ -63,17 +63,17 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 					'update_filter_for_' . $ext,		// Version filter.
 				) as $opt_key ) {
 
-					/**
+					/*
 					 * The option key will exist only if the option was changed or received focus.
 					 */
 					if ( isset( $opts[ $opt_key ] ) ) {
 
-						/**
+						/*
 						 * Check if the current option value is different than the submitted value.
 						 */
 						if ( ! isset( $this->p->options[ $opt_key ] ) || $this->p->options[ $opt_key ] !== $opts[ $opt_key ] ) {
 
-							/**
+							/*
 							 * Update the current value (so we can refresh the config) and signal that
 							 * an update check is required for that plugin / add-on.
 							 */
@@ -85,14 +85,14 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 				}
 			}
 
-			/**
+			/*
 			 * Check for updates if we have one or more Auth ID or version filter changes.
 			 */
 			if ( ! empty( $check_ext_for_updates ) ) {
 
 				$this->a->update->refresh_upd_config();
 
-				/**
+				/*
 				 * Note that SucomUpdate->check_ext_for_updates() does not throttle like SucomUpdate->check_all_for_updates().
 				 */
 				$this->a->update->check_ext_for_updates( $check_ext_for_updates, $quiet = true );

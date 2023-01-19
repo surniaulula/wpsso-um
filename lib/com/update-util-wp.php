@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2015-2023 Jean-Sebastien Morisset (https://surniaulula.com/)
@@ -14,7 +14,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 
 	class SucomUpdateUtilWP {
 
-		/**
+		/*
 		 * Unfiltered version of home_url() from wordpress/wp-includes/link-template.php
 		 *
 		 * Last synchronized with WordPress v5.8.1 on 2021/10/15.
@@ -24,7 +24,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 			return self::raw_get_home_url( null, $path, $scheme );
 		}
 
-		/**
+		/*
 		 * Unfiltered version of get_home_url() from wordpress/wp-includes/link-template.php
 		 *
 		 * Last synchronized with WordPress v5.8.1 on 2021/10/15.
@@ -35,7 +35,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 
 			if ( empty( $blog_id ) || ! $is_multisite ) {
 
-				/**
+				/*
 				 * The WordPress _config_wp_home() function is hooked to the 'option_home' filter in order to
 				 * override the database value. Since we're not using the default filters, check for WP_HOME or
 				 * WP_SITEURL and update the stored database value if necessary.
@@ -103,7 +103,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 			return $url;
 		}
 
-		/**
+		/*
 		 * Unfiltered version of set_url_scheme() from wordpress/wp-includes/link-template.php
 		 *
 		 * Last synchronized with WordPress v5.8.1 on 2021/10/15.
@@ -147,7 +147,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 			return $url;
 		}
 
-		/**
+		/*
 		 * Temporarily disable filter and action hooks before calling get_option(), update_option(), and delete_option().
 		 */
 		public static function raw_do_option( $action, $opt_name, $value = null, $default = false ) {

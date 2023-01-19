@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2015-2023 Jean-Sebastien Morisset (https://wpsso.com/)
@@ -19,7 +19,7 @@ if ( ! class_exists( 'WpssoUmFilters' ) ) {
 		private $opts;	// WpssoUmFiltersOptions class object.
 		private $upg;	// WpssoUmFiltersUpgrade class object.
 
-		/**
+		/*
 		 * Instantiated by WpssoUm->init_objects().
 		 */
 		public function __construct( &$plugin, &$addon ) {
@@ -89,7 +89,7 @@ if ( ! class_exists( 'WpssoUmFilters' ) ) {
 			return $newer_avail;
 		}
 
-		/**
+		/*
 		 * Filter for 'wpssoum_status_std_features'.
 		 */
 		public function filter_status_std_features( $features, $ext, $info ) {

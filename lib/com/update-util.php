@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2015-2023 Jean-Sebastien Morisset (https://surniaulula.com/)
@@ -16,7 +16,7 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 
 		public function __construct() {}
 
-		/**
+		/*
 		 * Returns an imploded string of active modules.
 		 */
 		public static function encode_avail( array $avail ) {
@@ -78,7 +78,7 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 			return $avail;
 		}
 
-		/**
+		/*
 		 * Decode a URL and add query arguments. Returns false on error.
 		 */
 		public static function decode_url_add_query( $url, array $args ) {
@@ -133,7 +133,7 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 			return $scheme . $user . $pass . ( $user || $pass ? '@' : '' ) . $host . $port . $path . $query . $fragment;
 		}
 
-		/**
+		/*
 		 * SucomUpdate->get_ext_version() calls this method when a plugin is not active or not installed.
 		 *
 		 * The WordPress get_plugins() function is very slow, so call it only once and cache its result.
@@ -177,7 +177,7 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 			return $local_cache;
 		}
 
-		/**
+		/*
 		 * Deprecated on 2021/10/20.
 		 */
 		public static function clear_plugins_cache() {

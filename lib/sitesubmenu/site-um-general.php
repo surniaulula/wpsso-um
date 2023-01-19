@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2015-2023 Jean-Sebastien Morisset (https://wpsso.com/)
@@ -39,7 +39,7 @@ if ( ! class_exists( 'WpssoUmSitesubmenuSiteumgeneral' ) && class_exists( 'Wpsso
 
 				case 'site-um-general':
 
-					/**
+					/*
 					 * Remove the Change to "All Options" View button.
 					 */
 					if ( isset( $form_button_rows[ 0 ] ) ) {
@@ -74,7 +74,7 @@ if ( ! class_exists( 'WpssoUmSitesubmenuSiteumgeneral' ) && class_exists( 'Wpsso
 			$this->form = new SucomForm( $this->p, WPSSO_SITE_OPTIONS_NAME, $this->p->site_options, $def_site_opts, $menu_ext );
 		}
 
-		/**
+		/*
 		 * Called by the extended WpssoAdmin class.
 		 */
 		protected function add_meta_boxes() {
@@ -91,7 +91,7 @@ if ( ! class_exists( 'WpssoUmSitesubmenuSiteumgeneral' ) && class_exists( 'Wpsso
 				array( $this, 'show_metabox_' . $metabox_id ), $metabox_screen,
 					$metabox_context, $metabox_prio, $callback_args );
 
-			/**
+			/*
 			 * Add a class to set a minimum width for the network postboxes.
 			 */
 			add_filter( 'postbox_classes_' . $this->pagehook . '_' . $this->pagehook . '_general', array( $this, 'add_class_postbox_network' ) );
