@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2015-2022 Jean-Sebastien Morisset (https://wpsso.com/)
@@ -24,12 +24,12 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					'base'        => 'wpsso-schema-shortcode/wpsso-schema-shortcode.php',
 					'update_auth' => '',		// No premium version.
 
-					/**
+					/*
 					 * URLs or relative paths to plugin banners and icons.
 					 */
 					'assets' => array(
 
-						/**
+						/*
 						 * Banner image array keys are 'low' and 'high'.
 						 */
 						'banners' => array(
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 							'high' => 'https://surniaulula.github.io/wpsso-schema-shortcode/assets/banner-1544x500.jpg',
 						),
 
-						/**
+						/*
 						 * Icon image array keys are '1x' and '2x'.
 						 */
 						'icons' => array(
@@ -52,13 +52,13 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					),
 					'url' => array(
 
-						/**
+						/*
 						 * GitHub.com.
 						 */
 						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-schema-shortcode/master/readme.txt',
 						'setup_html' => '',
 
-						/**
+						/*
 						 * WPSSO.com.
 						 */
 						'home'      => 'https://wpsso.com/extend/plugins/wpsso-schema-shortcode/',
@@ -77,7 +77,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					),
 				),
 				'wpssoum' => array(			// Plugin acronym.
-					'version'     => '4.14.0-rc.1',	// Plugin version.
+					'version'     => '4.14.0-rc.2',	// Plugin version.
 					'opt_version' => '8',		// Increment when changing default option values.
 					'short'       => 'WPSSO UM',	// Short plugin name.
 					'name'        => 'WPSSO Update Manager',
@@ -88,7 +88,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					'text_domain' => 'wpsso-um',
 					'domain_path' => '/languages',
 
-					/**
+					/*
 					 * Required plugin and its version.
 					 */
 					'req' => array(
@@ -101,12 +101,12 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 						),
 					),
 
-					/**
+					/*
 					 * URLs or relative paths to plugin banners and icons.
 					 */
 					'assets' => array(
 
-						/**
+						/*
 						 * Icon image array keys are '1x' and '2x'.
 						 */
 						'icons' => array(
@@ -115,7 +115,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 						),
 					),
 
-					/**
+					/*
 					 * Library files loaded and instantiated by WPSSO.
 					 */
 					'lib' => array(
@@ -146,7 +146,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 
 			$info =& self::$cf[ 'plugin' ][ 'wpssoum' ];
 
-			/**
+			/*
 			 * Define fixed constants.
 			 */
 			define( 'WPSSOUM_FILEPATH', $plugin_file );
