@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.14.1-dev.2 (2023/01/24)**
+**Version 4.14.1-dev.3 (2023/01/24)**
 
 * **New Features**
 	* None.
@@ -205,7 +205,7 @@ Maintenance release.
 
 == Upgrade Notice ==
 
-= 4.14.1-dev.2 =
+= 4.14.1-dev.3 =
 
 (2023/01/24) Updated the `WpssoAbstractAddOn` library class.
 
