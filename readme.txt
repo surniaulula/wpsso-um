@@ -66,12 +66,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.14.1-dev.3 (2023/01/24)**
+**Version 4.14.1-dev.4 (2023/01/24)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Updated the minimum WordPress version from v5.2 to v5.4.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -205,7 +205,7 @@ Maintenance release.
 
 == Upgrade Notice ==
 
-= 4.14.1-dev.3 =
+= 4.14.1-dev.4 =
 
 (2023/01/24) Updated the `WpssoAbstractAddOn` library class.
 
