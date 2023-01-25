@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.14.1-dev.5 (2023/01/25)**
+**Version 4.14.1-dev.6 (2023/01/25)**
 
 * **New Features**
 	* None.
@@ -205,7 +205,7 @@ Maintenance release.
 
 == Upgrade Notice ==
 
-= 4.14.1-dev.5 =
+= 4.14.1-dev.6 =
 
 (2023/01/25) Updated the minimum WordPress version from v5.2 to v5.4.
 
