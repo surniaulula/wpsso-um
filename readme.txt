@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.14.1-rc.1 (2023/01/25)**
+**Version 4.14.1 (2023/01/26)**
 
 * **New Features**
 	* None.
@@ -205,9 +205,9 @@ Maintenance release.
 
 == Upgrade Notice ==
 
-= 4.14.1-rc.1 =
+= 4.14.1 =
 
-(2023/01/25) Updated the minimum WordPress version from v5.2 to v5.4.
+(2023/01/26) Updated the minimum WordPress version from v5.2 to v5.4.
 
 = 4.14.0 =
 
