@@ -69,6 +69,9 @@ if ( ! class_exists( 'WpssoUm' ) ) {
 			load_plugin_textdomain( 'wpsso-um', false, 'wpsso-um/languages/' );
 		}
 
+		/*
+		 * Called by Wpsso->set_objects which runs at init priority 10.
+		 */
 		public function init_objects() {
 
 			$this->p =& Wpsso::get_instance();
