@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.15.0-dev.5 (2023/02/12)**
+**Version 4.15.0-b.1 (2023/02/13)**
 
 * **New Features**
 	* None.
@@ -112,118 +112,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.2.
 	* WPSSO Core v8.0.0.
 
-**Version 4.13.2 (2022/10/04)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added support for the 'external' plugin data property.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v8.0.0.
-
-**Version 4.13.1 (2022/09/09)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the WPSSO UM feature status text.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v8.0.0.
-
-**Version 4.13.0 (2022/08/24)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Moved the WPSSO Google Merchant Feed XML add-on config to the WPSSO Core plugin.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v8.0.0.
-
-**Version 4.12.3 (2022/03/23)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed missing download information for add-ons in the config array.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v8.0.0.
-
-**Version 4.12.2 (2022/03/14)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Removed deprecated functions and methods from 2020.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v8.0.0.
-
-**Version 4.12.1 (2022/03/07)**
-
-Maintenance release.
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v7.0.0.
-
-**Version 4.12.0 (2022/02/10)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added a 'user_direction' argument to compliment 'user_locale' for the update information query.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v7.0.0.
-
 == Upgrade Notice ==
 
-= 4.15.0-dev.5 =
+= 4.15.0-b.1 =
 
-(2023/02/12) Changed the cache clearing action hook to a cache refresh filter hook.
+(2023/02/13) Changed the cache clearing action hook to a cache refresh filter hook.
 
 = 4.14.1 =
 
@@ -232,32 +125,4 @@ Maintenance release.
 = 4.14.0 =
 
 (2023/01/20) Minor update for settings page CSS.
-
-= 4.13.2 =
-
-(2022/10/04) Added support for the 'external' plugin data property.
-
-= 4.13.1 =
-
-(2022/09/09) Updated the WPSSO UM feature status text.
-
-= 4.13.0 =
-
-(2022/08/24) Moved the WPSSO Google Merchant Feed XML add-on config to the WPSSO Core plugin.
-
-= 4.12.3 =
-
-(2022/03/23) Fixed missing download information for add-ons in the config array.
-
-= 4.12.2 =
-
-(2022/03/14) Removed deprecated functions and methods from 2020.
-
-= 4.12.1 =
-
-(2022/03/07) Maintenance release.
-
-= 4.12.0 =
-
-(2022/02/10) Added a 'user_direction' argument to compliment 'user_locale' for the update information query.
 
