@@ -66,6 +66,22 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.15.0-dev.4 (2023/02/12)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Changed the cache clearing action hook to a cache refresh filter hook.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Added a new `WpssoUmFilters->filter_cache_refreshed_notice()` method.
+	* Removed the `WpssoUmActions->action_clear_cache()` method.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.4.
+	* WPSSO Core v8.0.0.
+
 **Version 4.14.1 (2023/01/26)**
 
 * **New Features**
@@ -204,6 +220,10 @@ Maintenance release.
 	* WPSSO Core v7.0.0.
 
 == Upgrade Notice ==
+
+= 4.15.0-dev.4 =
+
+(2023/02/12) Changed the cache clearing action hook to a cache refresh filter hook.
 
 = 4.14.1 =
 
