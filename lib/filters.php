@@ -47,6 +47,7 @@ if ( ! class_exists( 'WpssoUmFilters' ) ) {
 			if ( is_admin() ) {
 
 				$this->p->util->add_plugin_filters( $this, array(
+					'cache_refreshed_notice'  => 2,
 					'readme_upgrade_notices'  => 2,
 					'newer_version_available' => 5,
 				) );
@@ -55,6 +56,13 @@ if ( ! class_exists( 'WpssoUmFilters' ) ) {
 					'status_std_features' => 3,
 				), $prio = 10, $ext = 'wpssoum' );	// Hooks the 'wpssoum' filters.
 			}
+		}
+
+		public function filter_cache_refreshed_notice( $notice_msg, $user_id = null ) {
+
+			$this->a->update->clear_upd_config();	// Refresh the update manager config on next page load.
+
+			return $notice_msg;
 		}
 
 		public function filter_readme_upgrade_notices( $upgrade_notices, $ext ) {
