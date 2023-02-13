@@ -148,7 +148,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 		}
 
 		/*
-		 * Temporarily disable filter and action hooks before calling get_option(), update_option(), and delete_option().
+		 * Temporarily disable filters and actions hooks before calling get_option(), update_option(), and delete_option().
 		 */
 		public static function raw_do_option( $action, $opt_name, $value = null, $default = false ) {
 
