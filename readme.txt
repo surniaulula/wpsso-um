@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.15.0-rc.1 (2023/02/13)**
+**Version 4.15.0 (2023/02/14)**
 
 * **New Features**
 	* None.
@@ -114,9 +114,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.15.0-rc.1 =
+= 4.15.0 =
 
-(2023/02/13) Changed the cache clearing action hook to a cache refresh filter hook.
+(2023/02/14) Changed the cache clearing action hook to a cache refresh filter hook.
 
 = 4.14.1 =
 
