@@ -53,7 +53,7 @@ if ( ! class_exists( 'WpssoUmFilters' ) ) {
 				) );
 
 				$this->p->util->add_plugin_filters( $this, array(
-					'status_std_features' => 3,
+					'features_status' => 3,
 				), $prio = 10, $ext = 'wpssoum' );	// Hooks the 'wpssoum' filters.
 			}
 		}
@@ -98,9 +98,9 @@ if ( ! class_exists( 'WpssoUmFilters' ) ) {
 		}
 
 		/*
-		 * Filter for 'wpssoum_status_std_features'.
+		 * Filter for 'wpssoum_features_status'.
 		 */
-		public function filter_status_std_features( $features, $ext, $info ) {
+		public function filter_features_status( $features, $ext, $info ) {
 
 			$features[ '(api) Update Check Schedule' ] = array(
 				'label_transl' => _x( '(feature) Update Check is Scheduled', 'lib file description', 'wpsso-um' ),
