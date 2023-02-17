@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.16.0-dev.1 (TBD)**
+**Version 4.16.0-dev.2 (2023/02/17)**
 
 * **New Features**
 	* None.
@@ -130,9 +130,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.16.0-dev.1 =
+= 4.16.0-dev.2 =
 
-(TBD) Renamed the 'wpssoum_status_std_features' filter to 'wpssoum_features_status'.
+(2023/02/17) Renamed the 'wpssoum_status_std_features' filter to 'wpssoum_features_status'.
 
 = 4.15.0 =
 
