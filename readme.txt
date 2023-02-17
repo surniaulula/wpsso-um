@@ -66,6 +66,22 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.16.0-dev.1 (TBD)**
+
+* **New Features**
+	* None.
+* **Improvements**
+* **Bugfixes**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Renamed the 'wpssoum_status_std_features' filter to 'wpssoum_features_status'.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.4.
+	* WPSSO Core v9.0.0 (released on 2021/09/24).
+
 **Version 4.15.0 (2023/02/14)**
 
 * **New Features**
@@ -113,6 +129,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.0.0.
 
 == Upgrade Notice ==
+
+= 4.16.0-dev.1 =
+
+(TBD) Renamed the 'wpssoum_status_std_features' filter to 'wpssoum_features_status'.
 
 = 4.15.0 =
 
