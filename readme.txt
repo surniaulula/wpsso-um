@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.16.0-b.2 (2023/02/20)**
+**Version 4.16.0-rc.1 (2023/02/20)**
 
 * **New Features**
 	* None.
@@ -129,7 +129,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.16.0-b.2 =
+= 4.16.0-rc.1 =
 
 (2023/02/20) Renamed the 'wpssoum_status_std_features' filter to 'wpssoum_features_status'.
 
