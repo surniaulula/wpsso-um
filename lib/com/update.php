@@ -644,9 +644,9 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			$cache_exp_secs = $throttle_mins * 60;
 			$cache_salt     = __METHOD__;
 			$cache_id       = $cache_md5_pre . md5( $cache_salt );
-			$last_time      = get_transient( $cache_id );	// Get last throttle time.
+			$last_time      = get_transient( $cache_id );	// Last update time, returns false if transient expired or does not exist.
 
-			if ( time() < $last_time + $cache_exp_secs ) {	// Throttle mins not yet exceeded.
+			if ( is_numeric( $last_time ) && time() < $last_time + $cache_exp_secs ) {	// Throttle mins not yet exceeded.
 
 				$user_id = get_current_user_id();
 
