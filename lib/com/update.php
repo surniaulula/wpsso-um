@@ -644,20 +644,22 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			$cache_exp_secs = $throttle_mins * 60;
 			$cache_salt     = __METHOD__;
 			$cache_id       = $cache_md5_pre . md5( $cache_salt );
+			$last_time      = get_transient( $cache_id );	// Get last throttle time.
 
-			if ( false !== ( $last_time = get_transient( $cache_id ) ) ) {	// Get last throttle time.
+			if ( time() < $last_time + $cache_exp_secs ) {	// Throttle mins not yet exceeded.
 
 				$user_id = get_current_user_id();
 
 				if ( ! $quiet && $user_id ) {
 
-					$expires_time = $last_time + $cache_exp_secs;
+					$last_time_diff = human_time_diff( $last_time );
+					$wait_time_diff = human_time_diff( $last_time, $last_time + $cache_exp_secs );
 
-					$notice_msg = sprintf( __( 'Update manager cache refresh ignored - it has been %s since the last refresh.',
-						$this->text_domain ), human_time_diff( $last_time ) ) . ' ';
+					$notice_msg = __( 'Update manager cache refresh ignored.', $this->text_domain ) . ' ';
 
-					$notice_msg .= sprintf( __( 'Please wait %s before requesting another cache refresh.',
-						$this->text_domain ), human_time_diff( $expires_time ) ) . ' ';
+					$notice_msg .= sprintf( __( 'It has been %s since the last refresh.', $this->text_domain ), $last_time_diff ) . ' ';
+
+					$notice_msg .= sprintf( __( 'Please wait %s before requesting another cache refresh.', $this->text_domain ), $wait_time_diff ) . ' ';
 
 					$notice_key = __FUNCTION__ . '_throttling';
 
