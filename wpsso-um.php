@@ -15,7 +15,7 @@
  * Requires PHP: 7.2
  * Requires At Least: 5.5
  * Tested Up To: 6.2.0
- * Version: 4.16.1-rc.1
+ * Version: 4.16.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
