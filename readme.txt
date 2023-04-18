@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.16.1-rc.1 (2023/04/18)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Updated the update cache refresh throttling notice message.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.5.
+	* WPSSO Core v9.0.0 (released on 2021/09/24).
+
 **Version 4.16.0 (2023/02/20)**
 
 * **New Features**
@@ -128,6 +143,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.0.0.
 
 == Upgrade Notice ==
+
+= 4.16.1-rc.1 =
+
+(2023/04/18) Updated the update cache refresh throttling notice message.
 
 = 4.16.0 =
 
