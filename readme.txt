@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.16.1-rc.1 (2023/04/18)**
+**Version 4.16.1 (2023/04/18)**
 
 * **New Features**
 	* None.
@@ -144,7 +144,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.16.1-rc.1 =
+= 4.16.1 =
 
 (2023/04/18) Updated the update cache refresh throttling notice message.
 
