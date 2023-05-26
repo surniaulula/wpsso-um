@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Update Manager 4.16.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-04-18 15:40-0700\n"
+"PO-Revision-Date: 2023-05-26 04:16-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.1\n"
 
 #: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:209
 msgid "The %1$s add-on requires the %2$s plugin."
@@ -108,7 +108,7 @@ msgstr "Le numéro de version de l'extension %1$s (%2$s) est absente de la liste
 #: gettext/gettext-lib-config.php:5
 msgctxt "plugin name"
 msgid "WPSSO Schema Shortcode"
-msgstr "WPSSO code court de Schéma"
+msgstr "WPSSO Code court de Schéma"
 
 #: gettext/gettext-lib-config.php:6
 msgctxt "plugin description"
@@ -123,7 +123,7 @@ msgstr "Mises à jour"
 #: gettext/gettext-lib-config.php:9
 msgctxt "plugin name"
 msgid "WPSSO Update Manager"
-msgstr "WPSSO gestionnaire de mise à jour"
+msgstr "WPSSO Gestionnaire de mise à jour"
 
 #: gettext/gettext-lib-config.php:10
 msgctxt "plugin description"
@@ -177,7 +177,7 @@ msgstr "Réglages du gestionnaire de mise à jour"
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Update Manager"
-msgstr "WPSSO gestionnaire de mise à jour"
+msgstr "WPSSO Gestionnaire de mise à jour"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wpsso.com/extend/plugins/wpsso-um/"
