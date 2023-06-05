@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.17.0-rc.1 (2023/06/05)**
+**Version 4.17.0-rc.2 (2023/06/05)**
 
 * **New Features**
 	* None.
@@ -159,7 +159,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.17.0-rc.1 =
+= 4.17.0-rc.2 =
 
 (2023/06/05) Added a new WPSSO Merchant Return Policy Manager add-on.
 
