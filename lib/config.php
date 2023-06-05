@@ -16,6 +16,76 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 
 		public static $cf = array(
 			'plugin' => array(
+				'wpssomrp' => array(			// Plugin acronym.
+					'short'       => 'WPSSO MRP',	// Short plugin name.
+					'name'        => 'WPSSO Merchant Return Policy Manager',
+					'desc'        => 'Manage any number of Merchant Return Policies for Google Merchant listings.',
+					'slug'        => 'wpsso-merchant-return-policy',
+					'base'        => 'wpsso-merchant-return-policy/wpsso-merchant-return-policy.php',
+					'update_auth' => '',		// No premium version.
+
+					/*
+					 * URLs or relative paths to plugin banners and icons.
+					 */
+					'assets' => array(
+
+						/*
+						 * Banner image array keys are 'low' and 'high'.
+						 */
+						'banners' => array(
+							'low'  => 'https://surniaulula.github.io/wpsso-merchant-return-policy/assets/banner-772x250.jpg',
+							'high' => 'https://surniaulula.github.io/wpsso-merchant-return-policy/assets/banner-1544x500.jpg',
+						),
+
+						/*
+						 * Icon image array keys are '1x' and '2x'.
+						 */
+						'icons' => array(
+							'1x' => 'https://surniaulula.github.io/wpsso-merchant-return-policy/assets/icon-128x128.png',
+							'2x' => 'https://surniaulula.github.io/wpsso-merchant-return-policy/assets/icon-256x256.png',
+						),
+					),
+					'hosts' => array(
+						'wp_org' => false,	// 2023/06/05 - Plugin submission is pending on wordpress.org.
+						'github' => true,
+						'wpsso'  => true,
+					),
+					'url' => array(
+
+						/*
+						 * WordPress.org URLs.
+						 *
+						 * 2023/06/05 - Plugin submission is pending on wordpress.org.
+						 *
+						 * 'home'   => 'https://wordpress.org/plugins/wpsso-merchant-return-policy/',
+						 * 'forum'  => 'https://wordpress.org/support/plugin/wpsso-merchant-return-policy',
+						 * 'review' => 'https://wordpress.org/support/plugin/wpsso-merchant-return-policy/reviews/?rate=5#new-post',
+						 */
+						'home'      => 'https://wpsso.com/extend/plugins/wpsso-merchant-return-policy/',
+						'forum'     => '',
+						'review'    => '',
+
+						/*
+						 * GitHub.com URLs.
+						 */
+						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-merchant-return-policy/master/readme.txt',
+						'setup_html' => '',
+
+						/*
+						 * WPSSO.com URLs.
+						 */
+						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-merchant-return-policy/changelog/',
+						'docs'      => 'https://wpsso.com/docs/plugins/wpsso-merchant-return-policy/',
+						'install'   => 'https://wpsso.com/docs/plugins/wpsso-merchant-return-policy/installation/',
+						'faqs'      => '',
+						'notes'     => '',
+						'support'   => '',	// Premium support ticket.
+						'purchase'  => '',	// Purchase page.
+						'info'      => '',	// License information.
+						'update'    => 'https://wpsso.com/extend/plugins/wpsso-merchant-return-policy/update/',
+						'download'  => 'https://wpsso.com/extend/plugins/wpsso-merchant-return-policy/latest/',
+					),
+				),
 				'wpssossc' => array(			// Plugin acronym.
 					'short'       => 'WPSSO SSC',	// Short plugin name.
 					'name'        => 'WPSSO Schema Shortcode',
@@ -53,13 +123,13 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					'url' => array(
 
 						/*
-						 * GitHub.com.
+						 * GitHub.com URLs.
 						 */
 						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-schema-shortcode/master/readme.txt',
 						'setup_html' => '',
 
 						/*
-						 * WPSSO.com.
+						 * WPSSO.com URLs.
 						 */
 						'home'      => 'https://wpsso.com/extend/plugins/wpsso-schema-shortcode/',
 						'forum'     => '',
@@ -77,7 +147,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					),
 				),
 				'wpssoum' => array(			// Plugin acronym.
-					'version'     => '4.16.1',	// Plugin version.
+					'version'     => '4.17.0-rc.1',	// Plugin version.
 					'opt_version' => '8',		// Increment when changing default option values.
 					'short'       => 'WPSSO UM',	// Short plugin name.
 					'name'        => 'WPSSO Update Manager',
