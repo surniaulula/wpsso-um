@@ -66,12 +66,27 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.17.1-rc.1 (2023/06/06)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Moved the WPSSO Merchant Return Policy Manager add-on definition to WPSSO Core.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.5.
+	* WordPress v5.5.
+	* WPSSO Core v9.0.0 (released on 2021/09/24).
+
 **Version 4.17.0 (2023/06/05)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Added a new WPSSO Merchant Return Policy Manager add-on.
+	* Added a definition for the new WPSSO Merchant Return Policy Manager add-on.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -129,9 +144,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
+= 4.17.1-rc.1 =
+
+(2023/06/06) Moved the WPSSO Merchant Return Policy Manager add-on definition to WPSSO Core.
+
 = 4.17.0 =
 
-(2023/06/05) Added a new WPSSO Merchant Return Policy Manager add-on.
+(2023/06/05) Added a definition for the new WPSSO Merchant Return Policy Manager add-on.
 
 = 4.16.1 =
 
