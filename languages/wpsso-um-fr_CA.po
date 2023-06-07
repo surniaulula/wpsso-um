@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Update Manager 4.16.1\n"
+"Project-Id-Version: WPSSO Update Manager 4.17.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-06-05 14:10-0700\n"
+"PO-Revision-Date: 2023-06-06 17:31-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -107,40 +107,30 @@ msgstr "Le numéro de version de l'extension %1$s (%2$s) est absente de la liste
 
 #: gettext/gettext-lib-config.php:5
 msgctxt "plugin name"
-msgid "WPSSO Merchant Return Policy Manager"
-msgstr "WPSSO Gestionnaire politique de retour de marchand"
-
-#: gettext/gettext-lib-config.php:6
-msgctxt "plugin description"
-msgid "Manage any number of Merchant Return Policies for Google Merchant listings."
-msgstr "Gérez n'importe quel nombre de politiques de retour de marchand pour les listes de marchands Google."
-
-#: gettext/gettext-lib-config.php:7
-msgctxt "plugin name"
 msgid "WPSSO Schema Shortcode"
 msgstr "WPSSO Code court de Schéma"
 
-#: gettext/gettext-lib-config.php:8
+#: gettext/gettext-lib-config.php:6
 msgctxt "plugin description"
 msgid "Schema shortcode to define and customize additional properties and types for sections of the content."
 msgstr "Shortcode de Schéma pour définir et personnaliser des propriétés et des types supplémentaires pour des sections de contenu."
 
-#: gettext/gettext-lib-config.php:9 gettext/gettext-lib-config.php:10
+#: gettext/gettext-lib-config.php:7 gettext/gettext-lib-config.php:8
 msgctxt "lib file description"
 msgid "Update Manager"
 msgstr "Mises à jour"
 
-#: gettext/gettext-lib-config.php:11
+#: gettext/gettext-lib-config.php:9
 msgctxt "plugin name"
 msgid "WPSSO Update Manager"
 msgstr "WPSSO Gestionnaire de mise à jour"
 
-#: gettext/gettext-lib-config.php:12
+#: gettext/gettext-lib-config.php:10
 msgctxt "plugin description"
 msgid "Update Manager for the WPSSO Core Premium plugin."
 msgstr "Gestionnaire de mise à jour pour l'extension WPSSO Core Premium."
 
-#: gettext/gettext-lib-config.php:13
+#: gettext/gettext-lib-config.php:11
 msgctxt "plugin name"
 msgid "WPSSO Core"
 msgstr "WPSSO Core"
