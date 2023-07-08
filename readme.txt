@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-um/assets/
 Tags: wpsso, update, manager, schedule, add-on, pro version
 Contributors: jsmoriss
 Requires Plugins: wpsso
-Requires PHP: 7.2.5
+Requires PHP: 7.2.34
 Requires At Least: 5.5
 Tested Up To: 6.2.2
 Stable Tag: 4.17.1
@@ -77,7 +77,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* None.
 * **Requires At Least**
-	* PHP v7.2.5.
+	* PHP v7.2.34.
 	* WordPress v5.5.
 	* WPSSO Core v9.0.0 (released on 2021/09/24).
 
@@ -92,54 +92,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* None.
 * **Requires At Least**
-	* PHP v7.2.5.
-	* WordPress v5.5.
-	* WPSSO Core v9.0.0 (released on 2021/09/24).
-
-**Version 4.16.1 (2023/04/18)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the update cache refresh throttling notice message.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.5.
-	* WordPress v5.5.
-	* WPSSO Core v9.0.0 (released on 2021/09/24).
-
-**Version 4.16.0 (2023/02/20)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Renamed the 'wpssoum_status_std_features' filter to 'wpssoum_features_status'.
-* **Requires At Least**
 	* PHP v7.2.
 	* WordPress v5.5.
-	* WPSSO Core v9.0.0 (released on 2021/09/24).
-
-**Version 4.15.0 (2023/02/14)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Changed the cache clearing action hook to a cache refresh filter hook.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added a new `WpssoUmFilters->filter_cache_refreshed_notice()` method.
-	* Removed the `WpssoUmActions->action_clear_cache()` method.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.4.
 	* WPSSO Core v9.0.0 (released on 2021/09/24).
 
 == Upgrade Notice ==
@@ -151,16 +105,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 4.17.0 =
 
 (2023/06/05) Added a definition for the new WPSSO Merchant Return Policy Manager add-on.
-
-= 4.16.1 =
-
-(2023/04/18) Updated the update cache refresh throttling notice message.
-
-= 4.16.0 =
-
-(2023/02/20) Renamed the 'wpssoum_status_std_features' filter to 'wpssoum_features_status'.
-
-= 4.15.0 =
-
-(2023/02/14) Changed the cache clearing action hook to a cache refresh filter hook.
 
