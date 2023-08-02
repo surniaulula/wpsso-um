@@ -1723,26 +1723,20 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			return empty( $this->p->options[ $ext_auth_key ] ) ? '' : $this->p->options[ $ext_auth_key ];
 		}
 
-		/*
-		 * Added on 2020/07/25.
-		 */
 		public function get_default_filter_name() {
 
-			$default_filter_name = 'stable';
+			$filter_name = 'stable';
 
-			if ( function_exists( 'wp_get_environment_type' ) ) {	// Since WP v5.5.
+			switch( wp_get_environment_type() ) {	// Since WP v5.5.
 
-				switch( wp_get_environment_type() ) {
+				case 'development':
 
-					case 'development':
+					$filter_name = 'dev';
 
-						$default_filter_name = 'dev';
-
-						break;
-				}
+					break;
 			}
 
-			return $default_filter_name;
+			return $filter_name;
 		}
 
 		public function get_ext_filter_name( $ext ) {
