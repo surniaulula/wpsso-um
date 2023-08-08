@@ -75,7 +75,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Added support for the 'save_settings_options' filter in WPSSO Core v15.19.0.
+	* Added a 'save_settings_options' filter hook for WPSSO Core v15.19.0.
 	* Deprecated the 'save_setting_options' filter hook.
 * **Requires At Least**
 	* PHP v7.2.34.
@@ -116,7 +116,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.18.0-dev.1 =
 
-(TBD) Added support for the 'save_settings_options' filter in WPSSO Core v15.19.0.
+(TBD) Added a 'save_settings_options' filter hook for WPSSO Core v15.19.0.
 
 = 4.17.1 =
 
