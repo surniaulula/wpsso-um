@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.18.0-dev.1 (2023/08/08)**
+**Version 4.18.0-dev.2 (2023/08/08)**
 
 * **New Features**
 	* None.
@@ -115,7 +115,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.18.0-dev.1 =
+= 4.18.0-dev.2 =
 
 (2023/08/08) Updated filter hook names for WPSSO Core v15.19.0.
 
