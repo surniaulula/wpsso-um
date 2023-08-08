@@ -28,8 +28,8 @@ if ( ! class_exists( 'WpssoUmActions' ) ) {
 			if ( is_admin() ) {
 
 				$this->p->util->add_plugin_actions( $this, array(
-					'load_setting_page_check_for_updates' => 4,
-					'load_setting_page_create_offers'     => 4,
+					'load_settings_page_check_for_updates' => 4,
+					'load_settings_page_create_offers'     => 4,
 				) );
 			}
 		}
@@ -69,7 +69,7 @@ if ( ! class_exists( 'WpssoUmActions' ) ) {
 			}
 		}
 
-		public function action_load_setting_page_check_for_updates( $pagehook, $menu_id, $menu_name, $menu_lib ) {
+		public function action_load_settings_page_check_for_updates( $pagehook, $menu_id, $menu_name, $menu_lib ) {
 
 			foreach ( $this->p->cf[ 'plugin' ] as $ext => $info ) {
 
@@ -81,7 +81,7 @@ if ( ! class_exists( 'WpssoUmActions' ) ) {
 			$this->p->notice->upd( __( 'Plugin update information has been refreshed.', 'wpsso-um' ) );
 		}
 
-		public function action_load_setting_page_create_offers( $pagehook, $menu_id, $menu_name, $menu_lib ) {
+		public function action_load_settings_page_create_offers( $pagehook, $menu_id, $menu_name, $menu_lib ) {
 
 			foreach ( $this->p->cf[ 'plugin' ] as $ext => $info ) {
 
