@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.18.0-dev.1 (TBD)**
+**Version 4.18.0-dev.1 (2023/08/08)**
 
 * **New Features**
 	* None.
@@ -75,8 +75,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Added a 'save_settings_options' filter hook for WPSSO Core v15.19.0.
-	* Deprecated the 'save_setting_options' filter hook.
+	* Updated filter hook names for WPSSO Core v15.19.0:
+		* Added a 'save_settings_options' filter hook.
+		* Deprecated the 'save_setting_options' filter hook.
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.5.
@@ -116,7 +117,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.18.0-dev.1 =
 
-(TBD) Added a 'save_settings_options' filter hook for WPSSO Core v15.19.0.
+(2023/08/08) Updated filter hook names for WPSSO Core v15.19.0.
 
 = 4.17.1 =
 
