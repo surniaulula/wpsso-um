@@ -12,7 +12,7 @@ Requires Plugins: wpsso
 Requires PHP: 7.2.34
 Requires At Least: 5.5
 Tested Up To: 6.3.0
-Stable Tag: 4.17.1
+Stable Tag: 4.18.0
 
 Update Manager for the WPSSO Core Premium plugin.
 
