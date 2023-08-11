@@ -14,24 +14,25 @@ if ( ! class_exists( 'SucomPluginData' ) ) {
 
 	class SucomPluginData {
 
-		public $id = 0;
-		public $name;
-		public $slug;
-		public $plugin;
-		public $version;
-		public $tested;
-		public $requires;
-		public $homepage;
-		public $download_url;
 		public $author;
 		public $author_homepage;
-		public $upgrade_notice;
 		public $banners;
+		public $download_url;
+		public $homepage;
 		public $icons;
-		public $rating;
-		public $num_ratings;
+		public $id = 0;
 		public $last_updated;
+		public $license;
+		public $name;
+		public $num_ratings;
+		public $plugin;
+		public $rating;
+		public $requires;
 		public $sections;
+		public $slug;
+		public $tested;
+		public $upgrade_notice;
+		public $version;
 
 		public static function data_from_json( $json_encoded ) {
 
