@@ -1263,7 +1263,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			/*
 			 * Check the local resolver and DNS IPv4 values for inconsistencies.
 			 */
-			$json_host = parse_url( $json_url, PHP_URL_HOST );
+			$json_host = wp_parse_url( $json_url, PHP_URL_HOST );
 
 			if ( empty( $json_host ) || $json_host === $json_url ) {	// Check for false or original URL.
 

@@ -93,7 +93,7 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 				return false;
 			}
 
-			$parsed_url = parse_url( SucomUtil::decode_html( urldecode( $url ) ) );
+			$parsed_url = wp_parse_url( SucomUtil::decode_html( urldecode( $url ) ) );
 
 			if ( empty( $parsed_url ) ) {
 
@@ -175,14 +175,6 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 			}
 
 			return $local_cache;
-		}
-
-		/*
-		 * Deprecated on 2021/10/20.
-		 */
-		public static function clear_plugins_cache() {
-
-			_deprecated_function( __METHOD__ . '()', '2021/10/20', $replacement = '' );	// Deprecation message.
 		}
 	}
 }

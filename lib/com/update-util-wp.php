@@ -89,7 +89,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 
 				} else {
 
-					$scheme = parse_url( $url, PHP_URL_SCHEME );
+					$scheme = wp_parse_url( $url, PHP_URL_SCHEME );
 				}
 			}
 
