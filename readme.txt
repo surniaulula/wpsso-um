@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.19.0-dev.2 (2023/10/29)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Added debug messages to the update check methods.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.5.
+	* WPSSO Core v9.0.0 (released on 2021/09/24).
+
 **Version 4.18.0 (2023/08/09)**
 
 * **New Features**
@@ -114,6 +129,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v9.0.0 (released on 2021/09/24).
 
 == Upgrade Notice ==
+
+= 4.19.0-dev.2 =
+
+(2023/10/29) Added debug messages to the update check methods.
 
 = 4.18.0 =
 
