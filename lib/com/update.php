@@ -391,8 +391,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 			if ( $has_dev_filter ) {
 
-				$user_id = get_current_user_id();
-
+				$user_id    = get_current_user_id();
 				$notice_key = 'non-stable-update-version-filters-selected';
 
 				if ( ! $quiet && $user_id && $this->p->notice->is_admin_pre_notices( $notice_key, $user_id ) ) {
