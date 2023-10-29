@@ -600,10 +600,15 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 			if ( $this->p->debug->enabled ) {
 
-				$this->p->debug->mark();
+				$this->p->debug->mark( 'manual update check' );	// Begin timer.
 			}
 
 			$this->check_all_for_updates( $quiet = false );	// Throttled.
+
+			if ( $this->p->debug->enabled ) {
+
+				$this->p->debug->mark( 'manual update check' );	// End timer.
+			}
 		}
 
 		/*
@@ -615,10 +620,15 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 			if ( $this->p->debug->enabled ) {
 
-				$this->p->debug->mark();
+				$this->p->debug->mark( 'quiet update check' );	// Begin timer.
 			}
 
 			$this->check_all_for_updates( $quiet = true );	// Throttled.
+
+			if ( $this->p->debug->enabled ) {
+
+				$this->p->debug->mark( 'quiet update check' );	// End timer.
+			}
 		}
 
 		/*
@@ -648,18 +658,23 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 			if ( is_numeric( $last_time ) && time() < $last_time + $cache_exp_secs ) {	// Throttle mins not yet exceeded.
 
-				$user_id = get_current_user_id();
+				$user_id         = get_current_user_id();
+				$human_cache_exp = human_time_diff( 0, $cache_exp_secs );
+				$human_last_time = human_time_diff( $last_time );
+				$human_wait_time = human_time_diff( $last_time, $last_time + $cache_exp_secs );
+
+				if ( $this->p->debug->enabled ) {
+
+					$this->p->debug->log( 'exiting early: ' . $human_last_time . ' since last refresh (minimum is ' . $human_cache_exp . ')' );
+				}
 
 				if ( ! $quiet && $user_id ) {
 
-					$last_time_diff = human_time_diff( $last_time );
-					$wait_time_diff = human_time_diff( $last_time, $last_time + $cache_exp_secs );
-
 					$notice_msg = __( 'Update manager cache refresh ignored.', $this->text_domain ) . ' ';
 
-					$notice_msg .= sprintf( __( 'It has been %s since the last refresh.', $this->text_domain ), $last_time_diff ) . ' ';
+					$notice_msg .= sprintf( __( 'It has been %s since the last refresh.', $this->text_domain ), $human_last_time ) . ' ';
 
-					$notice_msg .= sprintf( __( 'Please wait %s before requesting another cache refresh.', $this->text_domain ), $wait_time_diff ) . ' ';
+					$notice_msg .= sprintf( __( 'Please wait %s before requesting another cache refresh.', $this->text_domain ), $human_wait_time ) . ' ';
 
 					$notice_key = __FUNCTION__ . '_throttling';
 
@@ -1068,7 +1083,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 
 			if ( $this->p->debug->enabled ) {
 
-				$this->p->debug->mark( 'maybe add plugin and add-on update(s) to transient' );	// Begin timer.
+				$this->p->debug->mark( 'maybe add plugin and add-on update(s) to transient' );	// End timer.
 			}
 
 			return $transient;
