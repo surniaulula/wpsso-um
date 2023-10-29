@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.19.0-rc.1 (2023/10/29)**
+**Version 4.19.0 (2023/10/29)**
 
 * **New Features**
 	* None.
@@ -100,7 +100,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.19.0-rc.1 =
+= 4.19.0 =
 
 (2023/10/29) Added debug messages to the update check methods.
 
