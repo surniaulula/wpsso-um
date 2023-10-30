@@ -38,9 +38,11 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 		 * The 'wpsso_save_settings_options' filter is applied by WpssoOptions->save_options(),
 		 * WpssoAdmin->settings_sanitation(), and WpssoAdmin->save_site_settings().
 		 *
+		 * $opts is the new options to be saved. Wpsso->options and Wpsso->site_options are still the old options.
+		 *
 		 * $network is true if we're saving the multisite network settings.
 		 *
-		 * $is_option_upg will be true when the options version, not the plugin version, is being upgraded.
+		 * $is_option_upg is true when the option versions, not the plugin versions, have changed.
 		 *
 		 * Check for Authentication ID changes, and if the submitted values are different, refresh the update manager
 		 * config and force an update check. If the saved version string is different, then just refresh the update manager
@@ -53,12 +55,15 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 				return $opts;	// Nothing to do.
 			}
 
-			$check_ext_for_updates = array();
+			$check_ext = array();
 
 			foreach ( $this->p->cf[ 'plugin' ] as $ext => $info ) {
 
 				$update_auth = isset( $info[ 'update_auth' ] ) ? $info[ 'update_auth' ] : '';
 
+				/*
+				 * Compare old and new options for changes.
+				 */
 				foreach ( array(
 					'plugin_' . $ext . '_' . $update_auth,	// Authentication ID.
 					'update_filter_for_' . $ext,		// Version filter.
@@ -80,23 +85,30 @@ if ( ! class_exists( 'WpssoUmFiltersOptions' ) ) {
 							 */
 							$this->p->options[ $opt_key ] = $opts[ $opt_key ];
 
-							$check_ext_for_updates[] = $ext;
+							$check_ext[] = $ext;
 						}
 					}
 				}
 			}
 
+			if ( $is_option_upg ) {
+
+				$check_ext[] = 'wpsso';
+			}
+
+			$check_ext = array_unique( $check_ext );	// Just in case.
+
 			/*
 			 * Check for updates if we have one or more Auth ID or version filter changes.
 			 */
-			if ( ! empty( $check_ext_for_updates ) ) {
+			if ( ! empty( $check_ext ) ) {
 
 				$this->a->update->refresh_upd_config();
 
 				/*
 				 * Note that SucomUpdate->check_ext_for_updates() does not throttle like SucomUpdate->check_all_for_updates().
 				 */
-				$this->a->update->check_ext_for_updates( $check_ext_for_updates, $quiet = true );
+				$this->a->update->check_ext_for_updates( $check_ext, $quiet = true );
 			}
 
 			return $opts;
