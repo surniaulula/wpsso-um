@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.21.0-dev.8 (2021/11/03)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Refactored the settings page load process.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.5.
+	* WPSSO Core v9.0.0 (released on 2021/09/24).
+
 **Version 4.20.0 (2023/10/30)**
 
 * **New Features**
@@ -114,6 +129,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v9.0.0 (released on 2021/09/24).
 
 == Upgrade Notice ==
+
+= 4.21.0-dev.8 =
+
+(2021/11/03) Refactored the settings page load process.
 
 = 4.20.0 =
 
