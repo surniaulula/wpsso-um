@@ -37,7 +37,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		private $sched_hours   = 24;
 		private $sched_name    = 'every24hours';
 
-		private static $api_version = '4.20.0';
+		private static $api_version = '4.21.0';
 		private static $upd_config  = array();
 		private static $offer_fname = 'offer-update.txt';
 
@@ -120,7 +120,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 						$this->set_upd_config();
 					}
 
-					$this->add_wp_hooks();	// Private method.
+					$this->add_wp_callbacks();	// Private method.
 
 				} elseif ( $this->p->debug->enabled ) {
 
@@ -423,7 +423,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		/*
 		 * Called by SucomUpdate->__construct() after SucomUpdate->set_upd_config() is run.
 		 */
-		private function add_wp_hooks() {
+		private function add_wp_callbacks() {
 
 			if ( $this->p->debug->enabled ) {
 
@@ -474,13 +474,13 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			add_filter( 'pre_site_transient_update_plugins', array( $this, 'reenable_plugin_updates' ), PHP_INT_MAX, 1 );
 			add_filter( 'site_transient_update_plugins', array( $this, 'maybe_add_plugin_update' ), PHP_INT_MAX, 1 );
 
-			$this->add_wp_hooks_cron();
+			$this->add_wp_cron_callbacks();
 		}
 
 		/*
 		 * Since WPSSO UM v3.3.0.
 		 */
-		private function add_wp_hooks_cron() {
+		private function add_wp_cron_callbacks() {
 
 			if ( $this->p->debug->enabled ) {
 

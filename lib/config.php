@@ -77,7 +77,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					),
 				),
 				'wpssoum' => array(			// Plugin acronym.
-					'version'     => '4.20.0',	// Plugin version.
+					'version'     => '4.21.0-dev.8',	// Plugin version.
 					'opt_version' => '8',		// Increment when changing default option values.
 					'short'       => 'WPSSO UM',	// Short plugin name.
 					'name'        => 'WPSSO Update Manager',
@@ -120,10 +120,10 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					 */
 					'lib' => array(
 						'sitesubmenu' => array(
-							'site-um-general' => 'Update Manager',
+							'site-update-manager' => 'Update Manager',
 						),
 						'submenu' => array(
-							'um-general' => 'Update Manager',
+							'update-manager' => 'Update Manager',
 						),
 					),
 				),
