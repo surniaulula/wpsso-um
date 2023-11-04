@@ -88,7 +88,7 @@ if ( ! class_exists( 'WpssoUmSubmenuUpdateManager' ) && class_exists( 'WpssoAdmi
 
 				foreach ( $tabs as $tab_key => $tab_title ) {
 
-					$table_rows[ $tab_key ] = $this->get_table_rows( $page_id, $metabox_id, $tab_key );
+					$table_rows[ $tab_key ] = $this->get_table_rows( $page_id, $metabox_id, $tab_key, $args );
 				}
 
 				if ( isset( $this->p->util->metabox ) ) {	// Since WPSSO Core v8.0.0.
@@ -99,7 +99,7 @@ if ( ! class_exists( 'WpssoUmSubmenuUpdateManager' ) && class_exists( 'WpssoAdmi
 			}
 		}
 
-		protected function get_table_rows( $page_id, $metabox_id, $tab_key = '' ) {
+		protected function get_table_rows( $page_id, $metabox_id, $tab_key = '', $args = array() ) {
 
 			$ext_sorted      = WpssoConfig::get_ext_sorted();	// Since WPSSO Core v3.38.3.
 			$version_filters = $this->p->cf[ 'um' ][ 'version_filter' ];
