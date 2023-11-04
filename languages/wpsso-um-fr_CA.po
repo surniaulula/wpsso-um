@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Update Manager 4.20.0\n"
+"Project-Id-Version: WPSSO Update Manager 4.21.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-10-30 11:47-0700\n"
+"PO-Revision-Date: 2023-11-03 21:33-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -148,32 +148,27 @@ msgctxt "lib file description"
 msgid "(feature) Update Check is Scheduled"
 msgstr "(feature) Vérification mises à jour planifiée"
 
-#: lib/sitesubmenu/site-um-general.php:50
-#: lib/sitesubmenu/site-um-general.php:56 lib/submenu/um-general.php:50
-#: lib/submenu/um-general.php:56
+#: lib/sitesubmenu/site-update-manager.php:32 lib/submenu/update-manager.php:32
+msgctxt "metabox title"
+msgid "Update Manager Settings"
+msgstr "Réglages du gestionnaire de mise à jour"
+
+#: lib/sitesubmenu/site-update-manager.php:55
+#: lib/sitesubmenu/site-update-manager.php:61 lib/submenu/update-manager.php:55
+#: lib/submenu/update-manager.php:61
 msgctxt "submit button"
 msgid "Check for Plugin Updates"
 msgstr "Vérifier pour mises à jour"
 
-#: lib/sitesubmenu/site-um-general.php:57 lib/submenu/um-general.php:57
+#: lib/sitesubmenu/site-update-manager.php:62 lib/submenu/update-manager.php:62
 msgctxt "submit button"
 msgid "Re-Offer Plugin Updates"
 msgstr "Ré-offrir mises à jour d'extension"
 
-#: lib/sitesubmenu/site-um-general.php:83
-msgctxt "metabox title"
-msgid "Network Update Manager"
-msgstr "Gestion de mises à jour réseau"
-
-#: lib/sitesubmenu/site-um-general.php:107 lib/submenu/um-general.php:90
+#: lib/sitesubmenu/site-update-manager.php:85 lib/submenu/update-manager.php:73
 msgctxt "metabox tab"
 msgid "Version Filters"
 msgstr "Filtres de version"
-
-#: lib/submenu/um-general.php:71
-msgctxt "metabox title"
-msgid "Update Manager Settings"
-msgstr "Réglages du gestionnaire de mise à jour"
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Update Manager"
