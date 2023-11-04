@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.21.0-dev.8 (2021/11/03)**
+**Version 4.21.0-dev.9 (2021/11/04)**
 
 * **New Features**
 	* None.
@@ -130,9 +130,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.21.0-dev.8 =
+= 4.21.0-dev.9 =
 
-(2021/11/03) Refactored the settings page load process.
+(2021/11/04) Refactored the settings page load process.
 
 = 4.20.0 =
 
