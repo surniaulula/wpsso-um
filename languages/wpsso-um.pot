@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Update Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Update Manager 4.21.0-dev.9\n"
+"Project-Id-Version: WPSSO Update Manager 4.21.0-dev.10\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -164,19 +164,19 @@ msgctxt "metabox title"
 msgid "Update Manager Settings"
 msgstr ""
 
-#: lib/sitesubmenu/site-update-manager.php:55
-#: lib/sitesubmenu/site-update-manager.php:61 lib/submenu/update-manager.php:55
-#: lib/submenu/update-manager.php:61
+#: lib/sitesubmenu/site-update-manager.php:60
+#: lib/sitesubmenu/site-update-manager.php:66 lib/submenu/update-manager.php:60
+#: lib/submenu/update-manager.php:66
 msgctxt "submit button"
 msgid "Check for Plugin Updates"
 msgstr ""
 
-#: lib/sitesubmenu/site-update-manager.php:62 lib/submenu/update-manager.php:62
+#: lib/sitesubmenu/site-update-manager.php:67 lib/submenu/update-manager.php:67
 msgctxt "submit button"
 msgid "Re-Offer Plugin Updates"
 msgstr ""
 
-#: lib/sitesubmenu/site-update-manager.php:85 lib/submenu/update-manager.php:73
+#: lib/sitesubmenu/site-update-manager.php:90 lib/submenu/update-manager.php:78
 msgctxt "metabox tab"
 msgid "Version Filters"
 msgstr ""
