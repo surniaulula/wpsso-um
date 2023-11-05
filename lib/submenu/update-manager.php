@@ -31,15 +31,7 @@ if ( ! class_exists( 'WpssoUmSubmenuUpdateManager' ) && class_exists( 'WpssoAdmi
 			$this->menu_metaboxes = array(
 				'settings' => _x( 'Update Manager Settings', 'metabox title', 'wpsso-um' ),
 			);
-		}
-
-		protected function add_settings_page_callbacks() {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
+			
 			$this->p->util->add_plugin_filters( $this, array( 'form_button_rows' => 2 ) );
 		}
 
@@ -47,21 +39,8 @@ if ( ! class_exists( 'WpssoUmSubmenuUpdateManager' ) && class_exists( 'WpssoAdmi
 
 			switch ( $menu_id ) {
 
-				case 'update-manager':
-
-					/*
-					 * Remove the Change to "All Options" View button.
-					 */
-					if ( isset( $form_button_rows[ 0 ] ) ) {
-
-						$form_button_rows[ 0 ] = SucomUtil::preg_grep_keys( '/^change_show_options/', $form_button_rows[ 0 ], $invert = true );
-					}
-
-					$form_button_rows[ 0 ][ 'check_for_updates' ] = _x( 'Check for Plugin Updates', 'submit button', 'wpsso-um' );
-
-					break;
-
 				case 'tools':
+				case 'site-tools':
 
 					$form_button_rows[ 0 ][ 'check_for_updates' ] = _x( 'Check for Plugin Updates', 'submit button', 'wpsso-um' );
 					$form_button_rows[ 0 ][ 'create_offers' ]     = _x( 'Re-Offer Plugin Updates', 'submit button', 'wpsso-um' );
@@ -70,6 +49,12 @@ if ( ! class_exists( 'WpssoUmSubmenuUpdateManager' ) && class_exists( 'WpssoAdmi
 			}
 
 			return $form_button_rows;
+		}
+
+		/*
+		 * Remove the "Change to View" button from this settings page.
+		 */
+		protected function add_form_buttons_change_show_options( &$form_button_rows ) {
 		}
 
 		public function show_metabox_settings( $obj, $mb ) {
@@ -120,7 +105,8 @@ if ( ! class_exists( 'WpssoUmSubmenuUpdateManager' ) && class_exists( 'WpssoAdmi
 					$table_rows[ $opt_key ] = '' .
 						$this->form->get_th_html( $name_transl, $css_class = 'plugin_name' ) .
 						'<td>' . $this->form->get_select( $opt_key, $version_filters,
-							$css_class = 'update_filter', $css_id = '', $is_assoc = true ) . '</td>';
+							$css_class = 'update_filter', $css_id = '', $is_assoc = true ) . '</td>' .
+						WpssoAdmin::get_option_site_use( $opt_key, $this->form, $args[ 'network' ] );
 				}
 			}
 
