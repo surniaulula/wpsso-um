@@ -65,7 +65,7 @@ if ( ! class_exists( 'WpssoUmSubmenuUpdateManager' ) && class_exists( 'WpssoAdmi
 
 			$this->form->set_text_domain( 'wpsso' );	// Translate option values using wpsso text_domain.
 
-			if ( method_exists( $this, 'show_metabox_tabbed' ) ) {	// Since WPSSO Core v16.7.0.
+			if ( method_exists( $this, 'show_metabox_tabbed' ) ) {	// Since WPSSO Core v17.0.0.
 
 				$this->show_metabox_tabbed( $obj, $mb, $tabs );
 
