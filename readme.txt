@@ -96,38 +96,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.5.
 	* WPSSO Core v9.0.0 (released on 2021/09/24).
 
-**Version 4.19.0 (2023/10/29)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added debug messages to the update check methods.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.5.
-	* WPSSO Core v9.0.0 (released on 2021/09/24).
-
-**Version 4.18.0 (2023/08/09)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated filter hook names for WPSSO Core v15.19.0:
-		* Added a 'save_settings_options' filter hook.
-		* Deprecated the 'save_setting_options' filter hook.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.5.
-	* WPSSO Core v9.0.0 (released on 2021/09/24).
-
 == Upgrade Notice ==
 
 = 5.0.0-dev.13 =
@@ -137,12 +105,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 4.20.0 =
 
 (2023/10/30) Added an update check when options are upgraded.
-
-= 4.19.0 =
-
-(2023/10/29) Added debug messages to the update check methods.
-
-= 4.18.0 =
-
-(2023/08/09) Updated filter hook names for WPSSO Core v15.19.0.
 
