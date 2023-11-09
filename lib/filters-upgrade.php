@@ -30,15 +30,15 @@ if ( ! class_exists( 'WpssoUmFiltersUpgrade' ) ) {
 			) );
 		}
 
-		public function filter_rename_options_keys( $options_keys ) {
+		public function filter_rename_options_keys( $rename_options ) {
 
-			$options_keys[ 'wpssoum' ] = array(
+			$rename_options[ 'wpssoum' ] = array(
 				6 => array(
 					'update_check_hours' => '',
 				),
 			);
 
-			return $options_keys;
+			return $rename_options;
 		}
 	}
 }
