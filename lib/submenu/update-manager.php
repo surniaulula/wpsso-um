@@ -31,7 +31,7 @@ if ( ! class_exists( 'WpssoUmSubmenuUpdateManager' ) && class_exists( 'WpssoAdmi
 			$this->menu_metaboxes = array(
 				'settings' => _x( 'Update Manager Settings', 'metabox title', 'wpsso-um' ),
 			);
-			
+
 			$this->p->util->add_plugin_filters( $this, array( 'form_button_rows' => 2 ) );
 		}
 
