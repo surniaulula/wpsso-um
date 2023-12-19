@@ -441,10 +441,15 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 			}
 
 			/*
-			 * Refresh the config and plugin update data if/when the WordPress home URL is changed.
+			 * Refresh the update manager config and the plugin update data if/when the WordPress home URL is changed.
+			 *
+			 * See WpssAdmin->wp_site_option_changed().
+			 * See SucomUpdate->wp_site_option_changed().
+			 * See SucomUtilWP->raw_do_option().
+			 * See SucomUpdateUtilWP->raw_do_option().
 			 */
-			add_action( 'update_option_home', array( $this, 'site_address_changed' ), PHP_INT_MAX, 3 );
-			add_action( 'sucom_update_option_home', array( $this, 'site_address_changed' ), PHP_INT_MAX, 3 );
+			add_action( 'update_option_home', array( $this, 'wp_site_option_changed' ), PHP_INT_MAX - 10, 3 );
+			add_action( 'sucom_update_option_home', array( $this, 'wp_site_option_changed' ), PHP_INT_MAX - 10, 3 );
 
 			add_filter( 'http_headers_useragent', array( $this, 'maybe_update_wpua' ), PHP_INT_MAX, 1 );
 			add_filter( 'http_request_host_is_external', array( $this, 'allow_update_package' ), PHP_INT_MAX, 3 );
@@ -549,20 +554,14 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		}
 
 		/*
-		 * Since WPSSO UM v3.3.0.
+		 * Refresh the update manager config and the plugin update data if/when the WordPress home URL is changed.
 		 *
-		 * Called when the WordPress Settings > Site Address URL or the WP_HOME constant value is changed.
+		 * See WpssAdmin->wp_site_option_changed().
+		 * See SucomUpdate->wp_site_option_changed().
+		 * See SucomUtilWP->raw_do_option().
+		 * See SucomUpdateUtilWP->raw_do_option().
 		 */
-		public function site_address_changed( $old_value, $new_value, $option = 'home' ) {
-
-			static $do_once = null;
-
-			if ( true === $do_once ) {
-
-				return;	// Stop here.
-			}
-
-			$do_once = true;
+		public function wp_site_option_changed( $old_value, $new_value, $option_name ) {
 
 			if ( $this->p->debug->enabled ) {
 
@@ -580,14 +579,19 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 				return;	// Stop here.
 			}
 
-			$user_id = get_current_user_id();
+			static $do_once = null;
 
-			if ( ! $user_id ) {	// Nobody there.
+			if ( true === $do_once ) {
 
 				return;	// Stop here.
 			}
 
-			$this->check_all_for_updates( $quiet = false );	// Throttled.
+			$do_once = true;
+
+			if ( 'home' === $option_name ) {
+
+				$this->check_all_for_updates( $quiet = true );	// Throttled.
+			}
 		}
 
 		/*
