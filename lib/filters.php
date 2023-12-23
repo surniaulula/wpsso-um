@@ -73,7 +73,7 @@ if ( ! class_exists( 'WpssoUmFilters' ) ) {
 
 				if ( 0 === preg_match( $filter_regex, $version ) ) {
 
-					unset ( $upgrade_notices[ $version ] );
+					unset( $upgrade_notices[ $version ] );
 				}
 			}
 
