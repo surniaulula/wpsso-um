@@ -102,10 +102,13 @@ if ( ! class_exists( 'WpssoUmSubmenuUpdateManager' ) && class_exists( 'WpssoAdmi
 					$opt_key     = 'update_filter_for_' . $ext;
 					$name_transl = _x( $info[ 'name' ], 'plugin name', 'wpsso' );
 
+					/*
+					 * Use $is_assoc = 'sorted' to keep the array order.
+					 */
 					$table_rows[ $opt_key ] = '' .
 						$this->form->get_th_html( $name_transl, $css_class = 'plugin_name' ) .
 						'<td>' . $this->form->get_select( $opt_key, $version_filters,
-							$css_class = 'update_filter', $css_id = '', $is_assoc = true ) . '</td>' .
+							$css_class = 'update_filter', $css_id = '', $is_assoc = 'sorted' ) . '</td>' .
 						WpssoAdmin::get_option_site_use( $opt_key, $this->form, $args[ 'network' ] );
 				}
 			}
