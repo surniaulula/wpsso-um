@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 5.1.0-dev.2 (2021/12/24)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Updated the SSO &gt; Update Manager settings page to keep the original order of version filters.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.5.
+	* WPSSO Core v9.0.0 (released on 2021/09/24).
+
 **Version 5.0.0 (2021/11/08)**
 
 * **New Features**
@@ -81,28 +96,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.5.
 	* WPSSO Core v9.0.0 (released on 2021/09/24).
 
-**Version 4.20.0 (2023/10/30)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added an update check when options are upgraded.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.5.
-	* WPSSO Core v9.0.0 (released on 2021/09/24).
-
 == Upgrade Notice ==
+
+= 5.1.0-dev.2 =
+
+(2021/12/24) Updated the SSO &gt; Update Manager settings page to keep the original order of version filters.
 
 = 5.0.0 =
 
 (2021/11/08) Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
-
-= 4.20.0 =
-
-(2023/10/30) Added an update check when options are upgraded.
 
