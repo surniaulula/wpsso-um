@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.1.0-dev.4 (2021/12/25)**
+**Version 5.1.0-dev.5 (2021/12/26)**
 
 * **New Features**
 	* None.
@@ -98,9 +98,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.1.0-dev.4 =
+= 5.1.0-dev.5 =
 
-(2021/12/25) Updated the SSO &gt; Update Manager settings page to keep the original order of version filters.
+(2021/12/26) Updated the SSO &gt; Update Manager settings page to keep the original order of version filters.
 
 = 5.0.0 =
 
