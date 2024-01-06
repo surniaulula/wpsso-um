@@ -2090,29 +2090,28 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		/*
 		 * Returns false, a slashed directory path, or the file name path.
 		 *
-		 * Use $is_dir = true when specifically checking for a sub-folder path.
+		 * Use $file_is_dir = true when specifically checking for a sub-folder path.
 		 */
-		private static function get_ext_file_path( $ext, $file_name = '', $is_dir = false ) {
+		private static function get_ext_file_path( $ext, $rel_file = '', $file_is_dir = false ) {
+
+			$file_path = false;
 
 			if ( $ext_dir = self::get_ext_dir( $ext ) ) {	// Returns false or a slashed directory path.
 
-				if ( $is_dir ) {	// Must be a directory.
+				if ( $file_is_dir ) {	// Must be a directory.
 
-					if ( is_dir( $sub_dir = trailingslashit( $ext_dir . $file_name ) ) ) {
+					if ( is_dir( trailingslashit( $ext_dir . $rel_file ) ) ) {
 
-						return $sub_dir;
+						$file_path = trailingslashit( $ext_dir . $rel_file );
 					}
 
-				} else {
+				} elseif ( file_exists( $ext_dir . $rel_file ) ) {
 
-					if ( file_exists( $file_path = $ext_dir . $file_name ) ) {
-
-						return $file_path;
-					}
+					$file_path = $ext_dir . $rel_file;
 				}
 			}
 
-			return false;
+			return $file_path;
 		}
 	}
 }

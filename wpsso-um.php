@@ -13,7 +13,7 @@
  * Description: Update Manager for the WPSSO Core Premium plugin.
  * Requires Plugins: wpsso
  * Requires PHP: 7.2.34
- * Requires At Least: 5.5
+ * Requires At Least: 5.8
  * Tested Up To: 6.4.2
  * Version: 5.1.0
  *
