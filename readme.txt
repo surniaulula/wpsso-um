@@ -10,7 +10,7 @@ Tags: wpsso, update, manager, schedule, add-on, pro version
 Contributors: jsmoriss
 Requires Plugins: wpsso
 Requires PHP: 7.2.34
-Requires At Least: 5.5
+Requires At Least: 5.8
 Tested Up To: 6.4.2
 Stable Tag: 5.1.0
 
@@ -78,7 +78,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * **Requires At Least**
 	* PHP v7.2.34.
-	* WordPress v5.5.
+	* WordPress v5.8.
 	* WPSSO Core v9.0.0 (released on 2021/09/24).
 
 **Version 5.0.0 (2021/11/08)**
