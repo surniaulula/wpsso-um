@@ -67,10 +67,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 						self::raw_do_option( $action = 'update', $opt_name = 'home', $url );
 					}
 
-				} else {
-
-					$url = self::raw_do_option( $action = 'get', $opt_name = 'home' );
-				}
+				} else $url = self::raw_do_option( $action = 'get', $opt_name = 'home' );
 
 			} else {
 
@@ -87,10 +84,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 
 					$scheme = 'https';
 
-				} else {
-
-					$scheme = wp_parse_url( $url, PHP_URL_SCHEME );
-				}
+				} else $scheme = wp_parse_url( $url, PHP_URL_SCHEME );
 			}
 
 			$url = self::raw_set_url_scheme( $url, $scheme );
@@ -139,10 +133,7 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 					$url = '/' . ltrim( $url, "/ \t\n\r\0\x0B" );
 				}
 
-			} else {
-
-				$url = preg_replace( '#^\w+://#', $scheme . '://', $url );
-			}
+			} else $url = preg_replace( '#^\w+://#', $scheme . '://', $url );
 
 			return $url;
 		}

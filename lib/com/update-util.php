@@ -104,10 +104,7 @@ if ( ! class_exists( 'SucomUpdateUtil' ) ) {
 
 				$parsed_url[ 'query' ] = http_build_query( $args );
 
-			} else {
-
-				$parsed_url[ 'query' ] .= '&' . http_build_query( $args );
-			}
+			} else $parsed_url[ 'query' ] .= '&' . http_build_query( $args );
 
 			$url = self::unparse_url( $parsed_url );
 
