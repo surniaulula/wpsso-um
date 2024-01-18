@@ -10,15 +10,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
-$lib_dir = dirname( __FILE__ ) . '/';
+if ( ! class_exists( 'SucomPluginData' ) ) {
 
-require_once $lib_dir . 'plugin-data.php';
+	require_once dirname( __FILE__ ) . '/plugin-data.php';
+}
 
-require_once $lib_dir . 'plugin-update.php';
+if ( ! class_exists( 'SucomPluginUpdate' ) ) {
 
-require_once $lib_dir . 'update-util.php';
+	require_once dirname( __FILE__ ) . '/plugin-update.php';
+}
 
-require_once $lib_dir . 'update-util-wp.php';
+if ( ! class_exists( 'SucomUpdateUtil' ) ) {
+
+	require_once dirname( __FILE__ ) . '/update-util.php';
+}
+
+if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
+
+	require_once dirname( __FILE__ ) . '/update-util-wp.php';
+}
 
 if ( ! class_exists( 'SucomUpdate' ) ) {
 
