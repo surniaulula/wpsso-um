@@ -66,7 +66,22 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.1.0 (2021/12/27)**
+**Version 5.2.0-rc.1 (2024/07/10)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.8.
+	* WPSSO Core v13.0.0.
+
+**Version 5.1.0 (2023/12/27)**
 
 * **New Features**
 	* None.
@@ -98,9 +113,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
+= 5.2.0-rc.1 =
+
+(2024/07/10) None.
+
 = 5.1.0 =
 
-(2021/12/27) Updated the SSO &gt; Update Manager settings page to keep the original order of version filters.
+(2023/12/27) Updated the SSO &gt; Update Manager settings page to keep the original order of version filters.
 
 = 5.0.0 =
 
