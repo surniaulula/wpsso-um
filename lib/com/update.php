@@ -30,7 +30,11 @@ if ( ! class_exists( 'SucomUpdateUtilWP' ) ) {
 	require_once dirname( __FILE__ ) . '/update-util-wp.php';
 }
 
-if ( ! class_exists( 'SucomUpdate' ) ) {
+if ( class_exists( 'SucomUpdate' ) ) {
+
+	die( 'Invalid SucomUpdate class object.' );
+
+} else {
 
 	class SucomUpdate {
 
@@ -47,7 +51,7 @@ if ( ! class_exists( 'SucomUpdate' ) ) {
 		private $sched_hours   = 24;
 		private $sched_name    = 'every24hours';
 
-		private static $api_version = '5.1.0';
+		private static $api_version = '5.2.0';
 		private static $upd_config  = array();
 		private static $offer_fname = 'offer-update.txt';
 
