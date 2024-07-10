@@ -66,16 +66,16 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.2.0-rc.1 (2024/07/10)**
+**Version 5.2.0 (2024/07/10)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Updated minimum WPSSO Core version from v9.0.0 to v13.0.0.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Added check for invalid SucomUpdate class object.
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.8.
@@ -113,9 +113,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.2.0-rc.1 =
+= 5.2.0 =
 
-(2024/07/10) None.
+(2024/07/10) Updated minimum WPSSO Core version from v9.0.0 to v13.0.0.
 
 = 5.1.0 =
 
