@@ -1901,14 +1901,6 @@ if ( class_exists( 'SucomUpdate' ) ) {
 		}
 
 		/*
-		 * Called by delete_options() in the register class.
-		 */
-		public static function get_api_version() {
-
-			return self::$api_version;
-		}
-
-		/*
 		 * Called by get_plugin_data() when the transient / object cache is empty and/or not used.
 		 */
 		private static function set_umsg( $ext, $type, $value ) {
