@@ -1940,28 +1940,16 @@ if ( class_exists( 'SucomUpdate' ) ) {
 
 				$value = SucomUpdateUtilWP::raw_do_option( $action = 'get', $opt_name );	// Returns false by default.
 
-				if ( is_string( $value ) ) {
+				if ( is_string( $value ) ) $value = base64_decode( $value );	// Convert string value back to object or array.
 
-					$value = base64_decode( $value );	// Convert string value back to object or array.
-				}
+				if ( empty( $value ) ) $value = false;
 
-				if ( empty( $value ) ) {
-
-					$value = false;
-				}
-
-				if ( isset( self::$upd_config[ $ext ] ) ) {
-
-					self::$upd_config[ $ext ][ 'u' . $type ] = $value;
-				}
+				if ( isset( self::$upd_config[ $ext ] ) ) self::$upd_config[ $ext ][ 'u' . $type ] = $value;
 			}
 
 			return $value;
 		}
 
-		/*
-		 * Returns null if $prop_name does not exist (since v1.10.0).
-		 */
 		public static function get_option( $ext, $prop_name = false ) {
 
 			$not_found = false !== $prop_name ? null : false;	// Return null if $prop_name does not exist.
@@ -1986,6 +1974,13 @@ if ( class_exists( 'SucomUpdate' ) ) {
 			return $not_found;
 		}
 
+		public static function get_option_last( $ext ) {
+
+			$opt = self::get_option( $ext );
+
+			return isset( $opt->lastCheck ) ? $opt->lastCheck : null;
+		}
+
 		private static function get_option_data( $ext, $default = false ) {
 
 			if ( ! isset( self::$upd_config[ $ext ][ 'option_data' ] ) ) {
@@ -1996,10 +1991,7 @@ if ( class_exists( 'SucomUpdate' ) ) {
 
 					self::$upd_config[ $ext ][ 'option_data' ] = SucomUpdateUtilWP::raw_do_option( $action = 'get', $opt_name, $default );
 
-				} else {
-
-					self::$upd_config[ $ext ][ 'option_data' ] = $default;
-				}
+				} else self::$upd_config[ $ext ][ 'option_data' ] = $default;
 			}
 
 			return self::$upd_config[ $ext ][ 'option_data' ];
