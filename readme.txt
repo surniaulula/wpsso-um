@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.3.0-dev.1 (2024/08/06)**
+**Version 5.3.0-b.1 (2024/08/06)**
 
 * **New Features**
 	* None.
@@ -128,7 +128,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.3.0-dev.1 =
+= 5.3.0-b.1 =
 
 (2024/08/06) Added a method to return the last update check timestamp.
 
