@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 5.3.0-dev.1 (2024/08/06)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Added a method to return the last update check timestamp.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.8.
+	* WPSSO Core v13.0.0.
+
 **Version 5.2.0 (2024/07/10)**
 
 * **New Features**
@@ -112,6 +127,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v9.0.0 (released on 2021/09/24).
 
 == Upgrade Notice ==
+
+= 5.3.0-dev.1 =
+
+(2024/08/06) Added a method to return the last update check timestamp.
 
 = 5.2.0 =
 
