@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.4.0-dev.5 (2024/08/14)**
+**Version 5.4.0-dev.6 (2024/08/14)**
 
 * **New Features**
 	* None.
@@ -75,7 +75,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Removed the 'wpsso_features_status' filter hook.
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.8.
@@ -143,9 +143,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.4.0-dev.5 =
+= 5.4.0-dev.6 =
 
-(2024/08/14) None.
+(2024/08/14) Removed the 'wpsso_features_status' filter hook.
 
 = 5.3.0 =
 
