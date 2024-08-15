@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.4.0-dev.6 (2024/08/14)**
+**Version 5.4.0-b.1 (2024/08/15)**
 
 * **New Features**
 	* None.
@@ -143,9 +143,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.4.0-dev.6 =
+= 5.4.0-b.1 =
 
-(2024/08/14) Removed the 'wpsso_features_status' filter hook.
+(2024/08/15) Removed the 'wpsso_features_status' filter hook.
 
 = 5.3.0 =
 
