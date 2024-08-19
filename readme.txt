@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 5.5.0-dev.1 (2024/08/19)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Removed the 'wpsso_save_setting_options' filter hook.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.8.
+	* WPSSO Core v13.0.0.
+
 **Version 5.4.0 (2024/08/15)**
 
 * **New Features**
@@ -142,6 +157,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v9.0.0 (released on 2021/09/24).
 
 == Upgrade Notice ==
+
+= 5.5.0-dev.1 =
+
+(2024/08/19) Removed the 'wpsso_save_setting_options' filter hook.
 
 = 5.4.0 =
 
