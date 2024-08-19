@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.5.0-dev.1 (2024/08/19)**
+**Version 5.5.0-rc.1 (2024/08/19)**
 
 * **New Features**
 	* None.
@@ -158,7 +158,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.5.0-dev.1 =
+= 5.5.0-rc.1 =
 
 (2024/08/19) Removed the 'wpsso_save_setting_options' filter hook.
 
