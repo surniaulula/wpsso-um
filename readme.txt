@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 5.6.1 (2024/08/20)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Fixed an incorrect time function call in `SucomUpdate->check_ext_for_updates()`.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.8.
+	* WPSSO Core v15.0.0.
+
 **Version 5.6.0 (2024/08/20)**
 
 * **New Features**
@@ -172,6 +187,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v9.0.0 (released on 2021/09/24).
 
 == Upgrade Notice ==
+
+= 5.6.1 =
+
+(2024/08/20) Fixed an incorrect time function call in `SucomUpdate->check_ext_for_updates()`.
 
 = 5.6.0 =
 
