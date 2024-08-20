@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 5.6.0-dev.2 (2024/08/19)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Refactored the `WpssoUmRegister->deactivate_plugin()` method.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.8.
+	* WPSSO Core v15.0.0.
+
 **Version 5.5.0 (2024/08/19)**
 
 * **New Features**
@@ -157,6 +172,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v9.0.0 (released on 2021/09/24).
 
 == Upgrade Notice ==
+
+= 5.6.0-dev.2 =
+
+(2024/08/19) Refactored the `WpssoUmRegister->deactivate_plugin()` method.
 
 = 5.5.0 =
 
