@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.6.0-dev.2 (2024/08/19)**
+**Version 5.6.0-dev.3 (2024/08/20)**
 
 * **New Features**
 	* None.
@@ -173,9 +173,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.6.0-dev.2 =
+= 5.6.0-dev.3 =
 
-(2024/08/19) Refactored the `WpssoUmRegister->deactivate_plugin()` method.
+(2024/08/20) Refactored the `WpssoUmRegister->deactivate_plugin()` method.
 
 = 5.5.0 =
 
