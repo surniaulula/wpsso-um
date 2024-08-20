@@ -71,7 +71,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Added a cache array for update check statuses.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -175,7 +175,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 5.6.0-dev.4 =
 
-(2024/08/20) Refactored the `WpssoUmRegister->deactivate_plugin()` method.
+(2024/08/20) Added a cache array for update check statuses. Refactored the `WpssoUmRegister->deactivate_plugin()` method.
 
 = 5.5.0 =
 
