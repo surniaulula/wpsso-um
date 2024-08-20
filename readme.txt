@@ -66,12 +66,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.6.0-dev.4 (2024/08/20)**
+**Version 5.6.0-b.1 (2024/08/20)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Added a cache array for update check messages.
+	* Added a cache array to optimize update check messages.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -173,9 +173,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.6.0-dev.4 =
+= 5.6.0-b.1 =
 
-(2024/08/20) Added a cache array for update check messages. Refactored the `WpssoUmRegister->deactivate_plugin()` method.
+(2024/08/20) Added a cache array to optimize update check messages. Refactored the `WpssoUmRegister->deactivate_plugin()` method.
 
 = 5.5.0 =
 
