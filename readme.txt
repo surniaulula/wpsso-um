@@ -75,7 +75,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Added a new `SucomUpdate->last_update_check()` method.
+	* Added a new `SucomUpdate::get_option_last_check()` method.
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.8.
@@ -205,7 +205,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 5.7.0-dev.1 =
 
-(2024/08/21) Added a new `SucomUpdate->last_update_check()` method.
+(2024/08/21) Added a new `SucomUpdate::get_option_last_check()` method.
 
 = 5.6.1 =
 
