@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.7.0-dev.1 (TBD)**
+**Version 5.7.0-dev.1 (2024/08/21)**
 
 * **New Features**
 	* None.
@@ -75,7 +75,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Added a new `SucomUpdate->last_update_check()` method.
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.8.
@@ -205,7 +205,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 5.7.0-dev.1 =
 
-(TBD) None.
+(2024/08/21) Added a new `SucomUpdate->last_update_check()` method.
 
 = 5.6.1 =
 
