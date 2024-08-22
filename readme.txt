@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.7.0-dev.1 (2024/08/21)**
+**Version 5.7.0-dev.2 (2024/08/21)**
 
 * **New Features**
 	* None.
@@ -203,7 +203,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.7.0-dev.1 =
+= 5.7.0-dev.2 =
 
 (2024/08/21) Added a new `SucomUpdate::get_option_last_check()` method.
 
