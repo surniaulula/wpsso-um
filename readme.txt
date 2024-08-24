@@ -75,7 +75,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Changed the main instantiation action hook from 'init_objects' to 'init_objects_preloader'.
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.8.
@@ -220,7 +220,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 6.0.0-dev.1 =
 
-(2024/08/24) None.
+(2024/08/24) Changed the main instantiation action hook from 'init_objects' to 'init_objects_preloader'.
 
 = 5.7.0 =
 
