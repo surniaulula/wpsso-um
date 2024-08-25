@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 6.0.0-dev.1 (2024/08/24)**
+**Version 6.0.0-dev.3 (2024/08/24)**
 
 * **New Features**
 	* None.
@@ -218,7 +218,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 6.0.0-dev.1 =
+= 6.0.0-dev.3 =
 
 (2024/08/24) Changed the main instantiation action hook from 'init_objects' to 'init_objects_preloader'.
 
