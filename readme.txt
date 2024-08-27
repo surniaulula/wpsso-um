@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 6.0.1-dev.1 (2024/08/27)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* Fixed the 'wpsso_cache_refresh_scheduled' action hook method name.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.8.
+	* WPSSO Core v15.0.0.
+
 **Version 6.0.0 (2024/08/25)**
 
 * **New Features**
@@ -82,6 +97,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v15.0.0.
 
 == Upgrade Notice ==
+
+= 6.0.1-dev.1 =
+
+(2024/08/27) Fixed the 'wpsso_cache_refresh_scheduled' action hook method name.
 
 = 6.0.0 =
 
