@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 6.0.1-dev.1 (2024/08/27)**
+**Version 6.0.1-rc.1 (2024/08/27)**
 
 * **New Features**
 	* None.
@@ -98,7 +98,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 6.0.1-dev.1 =
+= 6.0.1-rc.1 =
 
 (2024/08/27) Fixed the 'wpsso_cache_refresh_scheduled' action hook method name.
 
