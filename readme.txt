@@ -75,7 +75,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Added a new `SucomUpdate::get_ext_file_content()` method.
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.8.
@@ -115,7 +115,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 7.0.0-rc.1 =
 
-(2024/09/10) None.
+(2024/09/10) Added a new `SucomUpdate::get_ext_file_content()` method.
 
 = 6.0.1 =
 
