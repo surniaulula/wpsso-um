@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 7.0.0-rc.1 (2024/09/10)**
+**Version 7.0.0 (2024/09/10)**
 
 * **New Features**
 	* None.
@@ -113,7 +113,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 7.0.0-rc.1 =
+= 7.0.0 =
 
 (2024/09/10) Added a new `SucomUpdate::get_ext_file_content()` method.
 
