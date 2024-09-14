@@ -9,8 +9,8 @@ Assets URI: https://surniaulula.github.io/wpsso-um/assets/
 Tags: wpsso, update, manager, add-on, pro version
 Contributors: jsmoriss
 Requires Plugins: wpsso
-Requires PHP: 7.2.34
-Requires At Least: 5.8
+Requires PHP: 7.4.33
+Requires At Least: 5.9
 Tested Up To: 6.6.2
 Stable Tag: 7.0.0
 
@@ -78,53 +78,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added support for an update transation status in the update option data.
 	* Refactored the `SucomUpdate->prefer_wp_org_update()` method.
 * **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v15.0.0.
-
-**Version 7.0.0 (2024/09/10)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added a new `SucomUpdate::get_ext_file_content()` method.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v15.0.0.
-
-**Version 6.0.1 (2024/08/27)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed the 'wpsso_cache_refresh_scheduled' action hook method name.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v15.0.0.
-
-**Version 6.0.0 (2024/08/25)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Changed the main instantiation action hook from 'init_objects' to 'init_objects_preloader'.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
+	* PHP v7.4.33.
+	* WordPress v5.9.
 	* WPSSO Core v15.0.0.
 
 == Upgrade Notice ==
@@ -132,16 +87,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 7.1.0-b.1 =
 
 (2024/09/14) Added support for an update transation status in the update option data.
-
-= 7.0.0 =
-
-(2024/09/10) Added a new `SucomUpdate::get_ext_file_content()` method.
-
-= 6.0.1 =
-
-(2024/08/27) Fixed the 'wpsso_cache_refresh_scheduled' action hook method name.
-
-= 6.0.0 =
-
-(2024/08/25) Changed the main instantiation action hook from 'init_objects' to 'init_objects_preloader'.
 
