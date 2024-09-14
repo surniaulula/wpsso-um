@@ -75,7 +75,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Added support for 'txn_status' option data.
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.8.
@@ -130,7 +130,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 7.1.0-dev.1 =
 
-(2024/09/14) None.
+(2024/09/14) Added support for 'txn_status' option data.
 
 = 7.0.0 =
 
