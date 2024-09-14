@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 7.1.0-rc.2 (2024/09/15)**
+**Version 7.1.0 (2024/09/15)**
 
 * **New Features**
 	* None.
@@ -84,7 +84,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 7.1.0-rc.2 =
+= 7.1.0 =
 
 (2024/09/15) Added support for an update transation status in the update option data.
 
