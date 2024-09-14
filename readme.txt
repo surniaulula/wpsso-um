@@ -75,7 +75,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Added support for a transation status in the option data.
+	* Added support for a transation status in the update option data.
+	* Refactored the `SucomUpdate->prefer_wp_org_update()` method.
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.8.
@@ -130,7 +131,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 7.1.0-dev.2 =
 
-(2024/09/14) Added support for a transation status in the option data.
+(2024/09/14) Added support for a transation status in the update option data.
 
 = 7.0.0 =
 
