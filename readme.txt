@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 7.2.0-dev.1 (2024/09/17)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Additional refactoring of the `SucomUpdate->prefer_wp_org_update()` method.
+* **Requires At Least**
+	* PHP v7.4.33.
+	* WordPress v5.9.
+	* WPSSO Core v15.0.0.
+
 **Version 7.1.0 (2024/09/15)**
 
 * **New Features**
@@ -83,6 +98,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v15.0.0.
 
 == Upgrade Notice ==
+
+= 7.2.0-dev.1 =
+
+(2024/09/17) None.
 
 = 7.1.0 =
 
