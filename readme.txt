@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 7.2.0-dev.1 (2024/09/17)**
+**Version 7.2.0-rc.1 (2024/09/18)**
 
 * **New Features**
 	* None.
@@ -90,7 +90,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Added support for an update transation status in the update option data.
+	* Added support for an update transaction status in the update option data.
 	* Refactored the `SucomUpdate->prefer_wp_org_update()` method.
 * **Requires At Least**
 	* PHP v7.4.33.
@@ -99,11 +99,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 7.2.0-dev.1 =
+= 7.2.0-rc.1 =
 
-(2024/09/17) None.
+(2024/09/18) Additional refactoring of the `SucomUpdate->prefer_wp_org_update()` method.
 
 = 7.1.0 =
 
-(2024/09/15) Added support for an update transation status in the update option data.
+(2024/09/15) Added support for an update transaction status in the update option data.
 
