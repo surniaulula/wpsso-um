@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 7.2.0-rc.1 (2024/09/18)**
+**Version 7.2.0 (2024/09/18)**
 
 * **New Features**
 	* None.
@@ -99,7 +99,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 7.2.0-rc.1 =
+= 7.2.0 =
 
 (2024/09/18) Additional refactoring of the `SucomUpdate->prefer_wp_org_update()` method.
 
