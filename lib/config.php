@@ -97,7 +97,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '15.0.0',	// Released on 2023/02/04.
+							'min_version'   => '15.15.0',	// Released on 2023/07/08.
 						),
 					),
 
