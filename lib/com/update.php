@@ -1834,7 +1834,7 @@ if ( class_exists( 'SucomUpdate' ) ) {
 				}
 			}
 
-			return 'stable';
+			return $this->get_default_filter_name();
 		}
 
 		/*
@@ -1844,7 +1844,7 @@ if ( class_exists( 'SucomUpdate' ) ) {
 
 			$filter_regex = '/^[0-9][0-9\.\-]+$/';	// Default stable regex.
 
-			$filter_name  = $this->get_ext_filter_name( $ext );	// Returns a valid filter name or 'stable'.
+			$filter_name  = $this->get_ext_filter_name( $ext );
 
 			if ( ! empty( $this->p->cf[ 'um' ][ 'version_regex' ][ $filter_name ] ) ) {
 
