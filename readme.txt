@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 7.2.1-rc.1 (2024/10/05)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* Fixed default version filter value if the version filter option is not defined and `wp_get_environment_type()` is development.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.4.33.
+	* WordPress v5.9.
+	* WPSSO Core v15.15.0.
+
 **Version 7.2.0 (2024/09/18)**
 
 * **New Features**
@@ -98,6 +113,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v15.0.0.
 
 == Upgrade Notice ==
+
+= 7.2.1-rc.1 =
+
+(2024/10/05) Fixed default version filter value if the version filter option is not defined and `wp_get_environment_type()` is development.
 
 = 7.2.0 =
 
