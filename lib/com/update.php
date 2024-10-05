@@ -1580,7 +1580,10 @@ if ( class_exists( 'SucomUpdate' ) ) {
 
 			$filter_name = 'stable';
 
-			switch( wp_get_environment_type() ) {	// Since WP v5.5.
+			/*
+			 * Possible values are 'local', 'development', 'staging', and 'production'.
+			 */
+			switch( wp_get_environment_type() ) {
 
 				case 'development':
 
