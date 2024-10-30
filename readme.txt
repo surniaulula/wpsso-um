@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 7.2.2-b.6 (2024/10/30)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* Fixed dynamic property warnings in `SucomPluginData::data_from_json()`.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.4.33.
+	* WordPress v5.9.
+	* WPSSO Core v15.15.0.
+
 **Version 7.2.1 (2024/10/05)**
 
 * **New Features**
@@ -113,6 +128,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v15.0.0.
 
 == Upgrade Notice ==
+
+= 7.2.2-b.6 =
+
+(2024/10/30) Fixed dynamic property warnings in `SucomPluginData::data_from_json()`.
 
 = 7.2.1 =
 
