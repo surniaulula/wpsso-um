@@ -14,23 +14,36 @@ if ( ! class_exists( 'SucomPluginData' ) ) {
 
 	class SucomPluginData {
 
+		public $assets_uri;
 		public $author;
 		public $author_homepage;
 		public $banners;
+		public $contributors;
 		public $download_url;
+		public $exp_date;
 		public $homepage;
 		public $icons;
 		public $id = 0;
 		public $last_updated;
 		public $license;
+		public $license_uri;
 		public $name;
 		public $num_ratings;
 		public $plugin;
+		public $qty_reg;
+		public $qty_rej;
+		public $qty_total;
+		public $qty_used;
 		public $rating;
 		public $requires;
+		public $requires_php;
 		public $sections;
+		public $short_description;
 		public $slug;
+		public $tags;
 		public $tested;
+		public $tested_wc;
+		public $txn_status;
 		public $upgrade_notice;
 		public $version;
 

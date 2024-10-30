@@ -43,10 +43,7 @@ if ( ! class_exists( 'SucomPluginUpdate' ) ) {
 
 				return self::update_from_data( $plugin_data );
 
-			} else {
-
-				return null;
-			}
+			} else return null;
 		}
 
 		public static function update_from_data( $plugin_data ){
