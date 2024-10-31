@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 7.2.2-rc.2 (2024/10/31)**
+**Version 7.2.2-rc.3 (2024/10/31)**
 
 * **New Features**
 	* None.
@@ -129,7 +129,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 7.2.2-rc.2 =
+= 7.2.2-rc.3 =
 
 (2024/10/31) Fixed dynamic property warnings in `SucomPluginData::data_from_json()`.
 
