@@ -77,7 +77,7 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 					),
 				),
 				'wpssoum' => array(			// Plugin acronym.
-					'version'     => '7.2.2-rc.4',	// Plugin version.
+					'version'     => '7.2.2-rc.5',	// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short'       => 'WPSSO UM',	// Short plugin name.
 					'name'        => 'WPSSO Update Manager',
