@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Update Manager 7.2.0\n"
+"Project-Id-Version: WPSSO Update Manager 7.2.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
 "POT-Creation-Date: 2024-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2024-09-19 11:16-0700\n"
+"PO-Revision-Date: 2024-10-30 17:15-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -101,7 +101,7 @@ msgstr "Erreur de mises à jour de la fonction WordPress %1$s: %2$s"
 msgid "The WordPress %1$s function returned HTTP %2$d (%3$s) for %4$s."
 msgstr "La fonction WordPress %1$s a retourné HTTP %2$d (%3$s) pour %4$s."
 
-#: gettext/gettext-lib-com.php:27 lib/com/update.php:1689
+#: gettext/gettext-lib-com.php:27 lib/com/update.php:1692
 msgid "The %1$s plugin (%2$s) version number is missing from the WordPress plugins array."
 msgstr "Le numéro de version de l'extension %1$s (%2$s) est absente de la liste d'extensions de WordPress."
 
