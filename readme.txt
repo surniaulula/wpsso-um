@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires Plugins: wpsso
 Requires PHP: 7.4.33
 Requires At Least: 5.9
-Tested Up To: 6.8.0
+Tested Up To: 6.8.1
 Stable Tag: 7.2.2
 
 Update Manager for the WPSSO Core Premium plugin.
