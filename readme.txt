@@ -81,67 +81,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.9.
 	* WPSSO Core v17.0.0.
 
-**Version 7.2.1 (2024/10/05)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed default version filter value if the version filter option is not defined and `wp_get_environment_type()` is development.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.4.33.
-	* WordPress v5.9.
-	* WPSSO Core v15.15.0.
-
-**Version 7.2.0 (2024/09/18)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Additional refactoring of the `SucomUpdate->prefer_wp_org_update()` method.
-* **Requires At Least**
-	* PHP v7.4.33.
-	* WordPress v5.9.
-	* WPSSO Core v15.15.0.
-
-**Version 7.1.0 (2024/09/15)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added support for an update transaction status in the update option data.
-	* Refactored the `SucomUpdate->prefer_wp_org_update()` method.
-* **Requires At Least**
-	* PHP v7.4.33.
-	* WordPress v5.9.
-	* WPSSO Core v15.0.0.
-
 == Upgrade Notice ==
 
 = 7.2.2 =
 
 (2024/11/01) Fixed dynamic property warnings in `SucomPluginData::data_from_json()`.
-
-= 7.2.1 =
-
-(2024/10/05) Fixed default version filter value if the version filter option is not defined and `wp_get_environment_type()` is development.
-
-= 7.2.0 =
-
-(2024/09/18) Additional refactoring of the `SucomUpdate->prefer_wp_org_update()` method.
-
-= 7.1.0 =
-
-(2024/09/15) Added support for an update transaction status in the update option data.
 
