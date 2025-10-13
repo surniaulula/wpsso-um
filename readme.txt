@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 7.3.0-dev.1 (2025/10/13)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Deprecated the WPSSO Schema Shortcode add-on.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.4.33.
+	* WordPress v5.9.
+	* WPSSO Core v17.0.0.
+
 **Version 7.2.2 (2024/11/01)**
 
 * **New Features**
@@ -82,6 +97,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v17.0.0.
 
 == Upgrade Notice ==
+
+= 7.3.0-dev.1 =
+
+(2025/10/13) Deprecated the WPSSO Schema Shortcode add-on.
 
 = 7.2.2 =
 
