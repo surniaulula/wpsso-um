@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Update Manager 7.2.2\n"
+"Project-Id-Version: WPSSO Update Manager 7.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-um\n"
-"POT-Creation-Date: 2024-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2024-10-30 17:15-0700\n"
+"POT-Creation-Date: 2025-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-10-13 10:28-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.7\n"
 
 #: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:235
 msgid "The %1$s add-on requires the %2$s plugin."
@@ -105,32 +105,22 @@ msgstr "La fonction WordPress %1$s a retourné HTTP %2$d (%3$s) pour %4$s."
 msgid "The %1$s plugin (%2$s) version number is missing from the WordPress plugins array."
 msgstr "Le numéro de version de l'extension %1$s (%2$s) est absente de la liste d'extensions de WordPress."
 
-#: gettext/gettext-lib-config.php:5
-msgctxt "plugin name"
-msgid "WPSSO Schema Shortcode"
-msgstr "WPSSO Code court de Schéma"
-
-#: gettext/gettext-lib-config.php:6
-msgctxt "plugin description"
-msgid "Schema shortcode to define and customize additional properties and types for sections of the content."
-msgstr "Shortcode de Schéma pour définir et personnaliser des propriétés et des types supplémentaires pour des sections de contenu."
-
-#: gettext/gettext-lib-config.php:7 gettext/gettext-lib-config.php:8
+#: gettext/gettext-lib-config.php:5 gettext/gettext-lib-config.php:6
 msgctxt "lib file description"
 msgid "Update Manager"
 msgstr "Mises à jour"
 
-#: gettext/gettext-lib-config.php:9
+#: gettext/gettext-lib-config.php:7
 msgctxt "plugin name"
 msgid "WPSSO Update Manager"
 msgstr "WPSSO Gestionnaire de mise à jour"
 
-#: gettext/gettext-lib-config.php:10
+#: gettext/gettext-lib-config.php:8
 msgctxt "plugin description"
 msgid "Update Manager for the WPSSO Core Premium plugin."
 msgstr "Gestionnaire de mise à jour pour l'extension WPSSO Core Premium."
 
-#: gettext/gettext-lib-config.php:11
+#: gettext/gettext-lib-config.php:9
 msgctxt "plugin name"
 msgid "WPSSO Core"
 msgstr "WPSSO Core"
