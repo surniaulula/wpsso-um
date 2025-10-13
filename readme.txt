@@ -71,7 +71,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* Deprecated the WPSSO Schema Shortcode add-on.
+	* Removed the WPSSO Schema Shortcode add-on from the SSO &gt; Plugin Add-ons page.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -100,7 +100,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 7.3.0 =
 
-(2025/10/13) Deprecated the WPSSO Schema Shortcode add-on.
+(2025/10/13) Removed the WPSSO Schema Shortcode add-on from the SSO &gt; Plugin Add-ons page.
 
 = 7.2.2 =
 
