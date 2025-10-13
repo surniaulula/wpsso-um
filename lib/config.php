@@ -16,68 +16,8 @@ if ( ! class_exists( 'WpssoUmConfig' ) ) {
 
 		public static $cf = array(
 			'plugin' => array(
-				'wpssossc' => array(			// Plugin acronym.
-					'short'       => 'WPSSO SSC',	// Short plugin name.
-					'name'        => 'WPSSO Schema Shortcode',
-					'desc'        => 'Schema shortcode to define and customize additional properties and types for sections of the content.',
-					'slug'        => 'wpsso-schema-shortcode',
-					'base'        => 'wpsso-schema-shortcode/wpsso-schema-shortcode.php',
-					'update_auth' => '',		// No premium version.
-
-					/*
-					 * URLs or relative paths to plugin banners and icons.
-					 */
-					'assets' => array(
-
-						/*
-						 * Banner image array keys are 'low' and 'high'.
-						 */
-						'banners' => array(
-							'low'  => 'https://surniaulula.github.io/wpsso-schema-shortcode/assets/banner-772x250.jpg',
-							'high' => 'https://surniaulula.github.io/wpsso-schema-shortcode/assets/banner-1544x500.jpg',
-						),
-
-						/*
-						 * Icon image array keys are '1x' and '2x'.
-						 */
-						'icons' => array(
-							'1x' => 'https://surniaulula.github.io/wpsso-schema-shortcode/assets/icon-128x128.png',
-							'2x' => 'https://surniaulula.github.io/wpsso-schema-shortcode/assets/icon-256x256.png',
-						),
-					),
-					'hosts' => array(
-						'wp_org' => false,
-						'github' => true,
-						'wpsso'  => true,
-					),
-					'url' => array(
-
-						/*
-						 * GitHub.com URLs.
-						 */
-						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-schema-shortcode/master/readme.txt',
-						'setup_html' => '',
-
-						/*
-						 * WPSSO.com URLs.
-						 */
-						'home'      => 'https://wpsso.com/extend/plugins/wpsso-schema-shortcode/',
-						'forum'     => '',
-						'review'    => '',
-						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-schema-shortcode/changelog/',
-						'docs'      => 'https://wpsso.com/docs/plugins/wpsso-schema-shortcode/',
-						'install'   => 'https://wpsso.com/docs/plugins/wpsso-schema-shortcode/installation/',
-						'faqs'      => '',
-						'notes'     => '',
-						'support'   => '',	// Premium support ticket.
-						'purchase'  => '',	// Purchase page.
-						'info'      => '',	// License information.
-						'update'    => 'https://wpsso.com/extend/plugins/wpsso-schema-shortcode/update/',
-						'download'  => 'https://wpsso.com/extend/plugins/wpsso-schema-shortcode/latest/',
-					),
-				),
 				'wpssoum' => array(			// Plugin acronym.
-					'version'     => '7.2.2',	// Plugin version.
+					'version'     => '7.3.0-dev.1',	// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short'       => 'WPSSO UM',	// Short plugin name.
 					'name'        => 'WPSSO Update Manager',
