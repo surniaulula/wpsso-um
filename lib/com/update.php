@@ -1357,7 +1357,7 @@ if ( class_exists( 'SucomUpdate' ) ) {
 
 			if ( ! isset( $host_cache[ $json_host ][ 'ip' ] ) ) {
 
-				$host_cache[ $json_host ][ 'ip' ] = gethostbyname( $json_host );	// Returns an IPv4 address, or the hostname on failure.
+				$host_cache[ $json_host ][ 'ip' ] = gethostbyname( $json_host . '.' );	// Returns an IPv4 address, or the hostname on failure.
 
 				if ( $host_cache[ $json_host ][ 'ip' ] === $json_host ) {
 
