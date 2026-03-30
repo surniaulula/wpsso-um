@@ -2018,7 +2018,7 @@ if ( class_exists( 'SucomUpdate' ) ) {
 
 				self::$upd_config[ $ext ][ 'u' . $type ] = $value;
 
-				if ( $value && '' ===  self::$upd_config[ $ext ][ 'auth_id' ] ) self::set_umsg( $ext, $type, false );	// Only show once.
+				if ( $value && '' === self::$upd_config[ $ext ][ 'auth_id' ] ) self::set_umsg( $ext, $type, false );	// Only show once.
 			}
 
 			return $value;
